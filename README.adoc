@@ -1,5 +1,8 @@
 == Алгоритмы и структуры данных в системах реального времени
 
+image:https://github.com/BasePractice/algorithms-and-data-structures-2022/actions/workflows/codeql-analysis.yml/badge.svg[link="https://github.com/BasePractice/algorithms-and-data-structures-2022/actions/workflows/codeql-analysis.yml"]
+image:https://github.com/BasePractice/algorithms-and-data-structures-2022/actions/workflows/maven.yml/badge.svg[link="https://github.com/BasePractice/algorithms-and-data-structures-2022/actions/workflows/maven.yml"]
+
 === Теоретическая и практическая часть
 1. link:p01/README.adoc[Массивы]
 
