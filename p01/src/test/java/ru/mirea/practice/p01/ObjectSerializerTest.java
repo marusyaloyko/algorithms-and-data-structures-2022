@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -15,6 +16,19 @@ final class ObjectSerializerTest {
         String name;
         String group;
         long position;
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Student student = (Student) o;
+            return position == student.position && name.equals(student.name) && group.equals(student.group);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(name, group, position);
+        }
     }
 
     @DisplayName("Сериализация")
@@ -29,5 +43,10 @@ final class ObjectSerializerTest {
         assertEquals(student.name, deserialize.name);
         assertEquals(student.group, deserialize.group);
         assertEquals(student.position, deserialize.position);
+
+        Student[] students = new Student[]{student};
+        serialize = ObjectSerializer.serialize(students);
+        Student[] students_d = ObjectSerializer.deserialize(serialize);
+        assertEquals(students[0], students_d[0]);
     }
 }
