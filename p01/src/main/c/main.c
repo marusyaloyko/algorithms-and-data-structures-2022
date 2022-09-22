@@ -8,7 +8,6 @@
 #define STUDENT_SIZEOF_NAME       10
 #define STUDENT_SIZEOF_GROUP      10
 #pragma pack(1)
-
 struct Student {
     char name[STUDENT_SIZEOF_NAME + 1];
     char group[STUDENT_SIZEOF_GROUP + 1];
