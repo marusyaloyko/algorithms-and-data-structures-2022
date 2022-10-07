@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) {
-        System.out.println("Введите 10 чисел");
+        System.out.println("Inter 10 numbers");
         Scanner sc = new Scanner(System.in);
         int[] Array = new int[10];
         int Sum = 0;
@@ -13,7 +13,7 @@ public class Task1 {
             Sum += Array[i];
         }
         ArithmeticAverage = (double)Sum/Array.length;
-        System.out.println("Сумма: " + Sum);
-        System.out.println("Среднее арифметическое: " + ArithmeticAverage);
+        System.out.println("Sum: " + Sum);
+        System.out.println("Arithmetic Average: " + ArithmeticAverage);
     }
 }
