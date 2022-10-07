@@ -98,8 +98,8 @@
             <modules>
                 <module>students/sample</module>
                 <module>students/0000000</module>
-                <module>students/0000001</module>
                 <module>students/21K0637</module>
+                <module>students/0000001</module>
             </modules>
         </profile>
     </profiles>
