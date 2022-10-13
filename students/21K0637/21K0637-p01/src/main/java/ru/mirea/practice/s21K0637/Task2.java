@@ -5,11 +5,16 @@ import java.util.Scanner;
 public class Task2 {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        int[] Array = new int[10];
+        System.out.println("inter size of array");
+        int n = sc.nextInt();
+        int[] Array = new int[n];
         int i = 0;
+        int sum = 0;
+        System.out.printf("Inter %d numbers\n" ,n);
         int a = sc.nextInt();
         do {
             Array[i] = a;
+            sum += a;
             i++;
             a = sc.nextInt();
         } while (i != Array.length);
@@ -25,6 +30,7 @@ public class Task2 {
             }
         }
 
+        System.out.println("Sum of numbers " + sum);
         System.out.println("Max value " + argsMax);
         System.out.println("Min value " + argsMin);
 
