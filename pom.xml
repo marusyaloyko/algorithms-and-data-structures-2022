@@ -101,5 +101,33 @@
                 <module>students/0000001</module>
             </modules>
         </profile>
+        <profile>
+            <id>check-style</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-checkstyle-plugin</artifactId>
+                        <version>3.1.2</version>
+                        <executions>
+                            <execution>
+                                <id>validate</id>
+                                <phase>validate</phase>
+                                <configuration>
+                                    <!--                                    <configLocation>google_checks.xml</configLocation>-->
+                                    <encoding>UTF-8</encoding>
+                                    <failsOnError>true</failsOnError>
+                                    <consoleOutput>true</consoleOutput>
+                                    <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                                </configuration>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
 </project>
