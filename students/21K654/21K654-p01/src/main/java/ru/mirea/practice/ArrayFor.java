@@ -16,7 +16,7 @@ public class ArrayFor {
                 } else {
                     System.out.println("Размер должен быть >0");
                 }
-            }else {
+            } else {
                 System.out.println("Введите числовое значение");
                 sc = new Scanner(System.in);
             }
