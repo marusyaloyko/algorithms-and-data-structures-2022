@@ -16,8 +16,7 @@ public class ArrayWhile {
                 } else {
                     System.out.println("Размер должен быть >0");
                 }
-            }
-            else {
+            } else {
                 System.out.println("Введите числовое значение");
                 sc = new Scanner(System.in);
             }
@@ -30,11 +29,12 @@ public class ArrayWhile {
             sum += arr[i];
             i++;
         }
-        int max = arr[0],min = arr[0];
+        int max = arr[0];
+        int min = arr[0];
         for (int j : arr) {
             if (j < min) {
                 min = j;
-            }else if (j > max) {
+            } else if (j > max) {
                 max = j;
             }
         }
