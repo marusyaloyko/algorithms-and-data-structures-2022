@@ -4,24 +4,25 @@ import java.util.Scanner;
 
 public class Task2 {
     static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
         System.out.println("inter size of array");
         int n = sc.nextInt();
-        int[] Array = new int[n];
+        int[] array = new int[n];
         int i = 0;
         int sum = 0;
-        System.out.printf("Inter %d numbers\n" ,n);
+        System.out.printf("Inter %d numbers\n", n);
         do {
             int a = sc.nextInt();
-            Array[i] = a;
+            array[i] = a;
             sum += a;
             i++;
 
-        } while (i < Array.length);
+        } while (i < array.length);
 
         int argsMax = 0;
-        int argsMin = (int) Math.pow(10,7);
-        for (int k : Array) {
+        int argsMin = (int) Math.pow(10, 7);
+        for (int k : array) {
             if (k > argsMax) {
                 argsMax = k;
             }
