@@ -20,6 +20,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package -P students --file pom.xml
-    - name: Checkstyle
-      run: mvn package -Pstudents -Pcheck-style
+      run: mvn clean package -P students
