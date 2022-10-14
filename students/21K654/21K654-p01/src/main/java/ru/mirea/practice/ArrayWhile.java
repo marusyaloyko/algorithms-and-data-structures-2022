@@ -2,7 +2,7 @@ package ru.mirea.practice;
 
 import java.util.Scanner;
 
-public class Array_while {
+public class ArrayWhile {
     public static void main(String[] args) {
         int n;
         int sum = 0;
