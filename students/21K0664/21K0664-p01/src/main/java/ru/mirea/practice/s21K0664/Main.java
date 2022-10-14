@@ -64,8 +64,6 @@ public class Main {
         System.out.print("Введите число: ");
         int num = input.nextInt();
         System.out.printf("Ваше число: %d \n", num);
-        input.close();
-
         System.out.println("\nЗадание 1.6");
         for (int k = 2; k < 10; k++){
             System.out.println("1/" + k);
@@ -73,8 +71,8 @@ public class Main {
 
         System.out.println("\nЗадание 1.7");
         System.out.println("Введите число: ");
-        int nfact = input.nextInt();
+        int pr = input.nextInt();
         System.out.println("\nФакториал числа: ");
-        System.out.println(fact(nfact));
+        System.out.println(fact(pr));
     }
 }
