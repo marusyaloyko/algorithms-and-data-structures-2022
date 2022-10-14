@@ -3,20 +3,20 @@ package ru.mirea.practice.Task_6;
 public class Circle {
     private double radius;
     public Circle(double radius){
-        this.radius=radius;
+        this.radius = radius;
     }
     public double square(){
-        return Math.PI*Math.pow(radius,2.0);
+        return Math.PI * Math.pow(radius,2.0);
     }
     public double length(){
-        return 2*radius*Math.PI;
+        return 2 * radius * Math.PI;
     }
 
     public void setRadius(double radius) {
         this.radius = radius;
     }
     public int toCompare(Circle a){
-        return (int)(this.radius-a.getRadius());
+        return (int)(this.radius - a.getRadius());
     }
     public double getRadius() {
         return radius;

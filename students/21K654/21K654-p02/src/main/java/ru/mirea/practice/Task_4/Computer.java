@@ -8,10 +8,10 @@ public class Computer {
     private String VideoCard;
     private String name;
     public Computer(String name,String CPU, String Motherboard,String HDD,String RAM,String VideoCard){
-        this.name=name; this.CPU=CPU; this.Motherboard=Motherboard; this.HDD=HDD; this.RAM=RAM; this.VideoCard=VideoCard;
+        this.name = name; this.CPU = CPU; this.Motherboard = Motherboard; this.HDD = HDD; this.RAM = RAM; this.VideoCard = VideoCard;
     }
     public Computer(String name){
-        this.name=name;
+        this.name = name;
     }
     public String getName() {
         return name;
@@ -47,6 +47,6 @@ public class Computer {
 
     @Override
     public String toString(){
-        return this.name+" "+this.CPU+" "+this.Motherboard+" "+this.RAM+" "+this.VideoCard+" "+this.HDD;
+        return this.name + " " + this.CPU + " " + this.Motherboard + " " + this.RAM + " " + this.VideoCard + " " + this.HDD;
     }
 }
