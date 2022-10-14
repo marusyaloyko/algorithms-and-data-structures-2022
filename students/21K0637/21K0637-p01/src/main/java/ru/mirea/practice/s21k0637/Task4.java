@@ -1,7 +1,7 @@
-package ru.mirea.practice.s21K0637;
+package ru.mirea.practice.s21k0637;
 
 public class Task4 {
-    public static int GSD(int a, int b) {
+    public static int gsd(int a, int b) {
         while (b != 0) {
             int tmp = a % b;
             a = b;
@@ -18,7 +18,7 @@ public class Task4 {
             harmonicNumerator = harmonicNumerator * i + harmonicDenomerator;
             harmonicDenomerator *= i;
 
-            int gsd = GSD(harmonicDenomerator, harmonicNumerator);
+            int gsd = gsd(harmonicDenomerator, harmonicNumerator);
             harmonicNumerator = harmonicNumerator / gsd;
             harmonicDenomerator = harmonicDenomerator / gsd;
 
