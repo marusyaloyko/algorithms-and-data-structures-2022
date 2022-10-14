@@ -6,7 +6,8 @@ public class Dog {
     private  int age;
 
     public  Dog(String name,int age) {
-        this.age = age;this.name = name;
+        this.age = age;
+        this.name = name;
     }
 
     public void setName(String name) {
@@ -25,12 +26,12 @@ public class Dog {
         return age;
     }
 
-    public int hAge(){
+    public int humanAge() {
         return this.age * 8;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return this.name + " " + this.age;
     }
 }

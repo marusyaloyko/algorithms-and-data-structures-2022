@@ -1,30 +1,30 @@
 package ru.mirea.practice.task4;
 
 public class Computer {
-    private String CPU;
+    private String cpu;
 
-    private String Motherboard;
+    private String motherboard;
 
-    private String HDD;
+    private String hdd;
 
-    private String RAM;
+    private String ram;
 
-    private String VideoCard;
+    private String vcard;
 
     private String name;
 
-    public Computer(String name,String CPU, String Motherboard,String HDD,String RAM,String VideoCard) {
+    public Computer(String name,String cpu, String motherboard,String hdd,String ram,String vcard) {
         this.name = name;
 
-        this.CPU = CPU;
+        this.cpu = cpu;
 
-        this.Motherboard = Motherboard;
+        this.motherboard = motherboard;
 
-        this.HDD = HDD;
+        this.hdd = hdd;
 
-        this.RAM = RAM;
+        this.ram = ram;
 
-        this.VideoCard = VideoCard;
+        this.vcard = vcard;
     }
     public Computer(String name) {
         this.name = name;
@@ -37,32 +37,32 @@ public class Computer {
         this.name = name;
     }
 
-    public void setCPU(String CPU) {
-        this.CPU = CPU;
+    public void setCpu(String cpu) {
+        this.cpu = cpu;
     }
 
-    public void setHDD(String HDD) {
-        this.HDD = HDD;
+    public void setHdd(String hdd) {
+        this.hdd = hdd;
     }
 
     public void setMotherboard(String motherboard) {
-        Motherboard = motherboard;
+        this.motherboard = motherboard;
     }
 
-    public void setRAM(String RAM) {
-        this.RAM = RAM;
+    public void setRam(String ram) {
+        this.ram = ram;
     }
 
-    public void setVideoCard(String videoCard) {
-        VideoCard = videoCard;
+    public void setVideoCard(String vcard) {
+        this.vcard = vcard;
     }
 
     public String getVideoCard() {
-        return VideoCard;
+        return vcard;
     }
 
     @Override
     public String toString() {
-        return this.name + " " + this.CPU + " " + this.Motherboard + " " + this.RAM + " " + this.VideoCard + " " + this.HDD;
+        return this.name + " " + this.cpu + " " + this.motherboard + " " + this.ram + " " + this.vcard + " " + this.hdd;
     }
 }

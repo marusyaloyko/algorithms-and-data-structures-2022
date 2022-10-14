@@ -18,7 +18,7 @@ public class Shop implements Input {
         this.arr = newArr;
     }
 
-    void deleteComputer(int number){
+    void deleteComputer(int number) {
         for (int i = number - 1;i < this.arr.length;i++) {
             if ((i + 1) < this.arr.length) {
                 this.arr[i] = this.arr[i + 1];
@@ -67,23 +67,24 @@ public class Shop implements Input {
             sc = new Scanner(System.in);
             arr[i].setName(sc.nextLine());
             System.out.println("CPU:");
-            arr[i].setCPU(sc.nextLine());
+            arr[i].setCpu(sc.nextLine());
             System.out.println("Motherboard:");
             arr[i].setMotherboard(sc.nextLine());
             System.out.println("RAM:");
-            arr[i].setRAM(sc.nextLine());
+            arr[i].setRam(sc.nextLine());
             System.out.println("HDD:");
-            arr[i].setHDD(sc.nextLine());
+            arr[i].setHdd(sc.nextLine());
             System.out.println("VideoCard:");
             arr[i].setVideoCard(sc.nextLine());
         }
     }
+
     @Override
     public String toString() {
         String s = "ToString: ";
 
         for (int i = 0;i < arr.length;i++) {
-            s += this.arr[i].toString()+"; ";
+            s += this.arr[i].toString() + "; ";
         }
 
         return s;

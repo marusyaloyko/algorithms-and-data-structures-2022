@@ -5,13 +5,13 @@ public class BookShelf {
 
     private final int num;
 
-    public BookShelf(Book[] arr){
+    public BookShelf(Book[] arr) {
         this.num = arr.length;
 
         this.arr = arr;
     }
 
-    public Book min(){
+    public Book min() {
         int min = arr[0].getYear();
 
         int j =- 1;
@@ -24,7 +24,8 @@ public class BookShelf {
 
         return arr[j];
     }
-    public  Book max(){
+
+    public  Book max() {
         int max = arr[0].getYear();
 
         int j =- 1;
@@ -37,7 +38,8 @@ public class BookShelf {
 
         return arr[j];
     }
-    public  void sortBooks(){
+
+    public  void sortBooks() {
 
     }
 }
