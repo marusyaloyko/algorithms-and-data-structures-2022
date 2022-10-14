@@ -1,8 +1,12 @@
 package ru.mirea.practice.s21K0637;
 
+import java.util.Scanner;
+
 public class Task5 {
     public static void main(String[] args) {
-        int res = factorial(6);
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int res = factorial(n);
         System.out.println(res);
     }
 
