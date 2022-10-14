@@ -7,11 +7,12 @@ public class Factorial {
         int n;
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите число");
-        while(true){
+        while(true) {
             if(sc.hasNextInt()) {
                 n = sc.nextInt();
-                if (n > 0)
+                if (n > 0) {
                     break;
+                }
                 else System.out.println("Число должно быть >0");
             }
             else {
@@ -20,7 +21,7 @@ public class Factorial {
             }
         }
         int fact = 1;
-        for (int i = 1;i <= n;i++){
+        for (int i = 1;i <= n;i++) {
             fact *= i;
         }
         System.out.println(fact);

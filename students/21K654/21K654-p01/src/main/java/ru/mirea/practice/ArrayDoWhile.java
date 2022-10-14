@@ -8,11 +8,12 @@ public class ArrayDoWhile {
         int sum = 0;
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите размер массива");
-        do{
+        do {
             if(sc.hasNextInt()) {
                 n = sc.nextInt();
-                if (n > 0)
+                if (n > 0) {
                     break;
+                }
                 else System.out.println("Размер должен быть >0");
             }
             else {
@@ -24,19 +25,20 @@ public class ArrayDoWhile {
         int arr[] = new int[n];
         System.out.println("Проинициализируйте массив");
         int i = 0;
-        while(i < n){
+        while(i < n) {
             arr[i] = sc.nextInt();
             sum += arr[i];
             i++;
         }
-        int max = arr[0],min = arr[0];
-        for(int j : arr){
-            if(j < min)
+        int max = arr[0], min = arr[0];
+        for(int j : arr) {
+            if(j < min) {
                 min = j;
-            if(j > max)
+            }
+            if(j > max) {
                 max = j;
+            }
         }
         System.out.println(sum + "   " + sum / n + "   " + min + "   " + max);
     }
-
 }

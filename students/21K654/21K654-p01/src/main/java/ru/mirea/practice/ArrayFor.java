@@ -8,11 +8,12 @@ public class ArrayFor {
         int sum = 0;
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите размер массива");
-        while(true){
+        while(true) {
             if(sc.hasNextInt()) {
                 n = sc.nextInt();
-                if (n > 0)
+                if (n > 0) {
                     break;
+                }
                 else System.out.println("Размер должен быть >0");
             }
             else {
@@ -22,7 +23,7 @@ public class ArrayFor {
         }
         int arr[] = new int[n];
         System.out.println("Проинициализируйте массив");
-        for(int i = 0;i < n;i++){
+        for(int i = 0;i < n;i++) {
             arr[i] = sc.nextInt();
             sum += arr[i];
         }
