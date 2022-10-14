@@ -14,7 +14,7 @@ public class BookShelf {
     public Book min() {
         int min = arr[0].getYear();
 
-        int j =- 1;
+        int j = - 1;
 
         for (int i = 0;i < num;i++) {
             if (arr[i].getYear() <= min) {
@@ -28,7 +28,7 @@ public class BookShelf {
     public  Book max() {
         int max = arr[0].getYear();
 
-        int j =- 1;
+        int j = - 1;
 
         for (int i = 0;i < num;i++) {
             if (arr[i].getYear() >= max) {

@@ -7,13 +7,13 @@ public class Tester {
 
     private int size;
 
-    public Tester (Circle[] arr) {
+    public Tester(Circle[] arr) {
         this.arr = arr;
         this.size = this.arr.length;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         String s = "ToString: ";
 
         for (int i = 0;i < size;i++) {
