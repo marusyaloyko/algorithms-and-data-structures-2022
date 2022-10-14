@@ -9,7 +9,7 @@ public class ArrayDoWhile {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите размер массива");
         do {
-            if(sc.hasNextInt()) {
+            if (sc.hasNextInt()) {
                 n = sc.nextInt();
                 if (n > 0) {
                     break;
@@ -21,21 +21,21 @@ public class ArrayDoWhile {
                 sc=new Scanner(System.in);
             }
         }
-        while(true);
+        while (true);
         int arr[] = new int[n];
         System.out.println("Проинициализируйте массив");
         int i = 0;
-        while(i < n) {
+        while (i < n) {
             arr[i] = sc.nextInt();
             sum += arr[i];
             i++;
         }
         int max = arr[0], min = arr[0];
-        for(int j : arr) {
-            if(j < min) {
+        for (int j : arr) {
+            if (j < min) {
                 min = j;
             }
-            if(j > max) {
+            if (j > max) {
                 max = j;
             }
         }

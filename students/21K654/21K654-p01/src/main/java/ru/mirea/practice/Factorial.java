@@ -7,8 +7,8 @@ public class Factorial {
         int n;
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите число");
-        while(true) {
-            if(sc.hasNextInt()) {
+        while (true) {
+            if (sc.hasNextInt()) {
                 n = sc.nextInt();
                 if (n > 0) {
                     break;
