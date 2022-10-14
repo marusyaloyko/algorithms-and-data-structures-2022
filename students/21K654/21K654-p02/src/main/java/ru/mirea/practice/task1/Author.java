@@ -2,10 +2,17 @@ package ru.mirea.practice.task1;
 
 public class Author {
     private String name;
+
     private String email;
+
     private char gender;
-    Author (String n,String gm,char gn){
-        this.name = n;this.gender = gn;this.email = gm;
+
+    Author (String n,String gm,char gn) {
+        this.name = n;
+
+        this.gender = gn;
+
+        this.email = gm;
     }
 
     public String getName() {

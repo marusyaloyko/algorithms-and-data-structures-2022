@@ -4,30 +4,37 @@ import java.util.Scanner;
 
 public class DogPitomnik {
     private Dog[] dogs;
-    public DogPitomnik(Dog[] k){
+
+    public DogPitomnik(Dog[] k) {
         this.dogs = k;
     }
-    public void addDogs(Dog[] k){
+
+    public void addDogs(Dog[] k) {
         Dog[] newDogs = new Dog[this.dogs.length + k.length];
+
         int j = 0;
-        for (int i = 0;i < newDogs.length;i++){
-            if(i < this.dogs.length)
+
+        for (int i = 0;i < newDogs.length;i++) {
+            if (i < this.dogs.length) {
                 newDogs[i] = dogs[i];
-            else {
+            } else {
                 newDogs[i] = k[j];
                 j++;
             }
         }
+
         this.dogs = newDogs;
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         String s = "ToString: ";
-        for(int i = 0;i < this.dogs.length;i++){
+
+        for (int i = 0;i < this.dogs.length;i++) {
             s += this.dogs[i].toString() + "; ";
         }
-        return s;
 
+        return s;
     }
 
     public static void main(String[] args) {

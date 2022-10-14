@@ -2,15 +2,19 @@ package ru.mirea.practice.task3;
 
 public class Circle {
     private Point center;
+
     private double radius;
-    public Circle(double x, double y){
+
+    public Circle(double x, double y) {
         this.center = new Point(x,y);
     }
-    public Circle(double x, double y,double r){
+
+    public Circle(double x, double y,double r) {
         this.center = new Point(x,y);
         this.radius = r;
     }
-    public Circle(){
+
+    public Circle() {
         this.center = new Point();
     }
 
@@ -19,7 +23,7 @@ public class Circle {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return center.toString() + " " + this.radius;
     }
 }

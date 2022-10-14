@@ -6,12 +6,12 @@ public class CircleTest {
         Circle circle1 = new Circle( 3);
         System.out.println(circle.square() + " " + circle.length());
         System.out.println(circle1.square() + " " + circle1.length());
-        if(circle.toCompare(circle1) > 0){
+        if (circle.toCompare(circle1) > 0) {
             System.out.println("больше");
         } else if (circle.toCompare(circle1) == 0) {
             System.out.println("равны");
-        }else
+        } else {
             System.out.println("меньше");
-
+        }
     }
 }

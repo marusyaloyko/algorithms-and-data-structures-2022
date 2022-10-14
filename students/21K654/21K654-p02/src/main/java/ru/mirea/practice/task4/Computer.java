@@ -2,15 +2,31 @@ package ru.mirea.practice.task4;
 
 public class Computer {
     private String CPU;
+
     private String Motherboard;
+
     private String HDD;
+
     private String RAM;
+
     private String VideoCard;
+
     private String name;
-    public Computer(String name,String CPU, String Motherboard,String HDD,String RAM,String VideoCard){
-        this.name = name; this.CPU = CPU; this.Motherboard = Motherboard; this.HDD = HDD; this.RAM = RAM; this.VideoCard = VideoCard;
+
+    public Computer(String name,String CPU, String Motherboard,String HDD,String RAM,String VideoCard) {
+        this.name = name;
+
+        this.CPU = CPU;
+
+        this.Motherboard = Motherboard;
+
+        this.HDD = HDD;
+
+        this.RAM = RAM;
+
+        this.VideoCard = VideoCard;
     }
-    public Computer(String name){
+    public Computer(String name) {
         this.name = name;
     }
     public String getName() {
@@ -46,7 +62,7 @@ public class Computer {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return this.name + " " + this.CPU + " " + this.Motherboard + " " + this.RAM + " " + this.VideoCard + " " + this.HDD;
     }
 }

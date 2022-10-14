@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        Shop shop=new Shop();
+        Scanner sc = new Scanner(System.in);
+        Shop shop = new Shop();
         shop.input(sc);
-        Computer computer=new Computer("new");
+        Computer computer = new Computer("new");
         shop.addComputer(computer);
         shop.addComputer(computer);
         System.out.println(shop.toString());

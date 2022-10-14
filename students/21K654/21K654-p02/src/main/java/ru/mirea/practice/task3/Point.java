@@ -2,12 +2,17 @@ package ru.mirea.practice.task3;
 
 public class Point {
     private double x;
+
     private  double y;
-    public Point(double x, double y){
-        this.x = x; this.y = y;
+
+    public Point(double x, double y) {
+        this.x = x;
+        this.y = y;
     }
-    public Point(){
-        this.x = 0;this.y = 0;
+
+    public Point() {
+        this.x = 0;
+        this.y = 0;
     }
 
     public double getX() {
@@ -25,15 +30,19 @@ public class Point {
     public void setY(double y) {
         this.y = y;
     }
-    public void setXY(double x, double y){
-        this.x = x; this.y = y;
-    }
-    public void move(double xDisp, double yDisp){
-        this.x += xDisp;this.y += yDisp;
-    }
-    @Override
-    public  String toString(){
-        return this.x + " " + this.y;
+
+    public void setXY(double x, double y) {
+        this.x = x;
+        this.y = y;
     }
 
+    public void move(double xDisp, double yDisp) {
+        this.x += xDisp;
+        this.y += yDisp;
+    }
+
+    @Override
+    public  String toString() {
+        return this.x + " " + this.y;
+    }
 }
