@@ -16,6 +16,7 @@ public class Author {
         return email;
     }
 
+
     public char getGender() {
         return gender;
     }
