@@ -11,13 +11,13 @@ public class Task2 {
         int i = 0;
         int sum = 0;
         System.out.printf("Inter %d numbers\n" ,n);
-        int a = sc.nextInt();
         do {
+            int a = sc.nextInt();
             Array[i] = a;
             sum += a;
             i++;
-            a = sc.nextInt();
-        } while (i != Array.length);
+
+        } while (i < Array.length);
 
         int argsMax = 0;
         int argsMin = (int) Math.pow(10,7);
