@@ -12,10 +12,10 @@ public class Factorial {
                 n = sc.nextInt();
                 if (n > 0) {
                     break;
+                } else {
+                    System.out.println("Число должно быть >0");
                 }
-                else System.out.println("Число должно быть >0");
-            }
-            else {
+            } else {
                 System.out.println("Введите числовое значение");
                 sc = new Scanner(System.in);
             }

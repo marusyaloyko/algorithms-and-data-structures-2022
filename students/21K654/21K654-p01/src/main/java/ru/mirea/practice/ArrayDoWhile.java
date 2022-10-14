@@ -13,10 +13,10 @@ public class ArrayDoWhile {
                 n = sc.nextInt();
                 if (n > 0) {
                     break;
+                } else {
+                    System.out.println("Размер должен быть >0");
                 }
-                else System.out.println("Размер должен быть >0");
-            }
-            else {
+            } else{
                 System.out.println("Введите числовое значение");
                 sc=new Scanner(System.in);
             }
@@ -34,8 +34,7 @@ public class ArrayDoWhile {
         for (int j : arr) {
             if (j < min) {
                 min = j;
-            }
-            if (j > max) {
+            } else if (j > max) {
                 max = j;
             }
         }
