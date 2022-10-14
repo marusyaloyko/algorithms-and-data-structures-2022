@@ -3,9 +3,10 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static int div(int x, int y){
+    public static int div(int x, int y) {
         return (x - x % y) / y;
     }
+
     public static void numberReverseOrder(int number) {
         if (number == 0) {
             return;
@@ -20,10 +21,11 @@ public class Main {
             System.out.print(number + " ");
         } else {
             numberOrder(div(number,10));
-            System.out.print(number%10 + " ");
+            System.out.print(number % 10 + " ");
         }
     }
-    static void Count() {
+
+    static void count() {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int n1 = n;
@@ -36,17 +38,18 @@ public class Main {
             }
             n = n / 10;
         }
-        while(n1 !=0){
-            if(max == n1%10){
+        while (n1 != 0) {
+            if (max == n1 % 10) {
                 count++;
-                n1=n1/10;
+                n1 = n1 / 10;
             }
-            n1=n1/10;
+            n1 = n1 / 10;
 
         }
         System.out.println(max + " " + count);
 
     }
+
     public static void main(String[] args) {
         System.out.println("Восьмая практическая работа");
 
@@ -65,7 +68,7 @@ public class Main {
 
         //Задание 16
         System.out.println("\nЗадание 16:\nВведите число для задания 16:");
-        Count();
+        count();
 
     }
 }

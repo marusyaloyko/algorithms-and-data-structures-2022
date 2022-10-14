@@ -1,21 +1,25 @@
-public class Square extends Shape{
+public class Square extends Shape {
     private double x;
 
-    Square(){}
-    Square(double x){
+    Square() {}
+
+    Square(double x) {
         this.x = x;
     }
 
-    public String getType(){
+    public String getType() {
         return "Rectangle";
     }
-    public double getArea(){
+
+    public double getArea() {
         return Math.pow(x,2);
     }
-    public double getPerimeter(){
-        return x*4;
+
+    public double getPerimeter() {
+        return x * 4;
     }
-    public String toString() {
-        return "Rectangle:{Side a = "+x+", Area = "+Math.pow(x,2)+", Perimeter = "+(x*4)+"}";
+
+    public String toString()  {
+        return "Side a = " + x + ", Area = " + getArea() + ", Perimeter = " + getPerimeter();
     }
 }
