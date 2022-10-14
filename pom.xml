@@ -79,6 +79,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.0</version>
                 <configuration>
                     <target>${maven.compiler.target}</target>
                     <source>${maven.compiler.source}</source>
@@ -114,7 +115,7 @@
                                 <id>validate</id>
                                 <phase>validate</phase>
                                 <configuration>
-                                    <!--                                    <configLocation>google_checks.xml</configLocation>-->
+                                    <configLocation>checkstyle.xml</configLocation>
                                     <encoding>UTF-8</encoding>
                                     <failsOnError>true</failsOnError>
                                     <consoleOutput>true</consoleOutput>
