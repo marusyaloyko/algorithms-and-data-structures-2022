@@ -26,6 +26,7 @@ public class Computer {
 
         this.vcard = vcard;
     }
+
     public Computer(String name) {
         this.name = name;
     }
