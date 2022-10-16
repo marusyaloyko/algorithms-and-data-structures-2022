@@ -5,19 +5,9 @@ public class Shell {
 
         Boolean bo = Boolean.FALSE;
 
-        Byte by = (byte) 0b10;
-
         Character ch = 'b';
 
-        Double dou = 5.9;
-
-        Float fl = (float) 6.7;
-
-        Integer in = 2 ^ 60;
-
-        Long lo = (long) (2 ^ 100);
-
-        Short sh = (short) 2;
+        Byte by = (byte) 0b10;
 
         by.byteValue();
         by.floatValue();
@@ -26,12 +16,16 @@ public class Shell {
         by.doubleValue();
         by.shortValue();
 
+        Double dou = 5.9;
+
         dou.byteValue();
         dou.floatValue();
         dou.intValue();
         dou.longValue();
         dou.doubleValue();
         dou.shortValue();
+
+        Float fl = (float) 6.7;
 
         fl.byteValue();
         fl.floatValue();
@@ -40,6 +34,8 @@ public class Shell {
         fl.doubleValue();
         fl.shortValue();
 
+        Integer in = 2 ^ 60;
+
         in.byteValue();
         in.floatValue();
         in.intValue();
@@ -47,12 +43,16 @@ public class Shell {
         in.doubleValue();
         in.shortValue();
 
+        Long lo = (long) (2 ^ 100);
+
         lo.byteValue();
         lo.floatValue();
         lo.intValue();
         lo.longValue();
         lo.doubleValue();
         lo.shortValue();
+
+        Short sh = (short) 2;
 
         sh.byteValue();
         sh.floatValue();
