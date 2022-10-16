@@ -1,6 +1,6 @@
 package ru.mirea.practice.Shells.Work2;
 
-public class Shell_2 {
+public class Shell {
     public static void main(String[] args) {
 
         Boolean bo = Boolean.FALSE;

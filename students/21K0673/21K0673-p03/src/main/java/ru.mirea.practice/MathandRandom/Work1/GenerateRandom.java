@@ -2,7 +2,7 @@ package ru.mirea.practice.MathandRandom.Work1;
 
 import java.util.Random;
 
-public class Generate_Random {
+public class GenerateRandom {
     public static void main(String[] args) {
         Random rand = new Random();
         int rand_int = rand.nextInt(10);

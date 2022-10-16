@@ -1,4 +1,4 @@
-package ru.mirea.practice.Ex_1;
+package ru.mirea.practice.Ex1;
 
 public class Test {
     public static void main(String[] args) {

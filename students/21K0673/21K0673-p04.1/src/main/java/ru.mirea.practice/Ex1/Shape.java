@@ -1,4 +1,4 @@
-package ru.mirea.practice.Ex_1;
+package ru.mirea.practice.Ex1;
 
 public abstract class Shape {
     protected String color;

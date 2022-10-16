@@ -1,6 +1,6 @@
 package ru.mirea.practice.Shells.Work1;
 
-public class Shell_1 {
+public class Shell {
     public static void main(String[] args) {
 //1.1
         Double a = Double.valueOf(5.9);
