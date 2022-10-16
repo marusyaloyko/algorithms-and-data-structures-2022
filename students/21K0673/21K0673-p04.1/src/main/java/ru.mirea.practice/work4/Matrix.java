@@ -39,7 +39,7 @@ public class Matrix {
         return arr;
     }
 
-    public Matrix sum(Matrix B) {
+    public Matrix sum(Matrix b) {
         double[][] a = new double[this.lines][this.columns];
         for (int i = 0; i < this.lines; i++) {
             for (int j = 0; j < this.columns; j++) {
@@ -49,7 +49,7 @@ public class Matrix {
         Matrix C = new Matrix(this.lines, this.columns, a);
         for (int i = 0; i < this.lines; i++) {
             for (int j = 0; j < this.columns; j++) {
-                C.getArr()[i][j] = (this.arr[i][j] + B.getArr()[i][j]);
+                C.getArr()[i][j] = (this.arr[i][j] + b.getArr()[i][j]);
             }
         }
         return C;
@@ -82,12 +82,12 @@ public class Matrix {
     }
 
     public static void main(String[] args) {
-        double[][] a = {{1, 2}, {3, 4}, {5, 6}};
-        int N = 3;
-        Matrix A = new Matrix(a);
-        Matrix B = new Matrix(a);
-        System.out.println(A.sum(B).toString());
-        System.out.println(A.mul_by_n(N).toString());
-        System.out.println(A.toString());
+        double[][] c = {{1, 2}, {3, 4}, {5, 6}};
+        int n = 3;
+        Matrix a = new Matrix(c);
+        Matrix b = new Matrix(c);
+        System.out.println(a.sum(b).toString());
+        System.out.println(a.mul_by_n(n).toString());
+        System.out.println(a.toString());
     }
 }

@@ -20,10 +20,9 @@ public class Employer {
 
     public static void main(String[] args) {
         Employer employer = new Manager();
-        Employer[] a = {
-                new Employer("Михаил", "Рогозин", 1736),
-                new Manager("Георгий", "Кокунько", 1736, 3872)
-        };
+        Employer[] a = new Employer[2];
+        a[0] = new Employer("Михаил", "Рогозин", 1736);
+        a[1] = new Manager("Георгий", "Кокунько", 1736, 3872);
         a[0].getIncome();
         a[1].getIncome();
     }

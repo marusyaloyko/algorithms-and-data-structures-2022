@@ -3,44 +3,44 @@ package ru.mirea.practice.work5;
 import java.util.Arrays;
 
 public class Reader {
-    private String full_name;
-    private int reader_ticket_number;
+    private String fullName;
+    private int readerTicketNumber;
     private String faculty;
-    private String date_birth;
-    private String telephone_number;
+    private String dateBirth;
+    private String telephoneNumber;
 
     Reader() {
     }
 
-    Reader(String full_name, int reader_ticket_number, String faculty, String date_birth, String telephone_number) {
-        this.full_name = full_name;
-        this.reader_ticket_number = reader_ticket_number;
+    Reader(String fullName, int readerTicketNumber, String faculty, String dateBirth, String telephoneNumber) {
+        this.fullName = fullName;
+        this.readerTicketNumber = readerTicketNumber;
         this.faculty = faculty;
-        this.date_birth = date_birth;
-        this.telephone_number = telephone_number;
+        this.dateBirth = dateBirth;
+        this.telephoneNumber = telephoneNumber;
     }
 
-    public void takeBook(int amount_of_books) {
-        System.out.println(this.full_name + " взял " + amount_of_books + " книги");
+    public void takeBook(int amountOfBooks) {
+        System.out.println(this.fullName + " взял " + amountOfBooks + " книги");
     }
 
-    public void takeBook(String... book_titles) {
-        System.out.println(this.full_name + " взял книги: " + Arrays.toString(book_titles));
+    public void takeBook(String... bookTitles) {
+        System.out.println(this.fullName + " взял книги: " + Arrays.toString(bookTitles));
     }
 
-    public void takeBook(Book... book_titles) {
-        System.out.println(this.full_name + " взял книги: " + Arrays.toString(book_titles));
+    public void takeBook(Book... bookTitles) {
+        System.out.println(this.fullName + " взял книги: " + Arrays.toString(bookTitles));
     }
 
-    public void returnBook(int amount_of_books) {
-        System.out.println(this.full_name + " вернул " + amount_of_books + " книги");
+    public void returnBook(int amountOfBooks) {
+        System.out.println(this.fullName + " вернул " + amountOfBooks + " книги");
     }
 
-    public void returnBook(String... book_titles) {
-        System.out.println(this.full_name + " взял книги: " + Arrays.toString(book_titles));
+    public void returnBook(String... bookTitles) {
+        System.out.println(this.fullName + " взял книги: " + Arrays.toString(bookTitles));
     }
 
-    public void returnBook(Book... book_titles) {
-        System.out.println(this.full_name + " взял книги: " + Arrays.toString(book_titles));
+    public void returnBook(Book... bookTitles) {
+        System.out.println(this.fullName + " взял книги: " + Arrays.toString(bookTitles));
     }
 }
