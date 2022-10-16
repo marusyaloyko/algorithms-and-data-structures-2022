@@ -1,40 +1,40 @@
 package ru.mirea.practice.work5;
 
 public class Dog {
-    private double Age;
-    private String Name;
+    private double age;
+    private String name;
 
-    Dog(double Age, String Name) {
-        this.Age = Age;
-        this.Name = Name;
+    Dog(double age, String name) {
+        this.age = age;
+        this.name = name;
     }
 
     public double getAge() {
-        return this.Age;
+        return this.age;
     }
 
     public double getInHuAge() {
-        return (this.Age) * 7;
+        return (this.age) * 7;
     }
 
     public String getName() {
-        return this.Name;
+        return this.name;
     }
 
-    public void setAge(double Age) {
-        this.Age = Age;
+    public void setAge(double age) {
+        this.age = age;
     }
 
-    public void setName(String Name) {
-        this.Name = Name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setAgeName(double Age, String Name) {
-        this.Age = Age;
-        this.Name = Name;
+    public void setAgeName(double age, String name) {
+        this.age = age;
+        this.name = name;
     }
 
     public String toString() {
-        return "{" + "Возраст = " + Age + ", Кличка: " + Name + "}";
+        return "{" + "Возраст = " + age + ", Кличка: " + name + "}";
     }
 }

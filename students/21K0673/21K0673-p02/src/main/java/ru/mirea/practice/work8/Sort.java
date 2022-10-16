@@ -4,16 +4,16 @@ public class Sort {
     Sort() {
     }
 
-    public String[] sort(String[] a, int Amount) {
+    public String[] sort(String[] a, int amount) {
         String buff;
         int i = 0;
-        for (int j = Amount - 1; ; j--) {
+        for (int j = amount - 1; ; j--) {
             buff = a[i];
             a[i] = a[j];
             a[j] = buff;
             if (i == j) {
                 break;
-            } else if (Amount % 10 == 0 & i + 1 == j) {
+            } else if (amount % 10 == 0 & i + 1 == j) {
                 break;
             }
             i++;

@@ -1,33 +1,33 @@
 package ru.mirea.practice.work7;
 
 public class Bookshelf {
-    int Amount;
-    Book[] Arr;
+    int amount;
+    Book[] arr;
 
-    Bookshelf(int Amount) {
-        this.Amount = Amount;
-        this.Arr = new Book[Amount];
+    Bookshelf(int amount) {
+        this.amount = amount;
+        this.arr = new Book[amount];
     }
 
     public int getAmount() {
-        return this.Amount;
+        return this.amount;
     }
 
     public Book[] getShelf() {
-        return this.Arr;
+        return this.arr;
     }
 
     public int getFirstYear() {
         int i = 0;
         for (int j = 1; ; ) {
-            if (Arr[i].getYear() > Arr[j].getYear()) {
+            if (arr[i].getYear() > arr[j].getYear()) {
                 i = j;
-                if (j == Amount - 1) {
-                    return Arr[i].getYear();
+                if (j == amount - 1) {
+                    return arr[i].getYear();
                 }
             } else {
-                if (j == Amount - 1) {
-                    return Arr[i].getYear();
+                if (j == amount - 1) {
+                    return arr[i].getYear();
                 }
                 j++;
             }
@@ -38,14 +38,14 @@ public class Bookshelf {
     public int getLastYear() {
         int i = 0;
         for (int j = 1; ; ) {
-            if (Arr[i].getYear() < Arr[j].getYear()) {
+            if (arr[i].getYear() < arr[j].getYear()) {
                 i = j;
-                if (j == Amount - 1) {
-                    return Arr[i].getYear();
+                if (j == amount - 1) {
+                    return arr[i].getYear();
                 }
             } else {
-                if (j == Amount - 1) {
-                    return Arr[i].getYear();
+                if (j == amount - 1) {
+                    return arr[i].getYear();
                 }
                 j++;
             }
@@ -54,12 +54,12 @@ public class Bookshelf {
     }
 
     public void sort() {
-        for (int i = 0; i < Amount - 1; ) {
-            for (int j = 1; j < Amount; ) {
-                if (Arr[i].getYear() > Arr[j].getYear()) {
-                    Book c = Arr[j];
-                    Arr[j] = Arr[i];
-                    Arr[i] = c;
+        for (int i = 0; i < amount - 1; ) {
+            for (int j = 1; j < amount; ) {
+                if (arr[i].getYear() > arr[j].getYear()) {
+                    Book c = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = c;
                 } else {
                     j++;
                 }
@@ -68,17 +68,17 @@ public class Bookshelf {
         }
     }
 
-    public void setAmount(int Amount) {
-        this.Amount = Amount;
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
 
-    public void setShelf(Book B, int Number) {
-        this.Arr[Number] = B;
+    public void setShelf(Book b, int number) {
+        this.arr[number] = b;
     }
 
     public String toString() {
-        for (int k = 0; k < this.Amount; k++) {
-            System.out.println(Arr[k] + "\n");
+        for (int k = 0; k < this.amount; k++) {
+            System.out.println(arr[k] + "\n");
         }
         return "";
     }

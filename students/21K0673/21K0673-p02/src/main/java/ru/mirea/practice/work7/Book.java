@@ -1,41 +1,41 @@
 package ru.mirea.practice.work7;
 
 public class Book {
-    private String Author;
-    private String Name;
-    private int Year;
+    private String author;
+    private String name;
+    private int year;
 
-    Book(String Author, String Name, int Year) {
-        this.Author = Author;
-        this.Name = Name;
-        this.Year = Year;
+    Book(String author, String name, int year) {
+        this.author = author;
+        this.name = name;
+        this.year = year;
     }
 
     public String getAuthor() {
-        return this.Author;
+        return this.author;
     }
 
     public String getName() {
-        return this.Name;
+        return this.name;
     }
 
     public int getYear() {
-        return this.Year;
+        return this.year;
     }
 
-    public void setAuthor(String Author) {
-        this.Author = Author;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
-    public void setName(String Name) {
-        this.Name = Name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setYear(int Year) {
-        this.Year = Year;
+    public void setYear(int year) {
+        this.year = year;
     }
 
     public String toString() {
-        return "{Название: " + Name + ", Автор: " + Author + ", Год издания: " + Year + "}";
+        return "{Название: " + name + ", Автор: " + author + ", Год издания: " + year + "}";
     }
 }

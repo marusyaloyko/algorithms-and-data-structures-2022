@@ -1,36 +1,36 @@
 package ru.mirea.practice.work3;
 
 public class Circle {
-    private Point Center;
-    private double R;
+    private Point center;
+    private double r;
 
-    Circle(Point Center, double R) {
-        this.Center = Center;
-        this.R = R;
+    Circle(Point center, double r) {
+        this.center = center;
+        this.r = r;
     }
 
     public double getR() {
-        return this.R;
+        return this.r;
     }
 
     public Point getCenter() {
-        return this.Center;
+        return this.center;
     }
 
-    public void setR(double R) {
-        this.R = R;
+    public void setR(double r) {
+        this.r = r;
     }
 
-    public void setCenter(Point Center) {
-        this.Center = Center;
+    public void setCenter(Point center) {
+        this.center = center;
     }
 
-    public void setXY(Point Center, double R) {
-        this.Center = Center;
-        this.R = R;
+    public void setXY(Point center, double r) {
+        this.center = center;
+        this.r = r;
     }
 
     public String toString() {
-        return "{" + "Радиус = " + R + ", Координаты центра окружности: " + Center + "}";
+        return "{" + "Радиус = " + r + ", Координаты центра окружности: " + center + "}";
     }
 }
