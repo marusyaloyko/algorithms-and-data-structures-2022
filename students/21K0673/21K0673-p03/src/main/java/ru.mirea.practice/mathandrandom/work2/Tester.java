@@ -37,7 +37,7 @@ public class Tester {
         return this.arr[0];
     }
 
-    public void Sort() {
+    public void sort() {
         for (int i = 0; i < this.a - 1; i++) {
             for (int j = 1; j < this.a; j++) {
                 if (this.arr[i].getR() > this.arr[j].getR()) {
@@ -58,21 +58,21 @@ public class Tester {
     }
 
     public static void main(String[] args) {
-        Point P = new Point(35, 24);
-        Circle a = new Circle(P, Math.random());
-        Circle b = new Circle(P, Math.random());
-        Circle c = new Circle(P, Math.random());
+        Point p = new Point(35, 24);
+        Circle a = new Circle(p, Math.random());
+        Circle b = new Circle(p, Math.random());
+        Circle c = new Circle(p, Math.random());
 
-        Tester Ar = new Tester(3);
-        Ar.setCircle(a, 0);
-        Ar.setCircle(b, 1);
-        Ar.setCircle(c, 2);
+        Tester ar = new Tester(3);
+        ar.setCircle(a, 0);
+        ar.setCircle(b, 1);
+        ar.setCircle(c, 2);
 
-        System.out.println(Ar.getBig());
-        System.out.println(Ar.getSmall());
+        System.out.println(ar.getBig());
+        System.out.println(ar.getSmall());
 
-        Ar.Sort();
+        ar.sort();
 
-        System.out.println(Ar.toString());
+        System.out.println(ar.toString());
     }
 }

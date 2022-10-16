@@ -24,29 +24,39 @@ public class InternetShop {
             c = in.nextInt();
         }
         switch (n) {
-            case 1 -> price = 123.45;
-            case 2 -> price = 571.09;
-            case 3 -> price = 12.79;
+            case 1:
+                price = 123.45;
+                break;
+            case 2:
+                price = 571.09;
+                break;
+            case 3:
+                price = 12.79;
+                break;
         }
         switch (c) {
-            case 1 -> {
+            case 1: {
                 NumberFormat numberFormat1 = NumberFormat.getCurrencyInstance(Locale.US);
                 price /= 1.12;
                 System.out.println(numberFormat1.format(price));
+                break;
             }
-            case 2 -> {
+            case 2: {
                 NumberFormat numberFormat2 = NumberFormat.getCurrencyInstance(Locale.FRANCE);
                 price /= 1.16;
                 System.out.println(numberFormat2.format(price));
+                break;
             }
-            case 3 -> {
+            case 3: {
                 NumberFormat numberFormat3 = NumberFormat.getCurrencyInstance(Locale.CHINA);
                 price /= 7.48;
                 System.out.println(numberFormat3.format(price));
+                break;
             }
-            case 4 -> {
+            case 4: {
                 NumberFormat numberFormat4 = NumberFormat.getCurrencyInstance();
                 System.out.println(numberFormat4.format(price));
+                break;
             }
         }
     }

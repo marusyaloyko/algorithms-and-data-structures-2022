@@ -2,32 +2,30 @@ package ru.mirea.practice.shells.work1;
 
 public class Shell {
     public static void main(String[] args) {
-//1.1
+
         Double a = Double.valueOf(5.9);
-//1.2
+
         Double b = Double.parseDouble("1.3");
-//1.3
-        Integer c = a.intValue();   //int преобразование
+
+        Integer c = a.intValue();
         int d = c;
 
-        Byte e = a.byteValue();    //byte преобразование
+        Byte e = a.byteValue();
         byte f = e;
 
-        Short g = a.shortValue(); //short преобразование
+        Short g = a.shortValue();
         short h = g;
 
-        Long i = a.longValue();   //long преобразование
+        Long i = a.longValue();
         long j = i;
 
-        Float k = a.floatValue(); //float преобразование
+        Float k = a.floatValue();
         float l = k;
 
-        double n = a; //double преобразование
+        double n = a;
 
-        //bool и char преобразования невозможны
-//1.4
         System.out.println(a);
-//1.5
+
         String m = Double.toString(3.14);
     }
 }

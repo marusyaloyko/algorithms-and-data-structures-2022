@@ -1,8 +1,6 @@
 package ru.mirea.practice.formatting.work3;
 
 public class Report {
-    Report() {
-    }
 
     static public void generateReport(Employee[] a) {
         for (int i = 0; i < a.length; i++) {
