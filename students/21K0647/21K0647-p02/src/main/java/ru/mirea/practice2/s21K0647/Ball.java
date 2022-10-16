@@ -5,8 +5,8 @@ public class Ball {
     double x = 0.0;
     double y = 0.0;
 
-    public Ball(){};
-    public Ball(double x, double y){
+    public Ball() {}
+    public Ball(double x, double y) {
         this.x = x;
         this.y = y;
     }
@@ -32,9 +32,9 @@ public class Ball {
         this.y = y;
     }
 
-    public void move(double xDisp, double yDisp) {
-        this.x += xDisp;
-        this.y += yDisp;
+    public void move(double xdisp, double ydisp) {
+        this.x += xdisp;
+        this.y += ydisp;
     }
 
     @Override

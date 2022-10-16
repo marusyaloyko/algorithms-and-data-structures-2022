@@ -62,21 +62,21 @@ public class Poker {
         if (n > 10) {
             System.out.println("Sorry! There are too many of you. (");
         } else {
-            String[] nMan = new String[n];
+            String[] nman = new String[n];
             Random random = new Random();
 
             for (int j = 0; j < n; ++j) {
-                nMan[j] = "";
+                nman[j] = "";
                 for (int i = 0; i < 5; ++i) {
                     Karta x = koloda.get(random.nextInt(koloda.size()));
-                    nMan[j] += x.weight;
-                    nMan[j] += x.mast;
-                    nMan[j] += "\t";
+                    nman[j] += x.weight;
+                    nman[j] += x.mast;
+                    nman[j] += "\t";
                     koloda.remove(x);
                 }
             }
             int i = 1;
-            for (String x : nMan) {
+            for (String x : nman) {
                 System.out.println(i + " Player\n" + x + "\n");
                 i++;
             }

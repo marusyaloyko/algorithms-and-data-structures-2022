@@ -11,9 +11,9 @@ public class Dog_kennel {
         kennel.add(a1);
         Dog a2 = new Dog("Pat", 4);
         kennel.add(a2);
-        System.out.println(kennel.get(1).ManAlt());
+        System.out.println(kennel.get(1).manAlt());
         for (Dog x: kennel) {
-            System.out.println(x.ToString());
+            System.out.println(x.toString());
         }
     }
 }

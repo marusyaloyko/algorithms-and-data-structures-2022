@@ -25,11 +25,11 @@ public class Dog {
         this.alt = alt;
     }
 
-    public int ManAlt() {
+    public int manAlt() {
         return alt * 7;
     }
 
-    public String ToString() {
+    public String toString() {
         return "Name: " + nickname + "\tAlt: " + alt;
     }
 }

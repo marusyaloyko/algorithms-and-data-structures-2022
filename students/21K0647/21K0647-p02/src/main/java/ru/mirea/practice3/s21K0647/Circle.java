@@ -2,7 +2,7 @@ package ru.mirea.practice3.s21K0647;
 
 public class Circle extends Point {
 
-    Point T;
+    Point tT;
     double r;
 
     public Circle() {

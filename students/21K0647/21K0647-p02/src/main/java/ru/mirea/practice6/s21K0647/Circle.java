@@ -47,7 +47,7 @@ public class Circle {
 
     @Override
     public String toString() {
-        return "Circle{" + "x=" + x +", y=" + y + ", r=" + r + ", colour='" + colour + '\'' + '}';
+        return "Circle{" + "x=" + x + ", y=" + y + ", r=" + r + ", colour='" + colour + '\'' + '}';
     }
 
     public double getLength() {
@@ -56,13 +56,13 @@ public class Circle {
         return c;
     }
 
-    public double Square() {
+    public double square() {
         double c;
         c = Math.PI * r * r;
         return c;
     }
 
-    public String Two_Circle(Circle a) {
+    public String twoCircle(Circle a) {
         String c1 = "";
         String c2 = "";
         String c3 = "";
@@ -73,16 +73,14 @@ public class Circle {
             c2 = "1 Circle higher 2 Circle";
         } else if (this.y < a.y) {
             c2 = "2 Circle higher 1 Circle";
-        }
-        else {
+        } else {
             c2 = "at the same height";
         }
         if (this.x > a.x) {
             c3 = "2 Circle to the left 1 Circle";
         } else if (this.x < a.x) {
             c3 = "1 Circle to the left 2 Circle";
-        }
-        else {
+        } else {
             c3 = "circles at the same latitude";
         }
         return c1 + "\n" + c2 + "\n" + c3;

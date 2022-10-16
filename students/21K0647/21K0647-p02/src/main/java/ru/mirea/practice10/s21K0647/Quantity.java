@@ -7,7 +7,7 @@ public class Quantity {
         Scanner source = new Scanner(System.in);
         String s = source.nextLine();
         System.out.println(s);
-        String []Sl = s.split(" ");
-        System.out.println(Sl.length);
+        String []sl = s.split(" ");
+        System.out.println(sl.length);
     }
 }

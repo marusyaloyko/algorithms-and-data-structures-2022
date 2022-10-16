@@ -30,7 +30,7 @@ public class Tester {
                 i = source.next();
             }
             if (i.equals("output")) {
-                for (Computer x : aMarket.C) {
+                for (Computer x : aMarket.cC) {
                     System.out.println("Name: " + x.model + "\tProcessor: " + x.processor + "\tMemory: " + x.memory + "\tBattery: " + x.battery);
                 }
                 System.out.println("Enter a request:");

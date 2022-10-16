@@ -1,6 +1,5 @@
 package ru.mirea.practice6.s21K0647;
 
-import java.lang.*;
 import java.util.Scanner;
 
 public class Tester {
@@ -13,8 +12,8 @@ public class Tester {
         r = source.nextDouble();
         k1.setR(r);
         System.out.println("Длина окружности = " + k1.getLength() + "см");
-        System.out.println("Площадь круга = " + k1.Square() + "см^2");
+        System.out.println("Площадь круга = " + k1.square() + "см^2");
         Circle k2 = new Circle(2, 10, 9, "blue");
-        System.out.println(k1.Two_Circle(k2));
+        System.out.println(k1.twoCircle(k2));
     }
 }
