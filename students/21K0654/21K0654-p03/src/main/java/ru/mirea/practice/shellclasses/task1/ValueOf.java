@@ -1,4 +1,4 @@
-package ru.mirea.practice.shellClasses.task1;
+package ru.mirea.practice.shellclasses.task1;
 
 public class ValueOf {
     public static void main(String[] args) {
