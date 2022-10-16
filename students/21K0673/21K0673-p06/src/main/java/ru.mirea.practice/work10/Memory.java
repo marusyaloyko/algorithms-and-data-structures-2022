@@ -3,8 +3,8 @@ package ru.mirea.practice.work10;
 public class Memory extends Computer {
     double capacity;
 
-    public Memory(EnumComputer company_name, double cost, double capacity) {
-        this.companyName = company_name;
+    public Memory(EnumComputer companyName, double cost, double capacity) {
+        this.companyName = companyName;
         this.cost = cost;
         this.capacity = capacity;
     }
