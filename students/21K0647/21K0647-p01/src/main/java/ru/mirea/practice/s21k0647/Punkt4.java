@@ -5,15 +5,14 @@ import java.util.Scanner;
 public class Punkt4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int []array;
         int n = sc.nextInt();
-        array = new int[n];
+        int []array = new int[n];
         int i = 0, maxi = -999999999, mini = 999999999;
         float a = 0;
 
         while (i < n) {
-            int array_i = sc.nextInt();
-            array[i] = array_i;
+            int b = sc.nextInt();
+            array[i] = b;
             a += array[i];
             if (array[i] < mini) {
                 mini = array[i];
