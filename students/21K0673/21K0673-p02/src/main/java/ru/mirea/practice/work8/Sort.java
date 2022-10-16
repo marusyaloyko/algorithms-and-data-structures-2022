@@ -21,8 +21,8 @@ public class Sort {
         return a;
     }
 
-    public void print(String[] a, int Amount) {
-        for (int i = 0; i < Amount; i++) {
+    public void print(String[] a, int amount) {
+        for (int i = 0; i < amount; i++) {
             System.out.println(a[i]);
         }
     }

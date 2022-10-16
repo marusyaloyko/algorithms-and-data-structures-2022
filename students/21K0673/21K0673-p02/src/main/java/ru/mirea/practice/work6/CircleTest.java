@@ -3,11 +3,11 @@ package ru.mirea.practice.work6;
 public class CircleTest {
     public static void main(String[] args) {
         Point c = new Point(5, 8);
-        Point d = new Point(1, 99);
         Circle a = new Circle(c, 8);
         a.getArea();
         a.getLength();
         System.out.println(a.getCenter());
+        Point d = new Point(1, 99);
         Circle b = new Circle(d, 2);
         a.getComparison(a, b);
         System.out.println(a);

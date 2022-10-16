@@ -30,9 +30,9 @@ public class Ball {
         this.y = y;
     }
 
-    public void move(double xDisp, double yDisp) {
-        x += xDisp;
-        y += yDisp;
+    public void move(double xdisp, double ydisp) {
+        x += xdisp;
+        y += ydisp;
     }
 
     public String toString() {
