@@ -56,7 +56,7 @@ public enum Shop {
         }
 
         switch (catalogBuff) {
-            case ("FOOD"): {
+            case ("FOOD") -> {
                 System.out.println("Choose a good:\n1.Honey\n2.Banana");
                 String foodBuff = in.next();
                 if (Objects.equals(foodBuff, "HONEY") | Objects.equals(foodBuff, "BANANA")) {
@@ -71,13 +71,21 @@ public enum Shop {
                 }
 
                 switch (foodBuff) {
-                    case ("HONEY") -> price = 123.45;
-                    case ("BANANA") -> price = 12.79;
-                    default -> System.out.println(" ");
+                    case ("HONEY"): {
+                        price = 123.45;
+                        break;
+                    }
+                    case ("BANANA"): {
+                        price = 12.79;
+                        break;
+                    }
+                    default: {
+                        System.out.println(" ");
+                        break;
+                    }
                 }
-                break;
             }
-            case ("STAFF"): {
+            case ("STAFF") -> {
                 System.out.println("\nChoose a good:\n1.Umbrella");
                 String staffBuff = in.next();
                 if (Objects.equals(catalogBuff, "UMBRELLA")) {
@@ -90,16 +98,15 @@ public enum Shop {
                     }
                 }
                 price = 571.09;
-                break;
             }
-            default: {
+            default -> {
                 System.out.println(" ");
-                break;
             }
         }
 
         System.out.println("\nChoose a currency for payment:\n1.$\n2.€\n3.¥\n4.£");
         int c = in.nextInt();
+
         while (c < 1 | c > 4) {
             System.out.println("\nChoose a currency:");
             c = in.nextInt();
