@@ -8,9 +8,9 @@
         <version>2022.1</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-    <artifactId>21K654</artifactId>
+    <artifactId>21K0654</artifactId>
     <packaging>pom</packaging>
-    <description>prct 1,2</description>
+    <description>Практические работы студента Васи</description>
 
     <modules>
         <module>21K0654-p01</module>
