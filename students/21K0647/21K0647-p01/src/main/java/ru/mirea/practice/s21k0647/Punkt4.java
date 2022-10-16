@@ -7,25 +7,24 @@ public class Punkt4 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int []array = new int[n];
-        int i = 0, j = 0, maxi = -999999999, mini = 999999999;
+        int i = 0;
+        int j = 0;
+        int maxi = -999999999;
+        int mini = 999999999;
         float a = 0;
+
         while (i < n) {
-            int b = sc.nextInt();
-            array[i] = b;
+            array[i] = sc.nextInt();;
+            a += array[i];
+            if (array[i] < mini) {
+                mini = array[i];
+            }
+            if (array[i] > maxi) {
+                maxi = array[i];
+            }
             i++;
         }
-        while (j < n) {
-            a += array[j];
-            if (array[j] < mini) {
-                mini = array[j];
-            }
-            if (array[j] > maxi) {
-                maxi = array[j];
-            }
-            j++;
-        }
 
-        j = 0;
         float b = 0;
         do {
             b += array[j];
