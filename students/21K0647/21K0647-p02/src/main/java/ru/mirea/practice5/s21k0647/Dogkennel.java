@@ -3,7 +3,7 @@ package ru.mirea.practice5.s21k0647;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class dogkennel {
+public class Dogkennel {
     public static void main(String[] args) {
         Scanner source = new Scanner(System.in);
         Dog a1 = new Dog("Jerry", 10);
