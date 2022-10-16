@@ -1,6 +1,6 @@
 package ru.mirea.practice.work2;
 
-public class Atelier {
+public class Atelier extends Clothes{
     public void dressWomen(Clothes[] clothes) {
 
     }

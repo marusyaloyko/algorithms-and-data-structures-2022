@@ -47,7 +47,8 @@ public enum Shop {
         if (Objects.equals(catalogBuff, "FOOD") | Objects.equals(catalogBuff, "STAFF")) {
             Catalog catalog = Catalog.valueOf(catalogBuff);
         } else {
-            while (!Objects.equals(catalogBuff, Catalog.FOOD.toString()) | !Objects.equals(catalogBuff, Catalog.STAFF.toString())) {
+            while (!Objects.equals(catalogBuff, Catalog.FOOD.toString()) | !Objects.equals(catalogBuff,
+                    Catalog.STAFF.toString())) {
                 System.out.println("\nChoose a catalog: ");
                 catalogBuff = in.next();
                 Catalog catalog = Catalog.valueOf(catalogBuff);
@@ -57,39 +58,43 @@ public enum Shop {
         switch (catalogBuff) {
             case ("FOOD"): {
                 System.out.println("Choose a good:\n1.Honey\n2.Banana");
-                String food_buff = in.next();
-                if (Objects.equals(food_buff, "HONEY") | Objects.equals(food_buff, "BANANA")) {
-                    Food food = Food.valueOf(food_buff);
+                String foodBuff = in.next();
+                if (Objects.equals(foodBuff, "HONEY") | Objects.equals(foodBuff, "BANANA")) {
+                    Food food = Food.valueOf(foodBuff);
                 } else {
-                    while (!Objects.equals(food_buff, Food.HONEY.toString()) | !Objects.equals(food_buff, Food.BANANA.toString())) {
+                    while (!Objects.equals(foodBuff, Food.HONEY.toString()) | !Objects.equals(foodBuff,
+                            Food.BANANA.toString())) {
                         System.out.println("\nChoose a good: ");
-                        food_buff = in.next();
-                        Food food = Food.valueOf(food_buff);
+                        foodBuff = in.next();
+                        Food food = Food.valueOf(foodBuff);
                     }
                 }
 
-                switch (food_buff) {
+                switch (foodBuff) {
                     case ("HONEY") -> price = 123.45;
                     case ("BANANA") -> price = 12.79;
                     default -> System.out.println(" ");
                 }
+                break;
             }
             case ("STAFF"): {
                 System.out.println("\nChoose a good:\n1.Umbrella");
-                String staff_buff = in.next();
+                String staffBuff = in.next();
                 if (Objects.equals(catalogBuff, "UMBRELLA")) {
-                    Staff staff = Staff.valueOf(staff_buff);
+                    Staff staff = Staff.valueOf(staffBuff);
                 } else {
-                    while (!Objects.equals(staff_buff, Staff.UMBRELLA.toString())) {
+                    while (!Objects.equals(staffBuff, Staff.UMBRELLA.toString())) {
                         System.out.println("Choose a good: ");
-                        staff_buff = in.next();
-                        Staff staff = Staff.valueOf(staff_buff);
+                        staffBuff = in.next();
+                        Staff staff = Staff.valueOf(staffBuff);
                     }
                 }
                 price = 571.09;
+                break;
             }
             default: {
                 System.out.println(" ");
+                break;
             }
         }
 
