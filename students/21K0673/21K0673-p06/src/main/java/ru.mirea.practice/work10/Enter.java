@@ -1,7 +1,7 @@
 package ru.mirea.practice.work10;
 
 public interface Enter {
-    public void setAmount(int Amount);
+    public void setAmount(int amount);
 
     public void addComputer(int a);
 

@@ -1,17 +1,17 @@
 package ru.mirea.practice.work10;
 
 public class Shop implements Enter {
-    private int Space = 10;
-    private Computer[] computer = new Computer[Space];
-    private int Amount;
+    private int space = 10;
+    private Computer[] computer = new Computer[space];
+    private int amount;
 
-    Shop(int Amount) {
-        if (Amount > 10) {
-            this.Amount = 10;
+    Shop(int amount) {
+        if (amount > 10) {
+            this.amount = 10;
         }
-        this.Amount = Amount;
+        this.amount = amount;
 
-        for (int i = 0; i < Amount; i++) {
+        for (int i = 0; i < amount; i++) {
             computer[i].getExistence();
         }
     }
@@ -20,25 +20,25 @@ public class Shop implements Enter {
     }
 
     public double getAmount() {
-        return this.Amount;
+        return this.amount;
     }
 
-    public void setAmount(int Amount) {
-        this.Amount = Amount;
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
 
     public void addComputer(int a) {
-        if ((this.Amount + a) > 10) {
-            this.Amount = 10;
+        if ((this.amount + a) > 10) {
+            this.amount = 10;
         }
-        this.Amount += a;
+        this.amount += a;
     }
 
     public void delComputer(int a) {
-        if ((this.Amount - a) < 0) {
-            this.Amount = 0;
+        if ((this.amount - a) < 0) {
+            this.amount = 0;
         }
-        this.Amount -= a;
+        this.amount -= a;
     }
 
     public void findComputer(int a) {
@@ -51,6 +51,6 @@ public class Shop implements Enter {
     }
 
     public String toString() {
-        return "{" + "В магазине: " + Amount + " компьютеров}";
+        return "{" + "В магазине: " + amount + " компьютеров}";
     }
 }

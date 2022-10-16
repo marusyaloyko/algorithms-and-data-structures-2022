@@ -5,7 +5,7 @@ public class Monitor extends Computer {
     double size;
 
     public Monitor(EnumComputer company_name, double cost, int framerate, double size) {
-        this.company_name = company_name;
+        this.companyName = company_name;
         this.cost = cost;
         this.framerate = framerate;
         this.size = size;

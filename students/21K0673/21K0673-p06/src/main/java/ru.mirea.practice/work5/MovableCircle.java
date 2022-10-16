@@ -4,8 +4,8 @@ public class MovableCircle extends MovablePoint {
     private int radius;
     private MovablePoint center;
 
-    MovableCircle(int x, int y, int xSpeed, int ySpeed, int radius, MovablePoint center) {
-        super(x, y, xSpeed, ySpeed);
+    MovableCircle(int x, int y, int xspeed, int yspeed, int radius, MovablePoint center) {
+        super(x, y, xspeed, yspeed);
     }
 
     public String toString() {
