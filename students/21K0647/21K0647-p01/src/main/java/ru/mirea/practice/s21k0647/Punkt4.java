@@ -10,10 +10,10 @@ public class Punkt4 {
         array = new int[n];
         int i = 0, maxi = -999999999, mini = 999999999;
         float a = 0;
-        for (int j = 0; j < n; j++){
-            array[j] = sc.nextInt();
-        }
+
         while (i < n) {
+            int array_i = sc.nextInt();
+            array[i] = array_i;
             a += array[i];
             if (array[i] < mini) {
                 mini = array[i];
