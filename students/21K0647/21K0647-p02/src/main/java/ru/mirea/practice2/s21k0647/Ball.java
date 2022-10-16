@@ -6,6 +6,7 @@ public class Ball {
     double y = 0.0;
 
     public Ball() {}
+
     public Ball(double x, double y) {
         this.x = x;
         this.y = y;
