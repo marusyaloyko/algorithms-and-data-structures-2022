@@ -1,4 +1,4 @@
-package ru.mirea.practice.Math_and_Random.Work_4_and_5;
+package ru.mirea.practice.MathandRandom.Work4and5;
 
 import java.util.Scanner;
 

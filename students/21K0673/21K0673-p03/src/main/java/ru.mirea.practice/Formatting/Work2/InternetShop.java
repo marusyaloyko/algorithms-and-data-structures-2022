@@ -1,4 +1,4 @@
-package ru.mirea.practice.Formatting.Work_2;
+package ru.mirea.practice.Formatting.Work2;
 
 import java.text.NumberFormat;
 import java.util.Locale;

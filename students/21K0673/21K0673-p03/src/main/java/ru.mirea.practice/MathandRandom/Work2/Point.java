@@ -1,4 +1,4 @@
-package ru.mirea.practice.Math_and_Random.Work_2;
+package ru.mirea.practice.MathandRandom.Work2;
 
 public class Point {
     private double x;

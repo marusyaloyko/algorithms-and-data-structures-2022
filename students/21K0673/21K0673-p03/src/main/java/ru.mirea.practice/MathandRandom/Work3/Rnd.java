@@ -1,4 +1,4 @@
-package ru.mirea.practice.Math_and_Random.Work_3;
+package ru.mirea.practice.MathandRandom.Work3;
 
 public class Rnd {
     private static int rnd(int min, int max) {

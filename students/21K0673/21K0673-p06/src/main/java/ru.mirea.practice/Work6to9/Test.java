@@ -1,4 +1,4 @@
-package ru.mirea.practice.Work_6_to_9;
+package ru.mirea.practice.Work6to9;
 
 public class Test {
     public static void main(String[] args) {

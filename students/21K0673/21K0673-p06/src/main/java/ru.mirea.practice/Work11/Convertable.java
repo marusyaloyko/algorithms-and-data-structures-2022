@@ -1,4 +1,4 @@
-package ru.mirea.practice.Work_11;
+package ru.mirea.practice.Work11;
 
 public interface Convertable {
 

@@ -1,4 +1,4 @@
-package ru.mirea.practice.Math_and_Random.Work_1;
+package ru.mirea.practice.MathandRandom.Work1;
 
 import java.util.Random;
 
