@@ -33,6 +33,10 @@ public class InternetShop {
             case 3:
                 price = 12.79;
                 break;
+            default: {
+                System.out.print(" ");
+                break;
+            }
         }
         switch (c) {
             case 1: {
@@ -56,6 +60,10 @@ public class InternetShop {
             case 4: {
                 NumberFormat numberFormat4 = NumberFormat.getCurrencyInstance();
                 System.out.println(numberFormat4.format(price));
+                break;
+            }
+            default: {
+                System.out.print(" ");
                 break;
             }
         }

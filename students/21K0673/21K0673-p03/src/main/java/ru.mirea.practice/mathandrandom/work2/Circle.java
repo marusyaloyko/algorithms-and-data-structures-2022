@@ -28,7 +28,7 @@ public class Circle {
         this.center = center;
     }
 
-    public void setALL(Point center, double r) {
+    public void setAll(Point center, double r) {
         this.center = center;
         this.r = r;
     }
