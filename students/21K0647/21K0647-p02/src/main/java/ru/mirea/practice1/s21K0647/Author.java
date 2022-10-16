@@ -28,7 +28,8 @@ public class Author {
     }
 
     @Override
-    public String toString() {return "Name: " + name + "\nE-mail: " + email + "\nGender: " + gender;
+    public String toString() {
+        return "Name: " + name + "\nE-mail: " + email + "\nGender: " + gender;
     }
 
 }

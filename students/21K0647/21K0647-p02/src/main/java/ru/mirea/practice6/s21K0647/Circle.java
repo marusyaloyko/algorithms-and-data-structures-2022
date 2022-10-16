@@ -6,24 +6,39 @@ public class Circle {
     private double r;
     private String colour;
 
-    public double getX() {return x;}
+    public double getX() {
+        return x;
+    }
 
-    public void setX(double x) {this.x = x;}
+    public void setX(double x) {
+        this.x = x;
+    }
 
-    public double getY() {return y;}
+    public double getY() {
+        return y;
+    }
 
-    public void setY(double y) {this.y = y;}
+    public void setY(double y) {
+        this.y = y;
+    }
 
-    public double getR() {return r;}
+    public double getR() {
+        return r;
+    }
 
-    public void setR(double r) {this.r = r;}
+    public void setR(double r) {
+        this.r = r;
+    }
 
-    public String getColour() {return colour;}
+    public String getColour() {
+        return colour;
+    }
 
-    public void setColour(String colour) {this.colour = colour;}
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
 
-    public Circle(double x, double y, double r, String colour)
-    {
+    public Circle(double x, double y, double r, String colour) {
         this.x = x;
         this.y = y;
         this.r = r;
@@ -32,26 +47,22 @@ public class Circle {
 
     @Override
     public String toString() {
-        return "Circle{" +
-                "x=" + x +", y=" + y +
-                ", r=" + r +
-                ", colour='" + colour + '\'' +
-                '}';
+        return "Circle{" + "x=" + x +", y=" + y + ", r=" + r + ", colour='" + colour + '\'' + '}';
     }
 
-    public double getLength(){
+    public double getLength() {
         double c;
         c = 2 * Math.PI * r;
         return c;
     }
 
-    public double Square(){
+    public double Square() {
         double c;
-        c = Math.PI*r*r;
+        c = Math.PI * r * r;
         return c;
     }
 
-    public String Two_Circle(Circle a){
+    public String Two_Circle(Circle a) {
         String c1 = "";
         String c2 = "";
         String c3 = "";

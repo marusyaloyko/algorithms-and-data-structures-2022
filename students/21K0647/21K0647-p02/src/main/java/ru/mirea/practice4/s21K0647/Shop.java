@@ -11,11 +11,12 @@ public class Shop {
 
     public void deleteComputer(String model) {
         for (Computer x : C) {
-            if(x.model.equals(model)){
+            if (x.model.equals(model)) {
                 C.remove(x);
             }
         }
     }
+
     public String searchComputer(String model) {
         String n = "Not found";
         for (Computer x : C) {

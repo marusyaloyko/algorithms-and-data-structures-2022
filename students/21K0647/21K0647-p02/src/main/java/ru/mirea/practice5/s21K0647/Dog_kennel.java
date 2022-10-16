@@ -12,7 +12,7 @@ public class Dog_kennel {
         Dog a2 = new Dog("Pat", 4);
         kennel.add(a2);
         System.out.println(kennel.get(1).ManAlt());
-        for(Dog x: kennel){
+        for (Dog x: kennel) {
             System.out.println(x.ToString());
         }
     }
