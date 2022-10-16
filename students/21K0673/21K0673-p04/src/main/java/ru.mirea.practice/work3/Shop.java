@@ -56,7 +56,7 @@ public enum Shop {
         }
 
         switch (catalogBuff) {
-            case ("FOOD") -> {
+            case ("FOOD"): {
                 System.out.println("Choose a good:\n1.Honey\n2.Banana");
                 String foodBuff = in.next();
                 if (Objects.equals(foodBuff, "HONEY") | Objects.equals(foodBuff, "BANANA")) {
@@ -84,8 +84,9 @@ public enum Shop {
                         break;
                     }
                 }
+                break;
             }
-            case ("STAFF") -> {
+            case ("STAFF"): {
                 System.out.println("\nChoose a good:\n1.Umbrella");
                 String staffBuff = in.next();
                 if (Objects.equals(catalogBuff, "UMBRELLA")) {
@@ -98,9 +99,11 @@ public enum Shop {
                     }
                 }
                 price = 571.09;
+                break;
             }
-            default -> {
+            default: {
                 System.out.println(" ");
+                break;
             }
         }
 
@@ -113,27 +116,32 @@ public enum Shop {
         }
 
         switch (c) {
-            case 1 -> {
+            case 1: {
                 NumberFormat numberFormat1 = NumberFormat.getCurrencyInstance(Locale.US);
                 price /= 1.12;
                 System.out.println(numberFormat1.format(price));
+                break;
             }
-            case 2 -> {
+            case 2: {
                 NumberFormat numberFormat2 = NumberFormat.getCurrencyInstance(Locale.FRANCE);
                 price /= 1.16;
                 System.out.println(numberFormat2.format(price));
+                break;
             }
-            case 3 -> {
+            case 3: {
                 NumberFormat numberFormat3 = NumberFormat.getCurrencyInstance(Locale.CHINA);
                 price /= 7.48;
                 System.out.println(numberFormat3.format(price));
+                break;
             }
-            case 4 -> {
+            case 4: {
                 NumberFormat numberFormat4 = NumberFormat.getCurrencyInstance();
                 System.out.println(numberFormat4.format(price));
+                break;
             }
-            default -> {
+            default: {
                 System.out.println(" ");
+                break;
             }
         }
     }
