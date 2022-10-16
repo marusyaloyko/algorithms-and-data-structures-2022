@@ -1,4 +1,4 @@
-package ru.mirea.practice7.s21K0647;
+package ru.mirea.practice7.s21k0647;
 
 public class Book {
     String author;

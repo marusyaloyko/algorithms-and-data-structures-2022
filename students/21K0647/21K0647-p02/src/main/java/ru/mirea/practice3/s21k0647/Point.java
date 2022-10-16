@@ -1,18 +1,18 @@
-package ru.mirea.practice3.s21K0647;
+package ru.mirea.practice3.s21k0647;
 
-public class Circle extends Point {
+public class Point {
+    double x;
+    double y;
 
-    Point tT;
-    double r;
-
-    public Circle() {
-        r = 0;
+    public Point() {
+        x = 0;
+        y = 0;
     }
 
-    public Circle(double r) {
-        this.r = r;
+    public Point(double x, double y) {
+        this.x = x;
+        this.y = y;
     }
-
 
     public double getX() {
         return x;
@@ -29,5 +29,4 @@ public class Circle extends Point {
     public void setY(double y) {
         this.y = y;
     }
-
 }

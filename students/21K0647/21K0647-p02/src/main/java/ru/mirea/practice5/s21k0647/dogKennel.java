@@ -1,9 +1,9 @@
-package ru.mirea.practice5.s21K0647;
+package ru.mirea.practice5.s21k0647;
 
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Dog_kennel {
+public class dogKennel {
     public static void main(String[] args) {
         Scanner source = new Scanner(System.in);
         Dog a1 = new Dog("Jerry", 10);

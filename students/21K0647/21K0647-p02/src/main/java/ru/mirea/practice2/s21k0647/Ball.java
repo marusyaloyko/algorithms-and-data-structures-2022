@@ -1,4 +1,4 @@
-package ru.mirea.practice2.s21K0647;
+package ru.mirea.practice2.s21k0647;
 
 public class Ball {
 
