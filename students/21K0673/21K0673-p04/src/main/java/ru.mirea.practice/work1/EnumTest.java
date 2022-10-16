@@ -13,6 +13,7 @@ public class EnumTest {
             case WINTER -> System.out.println("I love winter");
             case AUTUMN -> System.out.println("I love autumn");
             case SPRING -> System.out.println("I love spring");
+            default -> System.out.println(" ");
         }
     }
 

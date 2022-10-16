@@ -43,18 +43,18 @@ public enum Shop {
         Locale.setDefault(Locale.UK);
 
         System.out.println("\nChoose a catalog:\n1.Food\n2.Staff");
-        String catalog_buff = in.next();
-        if (Objects.equals(catalog_buff, "FOOD") | Objects.equals(catalog_buff, "STAFF")) {
-            Catalog catalog = Catalog.valueOf(catalog_buff);
+        String catalogBuff = in.next();
+        if (Objects.equals(catalogBuff, "FOOD") | Objects.equals(catalogBuff, "STAFF")) {
+            Catalog catalog = Catalog.valueOf(catalogBuff);
         } else {
-            while (!Objects.equals(catalog_buff, Catalog.FOOD.toString()) | !Objects.equals(catalog_buff, Catalog.STAFF.toString())) {
+            while (!Objects.equals(catalogBuff, Catalog.FOOD.toString()) | !Objects.equals(catalogBuff, Catalog.STAFF.toString())) {
                 System.out.println("\nChoose a catalog: ");
-                catalog_buff = in.next();
-                Catalog catalog = Catalog.valueOf(catalog_buff);
+                catalogBuff = in.next();
+                Catalog catalog = Catalog.valueOf(catalogBuff);
             }
         }
 
-        switch (catalog_buff) {
+        switch (catalogBuff) {
             case ("FOOD"): {
                 System.out.println("Choose a good:\n1.Honey\n2.Banana");
                 String food_buff = in.next();
@@ -71,12 +71,13 @@ public enum Shop {
                 switch (food_buff) {
                     case ("HONEY") -> price = 123.45;
                     case ("BANANA") -> price = 12.79;
+                    default -> System.out.println(" ");
                 }
             }
             case ("STAFF"): {
                 System.out.println("\nChoose a good:\n1.Umbrella");
                 String staff_buff = in.next();
-                if (Objects.equals(catalog_buff, "UMBRELLA")) {
+                if (Objects.equals(catalogBuff, "UMBRELLA")) {
                     Staff staff = Staff.valueOf(staff_buff);
                 } else {
                     while (!Objects.equals(staff_buff, Staff.UMBRELLA.toString())) {
@@ -86,6 +87,9 @@ public enum Shop {
                     }
                 }
                 price = 571.09;
+            }
+            default: {
+                System.out.println(" ");
             }
         }
 
@@ -115,6 +119,9 @@ public enum Shop {
             case 4 -> {
                 NumberFormat numberFormat4 = NumberFormat.getCurrencyInstance();
                 System.out.println(numberFormat4.format(price));
+            }
+            default -> {
+                System.out.println(" ");
             }
         }
     }
