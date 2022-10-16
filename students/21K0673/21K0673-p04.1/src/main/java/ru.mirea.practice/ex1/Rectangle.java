@@ -67,7 +67,7 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        return "Rectangle:{Side length = " + length + "Side b = " + width + ", Area = " + (length * width) +
-                ", Perimeter = " + (2 * length + 2 * width) + "}";
+        return "Rectangle:{Side length = " + length + "Side b = " + width + ", Area = " + (length * width)
+                + ", Perimeter = " + (2 * length + 2 * width) + "}";
     }
 }
