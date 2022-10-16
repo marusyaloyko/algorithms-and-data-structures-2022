@@ -46,13 +46,13 @@ public class Matrix {
                 a[i][j] = 0;
             }
         }
-        Matrix C = new Matrix(this.lines, this.columns, a);
+        Matrix c = new Matrix(this.lines, this.columns, a);
         for (int i = 0; i < this.lines; i++) {
             for (int j = 0; j < this.columns; j++) {
-                C.getArr()[i][j] = (this.arr[i][j] + b.getArr()[i][j]);
+                c.getArr()[i][j] = (this.arr[i][j] + b.getArr()[i][j]);
             }
         }
-        return C;
+        return c;
     }
 
     public Matrix mul_by_n(int b) {
