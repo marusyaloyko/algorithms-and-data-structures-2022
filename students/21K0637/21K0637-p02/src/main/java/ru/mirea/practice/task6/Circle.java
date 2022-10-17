@@ -3,12 +3,12 @@ package ru.mirea.practice.task6;
 public class Circle {
     static final double PI = 3.14;
     private int radius;
-    private int xCenter, yCenter;
+    private int xcenter, ycenter;
 
     public Circle(int radius, int xCenter, int yCenter) {
         this.radius = radius;
-        this.xCenter = xCenter;
-        this.yCenter = yCenter;
+        this.xcenter = xCenter;
+        this.ycenter = yCenter;
     }
 
     public int getRadius() {
@@ -16,7 +16,7 @@ public class Circle {
     }
 
     public void getCenter() {
-        System.out.printf("{%d; %d}", xCenter, yCenter);
+        System.out.printf("{%d; %d}", xcenter, ycenter);
     }
 
     public double getSquare() {

@@ -31,7 +31,7 @@ public class Dog {
 
     @Override
     public String toString() {
-        return "{'" + nickname + '\'' +
-                ", возраст " + age + "}";
+        return "{'" + nickname + '\''
+                + ", возраст " + age + "}";
     }
 }
