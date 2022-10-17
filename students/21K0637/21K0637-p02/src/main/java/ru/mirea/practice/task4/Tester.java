@@ -25,6 +25,8 @@ public class Tester {
                     System.out.println(shop);
                     break;
                 case ("EXIT"):
+                    break;
+                default:
                     return;
             }
         }

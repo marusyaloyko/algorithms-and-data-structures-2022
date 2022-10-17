@@ -21,16 +21,20 @@ public class Computer {
 
     @Override
     public String toString() {
-        return "Computer {" +
-                "brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                '}';
+        return "Computer {"
+                + "brand='" + brand + '\''
+                + ", model='" + model + '\''
+                + '}';
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Computer computer = (Computer) o;
         return Objects.equals(brand, computer.brand) && Objects.equals(model, computer.model);
     }

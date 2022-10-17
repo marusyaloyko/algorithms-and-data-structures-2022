@@ -7,8 +7,8 @@ public class CircleTester {
         Circle circle3 = new Circle(6, 5, 2);
 
         System.out.println(circle1.getRadius());
-        System.out.println(circle2.Square());
-        System.out.println(circle3.Length());
+        System.out.println(circle2.getSquare());
+        System.out.println(circle3.getLength());
         System.out.println(circle2.compareTo(circle3));
 
         System.out.println("Сравнение");
