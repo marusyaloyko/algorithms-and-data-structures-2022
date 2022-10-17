@@ -1,4 +1,4 @@
-package ru.mirea.practice.Task5;
+package ru.mirea.practice.task5;
 
 import java.util.ArrayList;
 

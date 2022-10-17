@@ -1,4 +1,4 @@
-package ru.mirea.practice.Task5;
+package ru.mirea.practice.task5;
 
 public class Dog {
     private String nickname;

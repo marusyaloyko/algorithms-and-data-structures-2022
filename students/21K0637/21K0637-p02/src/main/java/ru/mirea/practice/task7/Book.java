@@ -1,4 +1,4 @@
-package ru.mirea.practice.Task7;
+package ru.mirea.practice.task7;
 
 public class Book {
     private String author;
@@ -42,9 +42,9 @@ public class Book {
 
     @Override
     public String toString() {
-        return "{'" + author + '\'' +
-                ", '" + name + '\'' +
-                ", Дата издания: " + publicationDate +
-                '}';
+        return "{'" + author + '\''
+                + ", '" + name + '\''
+                + ", Дата издания: " + publicationDate
+                + '}';
     }
 }

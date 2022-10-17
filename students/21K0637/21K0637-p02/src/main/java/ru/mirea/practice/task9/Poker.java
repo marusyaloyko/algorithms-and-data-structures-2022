@@ -1,4 +1,4 @@
-package ru.mirea.practice.Task9;
+package ru.mirea.practice.task9;
 
 import java.util.Scanner;
 
@@ -48,8 +48,9 @@ public class Poker {
 
         for (int i = 0; i < players * m; i++) {
             System.out.println(deck[i]);
-            if (i % m == m - 1)
+            if (i % m == m - 1) {
                 System.out.println();
+            }
         }
     }
 }

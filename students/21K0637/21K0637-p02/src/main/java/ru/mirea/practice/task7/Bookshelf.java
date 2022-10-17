@@ -1,4 +1,4 @@
-package ru.mirea.practice.Task7;
+package ru.mirea.practice.task7;
 
 import java.util.Arrays;
 

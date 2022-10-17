@@ -1,4 +1,4 @@
-package ru.mirea.practice.Task6;
+package ru.mirea.practice.task6;
 
 public class CircleTester {
     public static void main(String[] args) {
@@ -16,12 +16,11 @@ public class CircleTester {
             case 1:
                 System.out.println("Окружность 1 больше");
                 break;
-            case 0:
-                System.out.println("Окружности равны");
-                break;
             case -1:
                 System.out.println("Окружность 2 больше");
                 break;
+            default:
+                System.out.println("Окружности равны");
         }
     }
 }

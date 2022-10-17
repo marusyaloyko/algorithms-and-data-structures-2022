@@ -1,4 +1,4 @@
-package ru.mirea.practice.Task2;
+package ru.mirea.practice.task2;
 
 class Ball {
     private double x;
