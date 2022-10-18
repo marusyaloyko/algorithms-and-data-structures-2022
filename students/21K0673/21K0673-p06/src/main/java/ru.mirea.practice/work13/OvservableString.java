@@ -1,14 +1,14 @@
 package ru.mirea.practice.work13;
 
-class OvservableStringBuilder {
-    private OnStringBuilderChangeListener onChangeListener;
+class OvservableString {
+    private StringBuild onChangeListener;
     private StringBuilder stringBuilder;
 
-    public void setOnChangeListener(OnStringBuilderChangeListener onChangeListener) {
+    public void setOnChangeListener(StringBuild onChangeListener) {
         this.onChangeListener = onChangeListener;
     }
 
-    public OvservableStringBuilder() {
+    public OvservableString() {
         stringBuilder = new StringBuilder();
     }
 
@@ -18,19 +18,19 @@ class OvservableStringBuilder {
         }
     }
 
-    public OvservableStringBuilder append(Object obj) {
+    public OvservableString append(Object obj) {
         stringBuilder.append(obj);
         notifyOnStringBuilderChangeListener();
         return this;
     }
 
-    public OvservableStringBuilder replace(int start, int end, String str) {
+    public OvservableString replace(int start, int end, String str) {
         stringBuilder.replace(start, end, str);
         notifyOnStringBuilderChangeListener();
         return this;
     }
 
-    public OvservableStringBuilder insert(int index, char[] str, int offset, int len) {
+    public OvservableString insert(int index, char[] str, int offset, int len) {
         stringBuilder.insert(index, str, offset, len);
         notifyOnStringBuilderChangeListener();
         return this;
