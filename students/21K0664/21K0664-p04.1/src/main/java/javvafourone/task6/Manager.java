@@ -22,12 +22,7 @@ public class Manager extends Employer {
 
     @Override
     public String toString() {
-        return "Manager{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", income=" + income +
-                ", averageSum=" + averageSum +
-                '}';
+        return "firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", income=" + income + ", averageSum=" + averageSum + '}';
     }
 
     public double getAverageSum() {

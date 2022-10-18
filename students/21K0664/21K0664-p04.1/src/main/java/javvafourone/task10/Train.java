@@ -22,9 +22,6 @@ public class Train extends Vehicle {
 
     @Override
     public String toString() {
-        return "Train{" +
-                "time=" + time +
-                ", price=" + price +
-                '}';
+        return "Train{" + "time=" + time + ", price=" + price + '}';
     }
 }

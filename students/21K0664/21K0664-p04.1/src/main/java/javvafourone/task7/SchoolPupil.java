@@ -30,9 +30,6 @@ public class SchoolPupil extends Pupil {
 
     @Override
     public String toString() {
-        return "SchoolPupil{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+        return "SchoolPupil{" + "name='" + name + '\'' + ", age=" + age + '}';
     }
 }

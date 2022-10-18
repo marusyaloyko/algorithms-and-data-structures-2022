@@ -70,13 +70,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", specialization='" + specialization + '\'' +
-                ", course=" + course +
-                ", group=" + group +
-                ", gpa=" + gpa +
-                '}';
+        return "name='" + name + '\'' + ", surname='" + surname;
     }
 }

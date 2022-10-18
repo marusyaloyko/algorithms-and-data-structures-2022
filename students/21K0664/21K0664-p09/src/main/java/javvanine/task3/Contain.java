@@ -41,46 +41,6 @@ public class Contain {
         this.a.set(n, k);
     }
 
-    public static ArrayList<Student> mergeSort(ArrayList<Student> a) {
-        if (a.size() == 1) {
-            return a;
-        } else {
-            int mid = a.size() / 2;
-            ArrayList<Student> left = new ArrayList<Student>(mid);
-            ArrayList<Student> right = new ArrayList<Student>(a.size() - mid);
-
-            for (int i = 0; i < mid; i++) {
-                left.add(a.get(i));
-            }
-
-            for (int i = 0; i < a.size() - mid; i++) {
-                right.add(a.get(i));
-            }
-
-            left = mergeSort(left);
-            right = mergeSort(right);
-            merge(left, right, a);
-        }
-        return a;
-    }
-
-    public static void merge(ArrayList<Student> left, ArrayList<Student> right, ArrayList<Student> Input) {
-        int i1 = 0;// left Index
-        int i2 = 0;// right Index
-        int InputIndex = 0;
-
-        for (int i = 0; i < Input.size(); i++) {
-            if (i2 >= right.size() || (i1 < left.size() && left.get(i).getGpa() <= right.get(i).getGpa())) {
-                Input.set(InputIndex, left.get(i1));
-                InputIndex++;
-            } else {
-                Input.set(InputIndex, right.get(i2));
-                InputIndex++;
-            }
-        }
-
-    }
-
     public static void main(String[] args) {
 
         Student a = new Student("Ivan", 2155, 60);
@@ -106,7 +66,6 @@ public class Contain {
         ArrayList<Student> students3 = new ArrayList<Student>(students);
         students3.addAll(students1);
 
-        mergeSort(students3);
         for (Student vv : students3) {
             System.out.println(vv);
         }

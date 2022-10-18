@@ -41,10 +41,6 @@ public class Student extends Pupil {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", course=" + course +
-                '}';
+        return "Student{" + "name='" + name + '\'' + ", age=" + age + ", course=" + course + '}';
     }
 }

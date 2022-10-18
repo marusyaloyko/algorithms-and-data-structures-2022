@@ -21,8 +21,6 @@ public class Bed extends Furniture {
 
     @Override
     public String toString() {
-        return "Bed{" +
-                "price=" + price +
-                '}';
+        return "Bed{" + "price=" + price + '}';
     }
 }

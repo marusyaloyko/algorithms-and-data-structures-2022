@@ -21,8 +21,6 @@ public abstract class Furniture {
 
     @Override
     public String toString() {
-        return "Furniture{" +
-                "price=" + price +
-                '}';
+        return "Furniture{" + "price=" + price + '}';
     }
 }
