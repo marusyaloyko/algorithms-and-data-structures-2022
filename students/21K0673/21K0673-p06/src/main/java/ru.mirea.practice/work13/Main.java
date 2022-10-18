@@ -2,10 +2,10 @@ package ru.mirea.practice.work13;
 
 public class Main {
     public static void main(String[] strings) {
-        OvservableStringBuilder UndoableStringBuilder = new OvservableStringBuilder();
-        UndoableStringBuilder.setOnChangeListener(new MyListener());
-        UndoableStringBuilder.append("Hello");
-        UndoableStringBuilder.append(", ");
-        UndoableStringBuilder.append("World!");
+        OvservableString undoablestringbuilder = new OvservableString();
+        undoablestringbuilder.setOnChangeListener(new MyListener());
+        undoablestringbuilder.append("Hello");
+        undoablestringbuilder.append(", ");
+        undoablestringbuilder.append("World!");
     }
 }

@@ -2,7 +2,7 @@ package ru.mirea.practice.work12;
 
 import java.util.Stack;
 
-class undoablestringbuilder {
+class StringBuild {
 
     private interface Action {
         void undo();
@@ -25,11 +25,11 @@ class undoablestringbuilder {
 
     private Stack<Action> actions = new Stack<>();
 
-    public undoablestringbuilder() {
+    public StringBuild() {
         stringBuilder = new StringBuilder();
     }
 
-    public undoablestringbuilder reverse() {
+    public StringBuild reverse() {
         stringBuilder.reverse();
 
         Action action = new Action() {
@@ -44,7 +44,7 @@ class undoablestringbuilder {
     }
 
 
-    public undoablestringbuilder append(String str) {
+    public StringBuild append(String str) {
         stringBuilder.append(str);
 
         Action action = new Action() {
@@ -59,41 +59,41 @@ class undoablestringbuilder {
         return this;
     }
 
-    public undoablestringbuilder appendCodePoint(int codePoint) {
+    public StringBuild appendCodePoint(int codePoint) {
         int lenghtBefore = stringBuilder.length();
         stringBuilder.appendCodePoint(codePoint);
         actions.add(new DeleteAction(stringBuilder.length() - lenghtBefore));
         return this;
     }
 
-    public undoablestringbuilder delete(int start, int end) {
+    public StringBuild delete(int start, int end) {
         String deleted = stringBuilder.substring(start, end);
         stringBuilder.delete(start, end);
         actions.add(() -> stringBuilder.insert(start, deleted));
         return this;
     }
 
-    public undoablestringbuilder deleteCharAt(int index) {
+    public StringBuild deleteCharAt(int index) {
         char deleted = stringBuilder.charAt(index);
         stringBuilder.deleteCharAt(index);
         actions.add(() -> stringBuilder.insert(index, deleted));
         return this;
     }
 
-    public undoablestringbuilder replace(int start, int end, String str) {
+    public StringBuild replace(int start, int end, String str) {
         String deleted = stringBuilder.substring(start, end);
         stringBuilder.replace(start, end, str);
         actions.add(() -> stringBuilder.replace(start, end, deleted));
         return this;
     }
 
-    public undoablestringbuilder insert(int index, char[] str, int offset, int len) {
+    public StringBuild insert(int index, char[] str, int offset, int len) {
         stringBuilder.insert(index, str, offset, len);
         actions.add(() -> stringBuilder.delete(index, len));
         return this;
     }
 
-    public undoablestringbuilder insert(int offset, String str) {
+    public StringBuild insert(int offset, String str) {
         stringBuilder.insert(offset, str);
         actions.add(() -> stringBuilder.delete(offset, str.length()));
         return this;
