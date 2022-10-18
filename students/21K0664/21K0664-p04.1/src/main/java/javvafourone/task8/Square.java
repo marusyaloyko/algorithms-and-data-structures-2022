@@ -1,29 +1,41 @@
 package javvafourone.task8;
 
-import javvafourone.task1.Shape;
 
-public class Square extends Shape {
-    private double x;
+public abstract class Square extends Rectangle {
+    private double side;
 
-    Square() {}
-
-    Square(double x) {
-        this.x = x;
+    Square() {
     }
 
-    public String getType() {
-        return "ru.mirea.practice.task8.Rectangle";
+    Square(double side) {
+        this.side = side;
     }
 
-    public double getArea() {
-        return Math.pow(x,2);
+    Square(double side, String color, boolean filled) {
+        this.side = side;
+        this.color = color;
+        this.filled = filled;
     }
 
-    public double getPerimeter() {
-        return x * 4;
+    public double getSide() {
+        return side;
     }
 
-    public String toString()  {
-        return "Side a = " + x + ", Area = " + getArea() + ", Perimeter = " + getPerimeter();
+    public void setSide(double side) {
+        this.side = side;
+    }
+
+    @Override
+    public void setWidth(double width) {
+        super.setWidth(width);
+    }
+
+    @Override
+    public void setLength(double length) {
+        super.setLength(length);
+    }
+
+    public String toString() {
+        return "Rectangle:{Side = " + side + ", Area = " + (side * side) + ", Perimeter = " + (side * 4) + "}";
     }
 }

@@ -26,7 +26,7 @@ public class Test {
 
     @Override
     public String toString() {
-        return "task1.Test{" + "n=" + n + ", a=" + Arrays.toString(a) + '}';
+        return "Test{" + "n=" + n + ", a=" + Arrays.toString(a) + '}';
     }
 
     Test(int n) {

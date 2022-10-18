@@ -1,32 +1,54 @@
 package javvafourone.task8;
 
-import javvafourone.task1.Shape;
 
-public class Rectangle extends Shape {
-    private double x;
-    private double y;
+public abstract class Rectangle extends Shape {
+    private double length;
+    private double width;
 
     Rectangle() {
     }
 
-    Rectangle(double x, double y) {
-        this.x = x;
-        this.y = y;
+    Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
     }
 
-    public String getType() {
-        return "ru.mirea.practice.task8.Rectangle";
+    Rectangle(double length, double width, String color, boolean filled) {
+        this.length = length;
+        this.width = width;
+        this.color = color;
+        this.filled = filled;
     }
 
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    @Override
     public double getArea() {
-        return x * y;
+        return length * width;
     }
 
+    @Override
     public double getPerimeter() {
-        return 2 * x + 2 * y;
+        return 2 * length + 2 * width;
     }
 
+    @Override
     public String toString() {
-        return "Rectangle:{Side a = " + x + "Side b = " + y + ", Area = " + (x * y) + ", Perimeter = " + (2 * x + 2 * y) + "}";
+        return "Rectangle:{Side length = " + length + "Side b = " + width + ", Area = " + (length * width)
+                + ", Perimeter = " + (2 * length + 2 * width) + "}";
     }
 }
