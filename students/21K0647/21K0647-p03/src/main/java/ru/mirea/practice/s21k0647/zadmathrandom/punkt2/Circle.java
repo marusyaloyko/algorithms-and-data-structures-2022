@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21k0647.zadMathRandom.punkt2;
+package ru.mirea.practice.s21k0647.zadmathrandom.punkt2;
 
 public class Circle extends Point {
     Point tT;

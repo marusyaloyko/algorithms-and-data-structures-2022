@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21k0647.zadMathRandom;
+package ru.mirea.practice.s21k0647.zadmathrandom;
 
 import java.util.Random;
 import java.util.Scanner;

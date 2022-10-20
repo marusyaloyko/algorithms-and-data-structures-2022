@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21k0647.formatString.employeeReport;
+package ru.mirea.practice.s21k0647.formatstring.employeereport;
 
 public class Employee {
     String fullname;

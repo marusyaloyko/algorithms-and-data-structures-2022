@@ -1,30 +1,30 @@
-package ru.mirea.practice.s21k0647.zadMathRandom.punkt2;
+package ru.mirea.practice.s21k0647.zadmathrandom.punkt2;
 
 import java.util.Scanner;
 
 public class Tester {
     public static String minP(Circle[] c) {
         double m = 100000;
-        Circle cMin = new Circle();
+        Circle cmin = new Circle();
         for (Circle x: c) {
             if (x.r < m) {
                 m = x.r;
-                cMin = x;
+                cmin = x;
             }
         }
-        return cMin.toString();
+        return cmin.toString();
     }
 
     public static String maxP(Circle[] c) {
         double m = -1;
-        Circle cMax = new Circle();
+        Circle cmax = new Circle();
         for (Circle x: c) {
             if (x.r > m) {
                 m = x.r;
-                cMax = x;
+                cmax = x;
             }
         }
-        return cMax.toString();
+        return cmax.toString();
     }
 
     public static void sortP(Circle[] c) {

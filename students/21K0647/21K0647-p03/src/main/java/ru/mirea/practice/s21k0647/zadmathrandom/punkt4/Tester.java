@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21k0647.zadMathRandom.punkt4;
+package ru.mirea.practice.s21k0647.zadmathrandom.punkt4;
 
 import java.util.ArrayList;
 import java.util.Scanner;

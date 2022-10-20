@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21k0647.zadMathRandom.punkt3;
+package ru.mirea.practice.s21k0647.zadmathrandom.punkt3;
 
 public class Array {
     public static void main(String[] args) {

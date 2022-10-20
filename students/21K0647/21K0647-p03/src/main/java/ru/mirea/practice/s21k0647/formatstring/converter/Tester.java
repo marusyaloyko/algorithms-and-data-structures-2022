@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21k0647.formatString.Converter;
+package ru.mirea.practice.s21k0647.formatstring.converter;
 
 import java.util.Scanner;
 

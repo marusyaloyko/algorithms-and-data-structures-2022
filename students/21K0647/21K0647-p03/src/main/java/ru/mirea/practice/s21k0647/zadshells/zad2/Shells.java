@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21k0647.zadShells.zad2;
+package ru.mirea.practice.s21k0647.zadshells.zad2;
 
 public class Shells {
     public static void main(String[] args) {
@@ -27,13 +27,19 @@ public class Shells {
         String[][] bo = {
                 {"bbb", ""},
                 {"Boolean", "parseXxx", "toString", "toString(primitive)"},
-                {"Byte", "byteValue", "toString", "toString(primitive)", "valueOf with radix", "doubleValue", "doubleValue", "floatValue", "intValue", "longValue", "shortValue"},
+                {"Byte", "byteValue", "toString", "toString(primitive)", "valueOf with radix",
+                        "doubleValue", "doubleValue", "floatValue", "intValue", "longValue", "shortValue"},
                 {"Character", "toString", "toString(primitive)"},
-                {"Double", "toString", "toString(primitive)", "byteValue", "doubleValue", "floatValue", "longValue", "parseXxx", "shortValue"},
-                {"Float", "toString", "toString(primitive)", "byteValue", "doubleValue", "floatValue", "longValue", "parseXxx", "intValue"},
-                {"Integer", "toString", "toString(primitive)", "toString(primitive,radix)", "byteValue", "doubleValue", "floatValue", "longValue", "parseXxx", "intValue", "parseXxx with radix", "shortValue", "valueOf with radix"},
-                {"Long", "toString", "toString(primitive)", "toString(primitive,radix)", "byteValue", "doubleValue", "floatValue", "longValue", "parseXxx", "intValue", "parseXxx with radix", "shortValue", "valueOf with radix"},
-                {"Short", "toString", "toString(primitive)", "byteValue", "doubleValue", "floatValue", "longValue", "parseXxx", "intValue", "parseXxx with radix", "shortValue", "valueOf with radix"},
+                {"Double", "toString", "toString(primitive)", "byteValue", "doubleValue", "floatValue",
+                        "longValue", "parseXxx", "shortValue"},
+                {"Float", "toString", "toString(primitive)", "byteValue", "doubleValue", "floatValue",
+                        "longValue", "parseXxx", "intValue"},
+                {"Integer", "toString", "toString(primitive)", "toString(primitive,radix)", "byteValue",
+                        "doubleValue", "floatValue", "longValue", "parseXxx", "intValue", "parseXxx with radix", "shortValue", "valueOf with radix"},
+                {"Long", "toString", "toString(primitive)", "toString(primitive,radix)", "byteValue",
+                        "doubleValue", "floatValue", "longValue", "parseXxx", "intValue", "parseXxx with radix", "shortValue", "valueOf with radix"},
+                {"Short", "toString", "toString(primitive)", "byteValue", "doubleValue", "floatValue",
+                        "longValue", "parseXxx", "intValue", "parseXxx with radix", "shortValue", "valueOf with radix"},
                 {"isStatic", "toString"}};
         array[0][0] = "";
         for (int i = 0; i < 10; ++i) {

@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21k0647.formatString.InternetShop;
+package ru.mirea.practice.s21k0647.formatstring.internetshop;
 
 
 import java.text.NumberFormat;
@@ -57,10 +57,10 @@ public class Tester {
         }
     }
 
-    public static String converter(String kod_lang, String kod_land, Double course, float sum_basket) {
-        Locale sumFormat2 = new Locale(kod_lang, kod_land);
+    public static String converter(String kodLang, String kodLand, Double course, float sumBasket) {
+        Locale sumFormat2 = new Locale(kodLang, kodLand);
         NumberFormat sumformat2 = NumberFormat.getCurrencyInstance(sumFormat2);
-        return ("Amount in " + sumFormat2.getISO3Country() + " " + sumformat2.format(course * sum_basket));
+        return ("Amount in " + sumFormat2.getISO3Country() + " " + sumformat2.format(course * sumBasket));
 
     }
 
