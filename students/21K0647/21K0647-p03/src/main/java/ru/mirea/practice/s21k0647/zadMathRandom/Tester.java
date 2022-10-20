@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21k0647.zad_Math_Random;
+package ru.mirea.practice.s21k0647.zadMathRandom;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -12,7 +12,7 @@ public class Tester {
         double[] array = new double[n];
         for (int i = 0; i < n; i++) {
             Random rand = new Random();
-            array[i] =Math.random();
+            array[i] = Math.random();
             array[i] = rand.nextDouble();
         }
         for (int i = 0; i < n; i++) {
@@ -21,7 +21,7 @@ public class Tester {
         System.out.println();
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
-                if(array[i] > array[j]){
+                if (array[i] > array[j]) {
                     double f = array[i];
                     array[i] = array[j];
                     array[j] = f;

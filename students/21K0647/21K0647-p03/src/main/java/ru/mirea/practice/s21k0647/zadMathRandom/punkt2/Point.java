@@ -1,16 +1,19 @@
-package ru.mirea.practice.s21k0647.zad_Math_Random.punkt2;
+package ru.mirea.practice.s21k0647.zadMathRandom.punkt2;
 
 public  class Point {
     double x;
     double y;
+
     public Point() {
             x = 0;
             y = 0;
     }
+
     public Point(double x, double y) {
             this.x = x;
             this.y = y;
     }
+
     public double getX() {
         return x;
     }

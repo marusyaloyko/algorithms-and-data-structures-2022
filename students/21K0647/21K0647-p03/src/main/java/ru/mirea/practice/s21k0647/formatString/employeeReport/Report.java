@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21k0647.format_string.employee_report;
+package ru.mirea.practice.s21k0647.formatString.employeeReport;
 
 import java.util.Formatter;
 

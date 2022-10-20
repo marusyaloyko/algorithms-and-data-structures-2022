@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21k0647.zad_shells.zad1;
+package ru.mirea.practice.s21k0647.zadShells.zad1;
 
 public class Shells {
     public static void main(String[] args) {

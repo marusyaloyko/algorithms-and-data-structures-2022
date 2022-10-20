@@ -1,16 +1,16 @@
-package ru.mirea.practice.s21k0647.format_string.Converter;
+package ru.mirea.practice.s21k0647.formatString.Converter;
 
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class currency_converter{
+public class CurrencyConverter {
     String s;
     String from;
     String inlang;
     String inland;
     String course;
 
-    currency_converter(String s, String from, String inlang, String inland, String cource) {
+    CurrencyConverter(String s, String from, String inlang, String inland, String cource) {
         this.s = s;
         this.from = from;
         this.inlang = inlang;
@@ -18,7 +18,7 @@ public class currency_converter{
         this.course = cource;
     }
 
-    public String Formated() {
+    public String formated() {
         double n = Double.parseDouble(s);
         Locale.setDefault(new Locale(inlang, inland));
         double n1 = Double.parseDouble(course);
@@ -30,7 +30,7 @@ public class currency_converter{
 
 
     public String toString() {
-        return "Translation " + s + "\nfrom " + from + " in " + inlang +"\nOutput " + Formated();
+        return "Translation " + s + "\nfrom " + from + " in " + inlang + "\nOutput " + formated();
     }
 
 }

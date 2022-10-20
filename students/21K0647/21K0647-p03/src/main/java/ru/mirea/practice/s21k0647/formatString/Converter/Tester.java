@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21k0647.format_string.Converter;
+package ru.mirea.practice.s21k0647.formatString.Converter;
 
 import java.util.Scanner;
 
@@ -10,8 +10,8 @@ public class Tester {
         System.out.println("In language code");
         System.out.println("In land code");
         System.out.println("Exchange rate from currency to currency");
-        currency_converter app = new currency_converter(sc.nextLine(), sc.nextLine(), sc.nextLine(), sc.nextLine(),sc.nextLine());
-        app.Formated();
+        CurrencyConverter app = new CurrencyConverter(sc.nextLine(), sc.nextLine(), sc.nextLine(), sc.nextLine(),sc.nextLine());
+        app.formated();
         System.out.print(app.toString());
     }
 }

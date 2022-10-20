@@ -1,16 +1,16 @@
-package ru.mirea.practice.s21k0647.format_string.Internet_Shop;
+package ru.mirea.practice.s21k0647.formatString.InternetShop;
 
 public class Product {
     int price;
-    String Name;
+    String name;
 
     public Product(String Name, int price) {
-        this.Name = Name;
+        this.name = Name;
         this.price = price;
     }
 
     public void setName(String Name) {
-        this.Name = Name;
+        this.name = Name;
     }
 
     public int getPrice() {
@@ -22,6 +22,6 @@ public class Product {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 }

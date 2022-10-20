@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21k0647.zad_Math_Random.punkt4;
+package ru.mirea.practice.s21k0647.zadMathRandom.punkt4;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -15,17 +15,17 @@ public class Tester {
                 System.out.println("Enter a number greater than 0.");
             }
         }
-        int[] array_1 = new int[n];
-        ArrayList<Integer> array_2 = new ArrayList<Integer>();
-        for (int x: array_1) {
+        int[] array1 = new int[n];
+        ArrayList<Integer> array2 = new ArrayList<Integer>();
+        for (int x: array1) {
             x = (int) Math.round((Math.random() * (n + 1)));
             System.out.print(x + " ");
             if (x % 2 == 0) {
-                array_2.add(x);
+                array2.add(x);
             }
         }
         System.out.println();
-        for (int x: array_2) {
+        for (int x: array2) {
             System.out.print(x + " ");
         }
 

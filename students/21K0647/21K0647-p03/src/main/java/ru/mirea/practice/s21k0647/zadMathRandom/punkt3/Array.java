@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21k0647.zad_Math_Random.punkt3;
+package ru.mirea.practice.s21k0647.zadMathRandom.punkt3;
 
 public class Array {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class Array {
         }
         int k = 0;
         for (int i = 0; i < 3; ++i) {
-            if (array[i] > array[i+1]) {
+            if (array[i] > array[i + 1]) {
                 k++;
             }
         }

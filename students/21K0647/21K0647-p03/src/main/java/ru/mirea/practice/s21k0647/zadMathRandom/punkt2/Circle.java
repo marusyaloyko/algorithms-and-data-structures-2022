@@ -1,8 +1,9 @@
-package ru.mirea.practice.s21k0647.zad_Math_Random.punkt2;
+package ru.mirea.practice.s21k0647.zadMathRandom.punkt2;
 
 public class Circle extends Point {
-    Point T;
+    Point tT;
     double r;
+
     public Circle() {
         r = 0;
     }
@@ -28,6 +29,6 @@ public class Circle extends Point {
     }
 
     public String toString() {
-        return "x: " + x + "\ty: "+ y + "\tr: " + r;
+        return "x: " + x + "\ty: " + y + "\tr: " + r;
     }
 }
