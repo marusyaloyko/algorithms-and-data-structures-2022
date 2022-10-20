@@ -79,7 +79,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.0</version>
+                <version>3.10.1</version>
                 <configuration>
                     <target>${maven.compiler.target}</target>
                     <source>${maven.compiler.source}</source>
@@ -125,6 +125,8 @@
                 <module>students/21K0664</module>
                 <module>students/21K0709</module>
                 <module>students/21K0647</module>
+                <module>students/21K0673</module>
+                <module>students/21K0654</module>
             </modules>
         </profile>
     </profiles>
