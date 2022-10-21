@@ -55,7 +55,7 @@ public class Matrix {
         return c;
     }
 
-    public Matrix mul_by_n(int b) {
+    public Matrix mulByN(int b) {
         double[][] a = new double[this.lines][this.columns];
         for (int i = 0; i < this.lines; i++) {
             for (int j = 0; j < this.columns; j++) {
@@ -87,7 +87,7 @@ public class Matrix {
         Matrix a = new Matrix(c);
         Matrix b = new Matrix(c);
         System.out.println(a.sum(b).toString());
-        System.out.println(a.mul_by_n(n).toString());
+        System.out.println(a.mulByN(n).toString());
         System.out.println(a.toString());
     }
 }

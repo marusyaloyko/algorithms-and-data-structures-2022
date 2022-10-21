@@ -75,7 +75,8 @@ public class Matrix {
         System.out.println("Матрица:");
         for (int i = 0; i < this.lines; i++) {
             for (int j = 0; j < this.columns; j++) {
-                return Arrays.deepToString(this.arr);
+                // FIXME: Что за логика?
+                // return Arrays.deepToString(this.arr);
             }
         }
         return "";
