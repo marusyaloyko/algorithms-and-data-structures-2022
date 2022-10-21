@@ -6,7 +6,8 @@ public class Student {
     public int gpa;
 
 
-    Student() {}
+    Student() {
+    }
 
     public int getIdnumber() {
         return idnumber;
@@ -42,4 +43,5 @@ public class Student {
     public String toString() {
         return "task1.Student{" + "name='" + name + '\'' + ", iDNumber=" + idnumber + ", GPA=" + gpa + '}';
     }
+
 }
