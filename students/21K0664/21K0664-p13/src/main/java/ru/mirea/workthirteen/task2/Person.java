@@ -50,12 +50,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", patronymic='" + patronymic + '\'' +
-                ", age=" + age +
-                '}';
+        return "Person{" + "name='" + name + '\'' + ", surname='" + surname + '\'' + ", patronymic='" + patronymic + '\'' + ", age=" + age + '}';
     }
 
     public void print() {

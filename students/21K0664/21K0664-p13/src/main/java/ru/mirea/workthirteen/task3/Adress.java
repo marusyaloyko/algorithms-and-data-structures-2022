@@ -9,9 +9,10 @@ public class Adress {
     private String housing;
     private String flat;
 
-    Adress() {}
+    Adress() {
+    }
 
-    Adress(String country, String region, String city, String street, String house, String housing, String flat){
+    Adress(String country, String region, String city, String street, String house, String housing, String flat) {
         this.country = country;
         this.region = region;
         this.city = city;
@@ -77,22 +78,10 @@ public class Adress {
         this.street = street;
     }
 
-    @Override
-    public String toString() {
-        return "Adress{" +
-                "country='" + country + '\'' +
-                ", region='" + region + '\'' +
-                ", city='" + city + '\'' +
-                ", street='" + street + '\'' +
-                ", house='" + house + '\'' +
-                ", housing='" + housing + '\'' +
-                ", flat='" + flat + '\'' +
-                '}';
-    }
 
     public void set(String v) {
         String[] split = v.split(" ");
-        for (int i = 0; i < v.length() - 1; i++){
+        for (int i = 0; i < v.length() - 1; i++) {
             System.out.println(split[i]);
         }
     }
