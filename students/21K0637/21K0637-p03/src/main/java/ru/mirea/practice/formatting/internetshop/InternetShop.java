@@ -1,4 +1,4 @@
-package ru.mirea.practice.formatting.internetShop;
+package ru.mirea.practice.formatting.internetshop;
 
 import java.text.NumberFormat;
 import java.util.Locale;
@@ -6,9 +6,9 @@ import java.util.Scanner;
 
 public class InternetShop {
     static Product[] catalog = {new Product("Молоко", 89),
-            new Product("Печенье", 58),
-            new Product("Шоколад", 99),
-            new Product("Мюсли", 143)};
+        new Product("Печенье", 58),
+        new Product("Шоколад", 99),
+        new Product("Мюсли", 143)};
 
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
