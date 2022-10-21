@@ -12,7 +12,6 @@ public class InternetShop {
 
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
-        Scanner sc = new Scanner(System.in);
 
         System.out.println("Доступные товары(Цена в US): ");
         for (int i = 0; i < catalog.length; i++) {
@@ -20,6 +19,7 @@ public class InternetShop {
         }
 
         System.out.println("Выберете товар: ");
+        Scanner sc = new Scanner(System.in);
         int value = sc.nextInt() + 1;
 
         System.out.println("Выберете валюту: \n1.$\n2.€\n3.¥\n4.£");
