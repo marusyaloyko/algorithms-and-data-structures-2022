@@ -5,8 +5,8 @@ import java.util.Random;
 import static java.lang.Math.pow;
 
 public class Thesumofthedigitsofthenumber {
-    private static void sum(int i, int N, int sum) {
-        int buff = N;
+    private static void sum(int i, int n, int sum) {
+        int buff = n;
         buff /= pow(10, i);
         buff %= pow(10, 1);
         sum += buff;
@@ -14,16 +14,16 @@ public class Thesumofthedigitsofthenumber {
             System.out.print(sum);
         } else {
             i++;
-            sum(i, N, sum);
+            sum(i, n, sum);
         }
     }
 
     public static void main(String[] args) {
         Random rand = new Random();
-        int N = rand.nextInt(10000);
+        int n = rand.nextInt(10000);
         int i = 0;
         int sum = 0;
-        System.out.println(N);
-        sum(i, N, sum);
+        System.out.println(n);
+        sum(i, n, sum);
     }
 }

@@ -5,8 +5,8 @@ import java.util.Random;
 import static java.lang.Math.pow;
 
 public class Digitsnumbersfromrighttoleft {
-    private static void rec(int i, int N) {
-        int buff = N;
+    private static void rec(int i, int n) {
+        int buff = n;
         buff /= pow(10, i);
         buff %= pow(10, 1);
         if (buff == 0 & i != 1) {
@@ -15,15 +15,15 @@ public class Digitsnumbersfromrighttoleft {
             System.out.print(buff);
             System.out.print(" ");
             i++;
-            rec(i, N);
+            rec(i, n);
         }
     }
 
     public static void main(String[] args) {
         Random rand = new Random();
-        int N = rand.nextInt(10000);
+        int n = rand.nextInt(10000);
         int i = 0;
-        System.out.println(N);
-        rec(i, N);
+        System.out.println(n);
+        rec(i, n);
     }
 }

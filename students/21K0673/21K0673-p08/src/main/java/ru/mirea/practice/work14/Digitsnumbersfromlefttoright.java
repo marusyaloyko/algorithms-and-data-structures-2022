@@ -5,19 +5,19 @@ import java.util.Random;
 import static java.lang.Math.pow;
 
 public class Digitsnumbersfromlefttoright {
-    private static void amount(int i, int N) {
-        int buff = N;
+    private static void amount(int i, int n) {
+        int buff = n;
         buff /= pow(10, i);
         if (buff == 0) {
-            norm(i, N);
+            norm(i, n);
         } else {
             i++;
-            amount(i, N);
+            amount(i, n);
         }
     }
 
-    private static void norm(int i, int N) {
-        int buff = N;
+    private static void norm(int i, int n) {
+        int buff = n;
         buff /= pow(10, i - 1);
         buff %= pow(10, 1);
         if (buff == 0 & i != 1) {
@@ -26,15 +26,15 @@ public class Digitsnumbersfromlefttoright {
             System.out.print(buff);
             System.out.print(" ");
             i--;
-            norm(i, N);
+            norm(i, n);
         }
     }
 
     public static void main(String[] args) {
         Random rand = new Random();
-        int N = rand.nextInt(10000);
+        int n = rand.nextInt(10000);
         int i = 1;
-        System.out.println(N);
-        amount(i, N);
+        System.out.println(n);
+        amount(i, n);
     }
 }
