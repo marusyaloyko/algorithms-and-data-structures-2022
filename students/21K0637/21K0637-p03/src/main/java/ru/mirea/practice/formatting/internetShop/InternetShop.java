@@ -1,4 +1,4 @@
-package ru.mirea.practice.formatting.internet_shop;
+package ru.mirea.practice.formatting.internetShop;
 
 import java.text.NumberFormat;
 import java.util.Locale;
@@ -25,26 +25,18 @@ public class InternetShop {
         System.out.println("Выберете валюту: \n1.$\n2.€\n3.¥\n4.£");
         int c = sc.nextInt();
 
-
         switch (c) {
             case 1:
-                System.out.print("С вас " + NumberFormat.getCurrencyInstance()
-                        .format(catalog[value - 1].getPrice()));
+                System.out.print("С вас " + NumberFormat.getCurrencyInstance().format(catalog[value - 1].getPrice()));
                 break;
             case 2:
-                System.out.print("С вас " + NumberFormat
-                        .getCurrencyInstance(Locale.FRANCE)
-                        .format(catalog[value - 1].getPrice() * 1.01));
+                System.out.print("С вас " + NumberFormat.getCurrencyInstance(Locale.FRANCE).format(catalog[value - 1].getPrice() * 1.01));
                 break;
             case 3:
-                System.out.print("С вас " + NumberFormat
-                        .getCurrencyInstance(Locale.CHINA)
-                        .format(catalog[value - 1].getPrice() * 7.25));
+                System.out.print("С вас " + NumberFormat.getCurrencyInstance(Locale.CHINA).format(catalog[value - 1].getPrice() * 7.25));
                 break;
             case 4:
-                System.out.print("С вас " + NumberFormat
-                        .getCurrencyInstance(Locale.UK)
-                        .format(catalog[value - 1].getPrice() * 0.88456));
+                System.out.print("С вас " + NumberFormat.getCurrencyInstance(Locale.UK).format(catalog[value - 1].getPrice() * 0.88456));
                 break;
             default:
                 System.out.println("Введена неправильная валюта");

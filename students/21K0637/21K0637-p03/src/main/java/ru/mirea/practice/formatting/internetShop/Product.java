@@ -1,4 +1,4 @@
-package ru.mirea.practice.formatting.internet_shop;
+package ru.mirea.practice.formatting.internetShop;
 
 public class Product {
     private String name;

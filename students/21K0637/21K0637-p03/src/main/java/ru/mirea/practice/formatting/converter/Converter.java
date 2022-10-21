@@ -53,6 +53,7 @@ public class Converter {
 
                 System.out.println(NumberFormat.getCurrencyInstance(Locale.UK).format(amount) +  " = "
                         + NumberFormat.getCurrencyInstance(Locale.CHINA).format(amount * 8.24));
+                break;
             default:
                 break;
         }
