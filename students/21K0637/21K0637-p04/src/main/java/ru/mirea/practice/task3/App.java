@@ -6,7 +6,10 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         User userIvan = new User("Ivan", "pswd");
-        if (!userIvan.checkUser(scanner)) return;
+        if (!userIvan.checkUser(scanner)) {
+            System.out.println("Пользователь не найден");
+            return;
+        }
 
 
         System.out.println("________");

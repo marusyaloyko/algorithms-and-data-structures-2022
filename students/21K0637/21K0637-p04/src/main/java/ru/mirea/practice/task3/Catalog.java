@@ -3,9 +3,9 @@ package ru.mirea.practice.task3;
 public enum Catalog {
     DAIRY {
         final Product[] products = {
-                new Product("Молоко", 123.0),
-                new Product("Кефир", 86.0),
-                new Product("Творог", 75.0)
+            new Product("Молоко", 123.0),
+            new Product("Кефир", 86.0),
+            new Product("Творог", 75.0)
         };
 
         @Override
@@ -24,9 +24,9 @@ public enum Catalog {
     },
     BAKERY {
         final Product[] products = {
-                new Product("Хлеб", 34.0),
-                new Product("Бисквит", 60.0),
-                new Product("Печеньки", 75.0)
+            new Product("Хлеб", 34.0),
+            new Product("Бисквит", 60.0),
+            new Product("Печеньки", 75.0)
         };
 
         @Override

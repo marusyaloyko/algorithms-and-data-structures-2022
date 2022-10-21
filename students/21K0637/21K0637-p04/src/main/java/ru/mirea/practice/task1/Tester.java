@@ -27,6 +27,8 @@ public class Tester {
             case SUMMER:
                 System.out.println("I love summer");
                 break;
+            default:
+                break;
         }
     }
 }

@@ -13,7 +13,7 @@ public enum Size {
     L(40);
 
     Size(int euroSize) {
-        EuroSize = euroSize;
+        this.euroSize = euroSize;
     }
 
     public String getDescription() {
@@ -22,8 +22,8 @@ public enum Size {
 
     @Override
     public String toString() {
-        return name() + "(" + EuroSize + ") " + getDescription();
+        return name() + "(" + euroSize + ") " + getDescription();
     }
 
-    private final int EuroSize;
+    private final int euroSize;
 }

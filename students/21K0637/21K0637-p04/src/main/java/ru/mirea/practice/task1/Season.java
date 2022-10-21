@@ -23,7 +23,6 @@ public enum Season {
 
     @Override
     public String toString() {
-        return "DESCRIPTION:\n" + getDescription() +
-                "\nAverage temperature is " + temperature;
+        return "DESCRIPTION:\n" + getDescription() + "\nAverage temperature is " + temperature;
     }
 }

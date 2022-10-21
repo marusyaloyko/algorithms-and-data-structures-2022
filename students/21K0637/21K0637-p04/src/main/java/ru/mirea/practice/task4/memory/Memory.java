@@ -1,4 +1,4 @@
-package ru.mirea.practice.task4;
+package ru.mirea.practice.task4.memory;
 
 public class Memory {
     private final int volume;
@@ -11,11 +11,6 @@ public class Memory {
 
     @Override
     public String toString() {
-        return "Memory {" + "volume=" + volume + ", type=" + type + '}';
+        return "memory {" + "volume=" + volume + ", type=" + type + '}';
     }
-}
-
-enum Type {
-    SSD_M2, HDD, SSD,
-
 }

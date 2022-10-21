@@ -1,5 +1,7 @@
 package ru.mirea.practice.task4;
 
+import ru.mirea.practice.task4.memory.Memory;
+
 public class Computer {
     private Memory memory;
     private Processor processor;
