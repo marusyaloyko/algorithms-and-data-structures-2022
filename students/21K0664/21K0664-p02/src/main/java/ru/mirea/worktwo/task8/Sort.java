@@ -25,8 +25,9 @@ public class Sort {
                 j--;
             }
             // FIXME: Не понятна логика
-            if (deleteMe)
+            if (deleteMe) {
                 break;
+            }
         }
         return a;
     }
