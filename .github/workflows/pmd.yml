@@ -35,12 +35,11 @@ jobs:
         uses: pmd/pmd-github-action@967a81f8b657c87f7c3e96b62301cb1a48efef29
         with:
           rulesets: 'rulesets/java/quickstart.xml'
-#          sourcePath: 'src/main/java'
           analyzeModifiedFilesOnly: false
-      - name: Проверка на уязвимости
-        if: steps.pmd.outputs.violations != 0
-        run: exit 1
-      - name: Upload SARIF file
+      - name: Отчет о найденных уязвимостях
         uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: pmd-report.sarif
+      - name: Проверка на уязвимости
+        if: steps.pmd.outputs.violations != 0
+        run: exit 1
