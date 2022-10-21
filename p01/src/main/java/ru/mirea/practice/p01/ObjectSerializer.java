@@ -1,4 +1,4 @@
-package practice.p01;
+package ru.mirea.practice.p01;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

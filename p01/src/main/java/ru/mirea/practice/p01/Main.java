@@ -1,4 +1,4 @@
-package practice.p01;
+package ru.mirea.practice.p01;
 
 public final class Main {
     public static void main(String[] args) {

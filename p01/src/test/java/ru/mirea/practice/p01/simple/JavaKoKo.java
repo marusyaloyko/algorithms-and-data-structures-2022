@@ -1,4 +1,4 @@
-package ru.mirea.practice.simple;
+package ru.mirea.practice.p01.simple;
 
 import java.util.StringTokenizer;
 

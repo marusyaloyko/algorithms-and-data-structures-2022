@@ -1,8 +1,8 @@
-package ru.mirea.practice;
+package ru.mirea.practice.p01;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import practice.p01.ObjectSerializer;
+import ru.mirea.practice.p01.ObjectSerializer;
 
 import java.io.IOException;
 import java.io.Serializable;
