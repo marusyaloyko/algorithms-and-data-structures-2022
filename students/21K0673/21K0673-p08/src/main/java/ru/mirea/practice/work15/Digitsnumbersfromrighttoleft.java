@@ -21,7 +21,7 @@ public class Digitsnumbersfromrighttoleft {
 
     public static void main(String[] args) {
         Random rand = new Random();
-        int n = rand.nextInt(10000);
+        int n = rand.nextInt(1000);
         int i = 0;
         System.out.println(n);
         rec(i, n);
