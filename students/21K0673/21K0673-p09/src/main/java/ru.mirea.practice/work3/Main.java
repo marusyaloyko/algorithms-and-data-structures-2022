@@ -15,6 +15,7 @@ public class Main {
     Main(int mark) {
         this.mark = mark;
     }
+
     public static void main(String[] args) {
         List<Main> list1 = new ArrayList<Main>();
         list1.add(new Main(12));
