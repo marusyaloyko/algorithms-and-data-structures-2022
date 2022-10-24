@@ -4,18 +4,20 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Main implements Comparable<Main>{
+public class Main implements Comparable<Main> {
 
     int number;
-    public int getNumber(){
+
+    public int getNumber() {
         return this.number;
     }
-    Main(int number){
-        this.number=number;
+
+    Main(int number) {
+        this.number = number;
     }
 
     public static void main(String[] args) {
-        List<Main> list= new ArrayList<Main>();
+        List<Main> list = new ArrayList<Main>();
         list.add(new Main(8));
         list.add(new Main(1));
         list.add(new Main(4));
@@ -24,16 +26,17 @@ public class Main implements Comparable<Main>{
 
         //Collections.sort(list);
 
-        for(Main sortingStudentsByGPA:list){
+        for (Main sortingStudentsByGPA : list) {
             //System.out.println(list.getNumber());
         }
     }
+
     @Override
     public int compareTo(Main o) {
-        if(number==o.getNumber()){
+        if (number == o.getNumber()) {
             return 0;
         }
-        if(number<o.getNumber()){
+        if (number < o.getNumber()) {
             return 1;
         }
         return -1;
