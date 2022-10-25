@@ -2,7 +2,7 @@ package ru.mirea.workfourteen.task2;
 
 import java.util.regex.Pattern;
 
-public class Stroka {
+abstract class Stroka {
     public static void main(String[] args) {
         Pattern a = Pattern.compile("abcdefghijklmnopqrstuv18340");
         String stroka = "abcdefghijklmnopqrstuv18340";

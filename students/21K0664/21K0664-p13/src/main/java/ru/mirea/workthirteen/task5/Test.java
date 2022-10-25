@@ -1,6 +1,6 @@
 package ru.mirea.workthirteen.task5;
 
-public class Test {
+abstract class Test {
     public static void main(String[] args) {
 
         Number a = new Number("89175655655");

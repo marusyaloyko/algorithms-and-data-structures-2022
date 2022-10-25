@@ -1,6 +1,6 @@
 package ru.mirea.workthirteen.task4;
 
-public class Test {
+abstract class Test {
     public static void main(String[] args) {
 
         Shirt[] shirts = new Shirt[11];

@@ -1,6 +1,6 @@
 package ru.mirea.workeightteen.task1;
 
-public class Test {
+abstract class Test {
     /*
     try определяет блок кода, в котором может произойти исключение.
     Соотвественно в наш примере так и произошло - вызвалось исключение: 2/0

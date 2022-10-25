@@ -2,7 +2,7 @@ package ru.mirea.workfourteen.task3;
 
 import java.util.regex.Pattern;
 
-public class Money {
+abstract class Money {
     public static void main(String[] args) {
         Pattern dollar = Pattern.compile("USD");
         Pattern euro = Pattern.compile("EU");
