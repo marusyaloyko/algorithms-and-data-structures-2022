@@ -1,5 +1,5 @@
 package ru.mirea.practice.work4;
 
-public interface Comparable<M> {
-    public int compareTo(Main o);
+public interface Comparable {
+    void compareTo(Main[] source);
 }

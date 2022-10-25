@@ -1,10 +1,6 @@
 package ru.mirea.practice.work4;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
-public class Main implements Comparable<Main> {
+public class Main implements Comparable {
 
     int number;
 
@@ -12,33 +8,39 @@ public class Main implements Comparable<Main> {
         return this.number;
     }
 
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
     Main(int number) {
         this.number = number;
     }
 
     public static void main(String[] args) {
-        List<Main> list = new ArrayList<Main>();
-        list.add(new Main(8));
-        list.add(new Main(1));
-        list.add(new Main(4));
-        list.add(new Main(4));
-        list.add(new Main(1));
+        Main[] mains = new Main[]{
+                new Main(8),
+                new Main(4),
+                new Main(1),
+                new Main(3),
+                new Main(3)};
+        Main main = new Main(0);
+        main.compareTo(mains);
 
-        //Collections.sort(list);
-
-        for (Main sortingStudentsByGPA : list) {
-            //System.out.println(list.getNumber());
+        for (int i = 0; i < 5; i++) {
+            System.out.println(mains[i].getNumber());
         }
     }
 
     @Override
-    public int compareTo(Main o) {
-        if (number == o.getNumber()) {
-            return 0;
+    public void compareTo(Main[] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[j].getNumber() > array[i].getNumber()) {
+                    int buff = array[i].getNumber();
+                    array[i].setNumber(array[j].getNumber());
+                    array[j].setNumber(buff);
+                }
+            }
         }
-        if (number < o.getNumber()) {
-            return 1;
-        }
-        return -1;
     }
 }
