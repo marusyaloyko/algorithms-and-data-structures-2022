@@ -1,6 +1,6 @@
 package ru.mirea.workthirteen.task3;
 
-public class Test {
+abstract class Test {
 
     public static void main(String[] args) {
         Adress a = new Adress("Страна Регион Город Улица Дом Корпус Квартира");
