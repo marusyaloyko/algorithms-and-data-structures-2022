@@ -1,7 +1,4 @@
-import java.util.Scanner;
-import java.util.StringTokenizer;
-
-public class Main {
+abstract class Main {
 
     public static void main(String[] args) {
         System.out.println("Четырнадцатая практическая работа");

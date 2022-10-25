@@ -6,8 +6,6 @@ public class Number {
     private String secondthree;
     private String four;
 
-    Number() {
-    }
 
     Number(String stroke) {
         int size = stroke.length();

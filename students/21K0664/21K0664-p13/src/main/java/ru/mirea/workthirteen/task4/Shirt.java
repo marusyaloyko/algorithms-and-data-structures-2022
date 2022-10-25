@@ -6,9 +6,6 @@ public class Shirt {
     private String color;
     private String size;
 
-    Shirt() {
-    }
-
     Shirt(String stroke) {
         String[] split = stroke.split(",");
         this.number = split[0];
