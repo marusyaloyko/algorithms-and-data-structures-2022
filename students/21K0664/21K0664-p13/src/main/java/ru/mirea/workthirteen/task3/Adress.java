@@ -11,9 +11,6 @@ public class Adress {
     private String housing;
     private String flat;
 
-    Adress() {
-    }
-
     Adress(String stroke) {
         String[] split = stroke.split(" ");
         this.country = split[0];
