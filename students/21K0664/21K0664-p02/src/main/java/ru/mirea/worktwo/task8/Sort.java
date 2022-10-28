@@ -2,27 +2,14 @@ package ru.mirea.worktwo.task8;
 
 public class Sort {
 
-    public String[] sort(String[] a, int n) {
-        String buff;
-        for (int i = 0; ; ) {
-            for (int j = n - 1; ; ) {
-                buff = a[i];
-                a[i] = a[j];
-                a[j] = buff;
-                if (i == j) {
-                    break;
-                } else {
+    public void sort(String[] a, int n) {
+        String temp;
 
-                    if (n % 10 == 0 & i + 1 == j) {
-                        break;
-                    }
-                }
-                i++;
-                j--;
-            }
-            break;
+        for (int i = 0; i < n / 2; i++) {
+            temp = a[n - i - 1];
+            a[n - i - 1] = a[i];
+            a[i] = temp;
         }
-        return a;
     }
 
     public void print(String[] a, int n) {
