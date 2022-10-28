@@ -1,18 +1,21 @@
 package ru.mirea.practice.work1to3;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Random;
 import java.util.stream.Stream;
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
-public class SortingStudentsByGPA implements Comparator<SortingStudentsByGPA>{
+public class SortingStudentsbygpa implements Comparator<SortingStudentsbygpa> {
     public int[] idNumber;
 
     public void setArray(int[] marks) {
         System.arraycopy(marks, 0, this.idNumber, 0, marks.length);
     }
 
-    SortingStudentsByGPA(int[] arr) {
+    SortingStudentsbygpa(int[] arr) {
         this.idNumber = arr;
     }
 
@@ -33,7 +36,7 @@ public class SortingStudentsByGPA implements Comparator<SortingStudentsByGPA>{
             arr2[i] = rand.nextInt(10);
         }
 
-        SortingStudentsByGPA a = new SortingStudentsByGPA(arr2);
+        SortingStudentsbygpa a = new SortingStudentsbygpa(arr2);
         a.setArray(arr2);
         Arrays.sort(arr1, Collections.reverseOrder());
 
@@ -76,7 +79,7 @@ public class SortingStudentsByGPA implements Comparator<SortingStudentsByGPA>{
     }
 
     @Override
-    public int compare(SortingStudentsByGPA o1, SortingStudentsByGPA o2) {
+    public int compare(SortingStudentsbygpa o1, SortingStudentsbygpa o2) {
         if (o1 == o2) {
             return 0;
         }
@@ -89,6 +92,7 @@ public class SortingStudentsByGPA implements Comparator<SortingStudentsByGPA>{
         }
         return -1;
     }
+
     public static List<Main> mergeSort(List<Main> newList) {
         if (newList == null) {
             return null;
@@ -126,7 +130,7 @@ public class SortingStudentsByGPA implements Comparator<SortingStudentsByGPA>{
             k++;
         }
         for (int i = k; i < newList.size(); i++) {
-            int j=i-k;
+            int j = i - k;
             newList.set(i, right.get(j));
         }
         return newList;

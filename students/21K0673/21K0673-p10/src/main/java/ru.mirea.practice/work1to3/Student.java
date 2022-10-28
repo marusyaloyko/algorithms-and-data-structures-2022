@@ -57,7 +57,7 @@ class Student {
     }
 
     public String toString() {
-        return "{" + "Имя: " + name + ", Фамилия: " + surname + ", Специальность: " + speciality + ", Курс: " + course +
-                ", Группа: " + group + "}";
+        return "{" + "Имя: " + name + ", Фамилия: " + surname + ", Специальность: " + speciality + ", Курс: " + course
+                + ", Группа: " + group + "}";
     }
 }

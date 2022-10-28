@@ -7,13 +7,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        long startTime = System.currentTimeMillis();
         System.out.println("Николаенко");
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy MMMM dd HH:mm:ss");
         Calendar cal = Calendar.getInstance();
         cal.set(Calendar.YEAR, 2022);
         cal.set(Calendar.MONTH, Calendar.SEPTEMBER);
         cal.set(Calendar.DAY_OF_MONTH, 1);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy MMMM dd HH:mm:ss");
+
         System.out.println("Задание получено: " + sdf.format(cal.getTime()));
 
         Date now = new Date();
@@ -42,6 +42,7 @@ public class Main {
 
         System.out.println("Calendar: " + sdf.format(cal.getTime()));
 
+        long startTime = System.currentTimeMillis();
         long estimatedTime = System.currentTimeMillis() - startTime;
         System.out.println(estimatedTime);
     }
