@@ -2,7 +2,6 @@ package ru.mirea.worktwo.task8;
 
 public class Tester {
     public static void main(String[] args) {
-        Sort a = new Sort();
         String[] b = new String[3];
         b[0] = "qwerty";
         b[1] = "asdf";
@@ -12,6 +11,7 @@ public class Tester {
         }
         System.out.println("\n");
 
+        Sort a = new Sort();
         a.sort(b, 3);
         a.print(b, 3);
     }

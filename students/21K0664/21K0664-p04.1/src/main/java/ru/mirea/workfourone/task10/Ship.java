@@ -38,11 +38,7 @@ public class Ship extends Vehicle {
 
     @Override
     public String toString() {
-        return "Ship{" +
-                "time=" + time +
-                ", price=" + price +
-                ", speed=" + speed +
-                '}';
+        return "Ship{" + "time=" + time + ", price=" + price + ", speed=" + speed + '}';
     }
 }
 
