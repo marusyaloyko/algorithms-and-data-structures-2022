@@ -28,5 +28,6 @@ public class Shirt {
         shirts[8] = " S009, Green T - Shirt, Green, S";
         shirts[9] = " S010, Orange T - Shirt, Orange, S";
         shirts[10] = "S011,Maroon Polo Shirt,Maroon,S";
+        Shirt shirt = new Shirt(shirts);
     }
 }
