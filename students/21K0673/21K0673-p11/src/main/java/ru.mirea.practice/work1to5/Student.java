@@ -1,19 +1,30 @@
 package ru.mirea.practice.work1to5;
 
+import java.util.Date;
+
 class Student {
     private String name;
     private String surname;
-
+    private Date birthdate;
     private String speciality;
     private int course;
     private String group;
 
-    Student(String name, String surname, String speciality, int course, String group) {
+    Student(String name, String surname, String speciality, int course, String group, Date birthdate) {
         this.name = name;
         this.surname = surname;
         this.speciality = speciality;
         this.course = course;
         this.group = group;
+        this.birthdate = birthdate;
+    }
+
+    public void setBirthdate(Date birthdate) {
+        this.birthdate = birthdate;
+    }
+
+    public Date getBirthdate() {
+        return birthdate;
     }
 
     public String getName() {
@@ -58,6 +69,6 @@ class Student {
 
     public String toString() {
         return "{" + "Имя: " + name + ", Фамилия: " + surname + ", Специальность: " + speciality + ", Курс: " + course +
-                ", Группа: " + group + "}";
+                ", Группа: " + group + ", Дата рождения: " + birthdate + "}";
     }
 }
