@@ -17,12 +17,7 @@ public class Main implements Comparable {
     }
 
     public static void main(String[] args) {
-        Main[] mains = new Main[]{
-                new Main(8),
-                new Main(4),
-                new Main(1),
-                new Main(3),
-                new Main(3)};
+        Main[] mains = new Main[]{new Main(8), new Main(4), new Main(1), new Main(3), new Main(3)};
         Main main = new Main(0);
         main.compareTo(mains);
 

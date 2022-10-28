@@ -52,7 +52,7 @@ public class Main {
             k++;
         }
         for (int i = k; i < newList.size(); i++) {
-            int j=i-k;
+            int j = i - k;
             newList.set(i, right.get(j));
         }
         return newList;

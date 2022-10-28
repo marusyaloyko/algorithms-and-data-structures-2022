@@ -8,7 +8,7 @@ class Student {
         idNumber = new int[]{10, 234, 32, 12, 124, 23};
     }
 
-    public void Sort() {
+    public void sort() {
         for (int left = 0; left < idNumber.length; left++) {
             int value = idNumber[left];
             int i = left - 1;
@@ -23,9 +23,9 @@ class Student {
         }
     }
 
-    public void Print() {
-        for (int aIdNumber : idNumber) {
-            System.out.println(aIdNumber);
+    public void print() {
+        for (int aidnumber : idNumber) {
+            System.out.println(aidnumber);
         }
     }
 }
