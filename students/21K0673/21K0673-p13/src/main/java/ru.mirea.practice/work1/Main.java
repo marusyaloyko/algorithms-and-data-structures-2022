@@ -1,0 +1,45 @@
+package ru.mirea.practice.work1;
+
+public class Main {
+    private String string;
+
+    Main(String string) {
+        this.string = string;
+    }
+
+    public void method() {
+        System.out.println(string.charAt(string.length() - 1));
+
+        if (string.endsWith("!!!")) {
+            System.out.println(1);
+        } else {
+            System.out.println(0);
+        }
+
+        if (string.startsWith("I like")) {
+            System.out.println(1);
+        } else {
+            System.out.println(0);
+        }
+
+        if (string.contains("Java")) {
+            System.out.println(1);
+        } else {
+            System.out.println(0);
+        }
+        System.out.println(string.indexOf("Java"));
+
+        System.out.println(string.replace('a', 'o'));
+
+        System.out.println(string.toUpperCase());
+
+        System.out.println(string.toLowerCase());
+
+        System.out.println(string.substring(1));
+    }
+
+    public static void main(String[] args) {
+        Main main = new Main("I like Java!!!");
+        main.method();
+    }
+}
