@@ -13,32 +13,26 @@ public class Tester {
         this.arr[z] = k;
     }
 
-    public Circle getBig() {
-        for (int i = 0; i < this.a - 1; ) {
-            for (int j = 1; j < this.a; j++) {
-                if (this.arr[i].getR() < this.arr[j].getR()) {
+    public void getBig() {
+        for (int i = 0; i < a; i++) {
+            for (int j = i + 1; j < a; ) {
+                if (arr[i].getR() < arr[j].getR()) {
                     i = j;
+                } else {
+                    j++;
                 }
             }
-            // DUPLICATE: 21K0664
-            // FIXME: Что за логика?
-            // return this.arr[i];
+            System.out.println(arr[i]);
         }
-        return this.arr[0];
     }
 
-    public Circle getSmall() {
-        for (int i = 0; i < this.a - 1; ) {
-            for (int j = 1; j < this.a; j++) {
-                if (this.arr[i].getR() > this.arr[j].getR()) {
-                    i = j;
-                }
+    public void getSmall() {
+        for (int i = 0; i < a; i++) {
+            if(arr[i].getR()>arr[i+1].getR()){
+                    i++;
             }
-            // DUPLICATE: 21K0664
-            // FIXME: Что за логика?
-            // return this.arr[i];
+            System.out.println(arr[i]);
         }
-        return this.arr[0];
     }
 
     public void sort() {
@@ -72,8 +66,8 @@ public class Tester {
         ar.setCircle(b, 1);
         ar.setCircle(c, 2);
 
-        System.out.println(ar.getBig());
-        System.out.println(ar.getSmall());
+        ar.getBig();
+        ar.getSmall();
 
         ar.sort();
 
