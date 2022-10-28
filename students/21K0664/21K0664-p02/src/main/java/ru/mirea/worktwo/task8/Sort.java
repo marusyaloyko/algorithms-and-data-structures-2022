@@ -1,11 +1,10 @@
 package ru.mirea.worktwo.task8;
 
 public class Sort {
-    Sort() {}
 
-    public String[] sort(String[]a,int n) {
+    public String[] sort(String[] a, int n) {
         String buff;
-        for (int i = 0;;) {
+        for (int i = 0; ; ) {
             for (int j = n - 1; ; ) {
                 buff = a[i];
                 a[i] = a[j];
@@ -26,7 +25,7 @@ public class Sort {
         return a;
     }
 
-    public void print(String[]a,int n) {
+    public void print(String[] a, int n) {
         for (int i = 0; i < n; i++) {
             System.out.println(a[i]);
         }

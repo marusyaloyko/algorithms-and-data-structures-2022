@@ -17,8 +17,8 @@ class Password {
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
     }
+
     public static void main(String[] args) {
-        Password a = new Password();
         System.out.println(Password.validatePassword("F032_Password"));
         System.out.println(Password.validatePassword("TrySpy_1"));
         System.out.println(Password.validatePassword("smart_pass"));

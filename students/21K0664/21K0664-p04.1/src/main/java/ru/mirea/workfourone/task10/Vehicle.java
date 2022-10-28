@@ -1,6 +1,7 @@
 package ru.mirea.workfourone.task10;
 
 public abstract class Vehicle {
-    protected double time;
-    protected double price;
+    protected int time;
+    protected int price;
+    protected int speed;
 }

@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Exception2 {
     public void exceptionDemo() {
-        Scanner myScanner = new Scanner( System.in);
-        System.out.print( "Enter an integer ");
+        Scanner myScanner = new Scanner(System.in);
+        System.out.print("Enter an integer ");
         String intString = myScanner.next();
         myScanner.close();
         int i = Integer.parseInt(intString);
-        System.out.println( 2/i );
+        System.out.println(2 / i);
     }
 }

@@ -73,13 +73,9 @@ public class Matrix {
 
     public String toString() {
         System.out.println("Матрица:");
-        for (int i = 0; i < this.lines; i++) {
-            for (int j = 0; j < this.columns; j++) {
-                return Arrays.deepToString(this.arr);
-            }
+        for (double[] d : arr) {
+            System.out.println(Arrays.toString(d));
         }
         return "";
     }
-
-
 }

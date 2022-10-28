@@ -13,28 +13,23 @@ public class Tester {
         this.arr[z] = k;
     }
 
-    public Circle getmostBig() {
-        for (int i = 0; i < this.a - 1;) {
-            for (int j = 1; j < this.a; j++) {
-                if (this.arr[i].getR() < this.arr[j].getR()) {
-                    i = j;
-                }
+    public double getbig() {
+        double max = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].getR() > max) {
+                max = arr[i].getR();
             }
-            return this.arr[i];
         }
-        return this.arr[0];
+        return max;
     }
-
-    public Circle getmostSmall() {
-        for (int i = 0; i < this.a - 1;) {
-            for (int j = 1; j < this.a; j++) {
-                if (this.arr[i].getR() > this.arr[j].getR()) {
-                    i = j;
-                }
-            }
-            return this.arr[i];
+    public double getsmall() {
+        double min = arr[0].getR();
+        for (int i = 0; i < arr.length; i++)
+        {
+            if (arr[i].getR() < min)
+                min = arr[i].getR();
         }
-        return this.arr[0];
+        return min;
     }
 
     public void sort() {
@@ -63,16 +58,20 @@ public class Tester {
         Circle b = new Circle(point,Math.random());
         Circle c = new Circle(point,Math.random());
 
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+
         Tester arr = new Tester(3);
         arr.setCircle(a,0);
         arr.setCircle(b,1);
         arr.setCircle(c,2);
 
-        System.out.println(arr.getmostBig());
-        System.out.println(arr.getmostSmall());
+        System.out.println(arr.getbig());
+        System.out.println(arr.getsmall());
 
         arr.sort();
 
-        System.out.println(arr.toString());
+        System.out.println(arr);
     }
 }
