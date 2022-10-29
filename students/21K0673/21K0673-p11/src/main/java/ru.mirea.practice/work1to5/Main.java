@@ -5,7 +5,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
-public class Main {
+abstract class Main {
     public static void main(String[] args) {
         System.out.println("Николаенко");
         Calendar cal = Calendar.getInstance();

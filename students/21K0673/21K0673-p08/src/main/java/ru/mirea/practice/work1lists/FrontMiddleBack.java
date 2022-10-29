@@ -3,8 +3,8 @@ package ru.mirea.practice.work1lists;
 import java.util.LinkedList;
 
 public class FrontMiddleBack {
-    LinkedList a = new LinkedList();
-    LinkedList b = new LinkedList();
+    LinkedList<Integer> a = new LinkedList<>();
+    LinkedList<Integer> b = new LinkedList<>();
 
     FrontMiddleBack() {
     }

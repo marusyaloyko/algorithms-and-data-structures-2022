@@ -3,7 +3,6 @@ package ru.mirea.practice.work1to3;
 class Student {
     private String name;
     private String surname;
-
     private String speciality;
     private int course;
     private String group;

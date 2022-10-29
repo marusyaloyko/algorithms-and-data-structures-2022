@@ -16,9 +16,6 @@ public class Shop implements Enter {
         }
     }
 
-    Shop() {
-    }
-
     public double getAmount() {
         return this.amount;
     }
@@ -50,6 +47,7 @@ public class Shop implements Enter {
         System.out.println("Компьютер " + a + " есть на складе");
     }
 
+    @Override
     public String toString() {
         return "{" + "В магазине: " + amount + " компьютеров}";
     }

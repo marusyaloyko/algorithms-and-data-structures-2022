@@ -8,6 +8,10 @@ public class MathFunc implements MathCalculable {
     private double y;
     private String num;
 
+    public String getNum(){
+        return num;
+    }
+
     MathFunc(int x, int y) {
         this.x = x;
         this.y = y;
@@ -23,11 +27,4 @@ public class MathFunc implements MathCalculable {
     public double module() {
         return pow(x * x + y * y, 0.5);
     }
-
-    public static void main(String[] args) {
-        MathCalculable a = new MathFunc(3, 4);
-        System.out.println(a.module());
-        System.out.println(a.exponentiation(3));
-    }
-
 }
