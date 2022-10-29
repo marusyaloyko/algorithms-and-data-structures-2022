@@ -17,7 +17,7 @@ public class Main {
 
     public static List<Main> mergeSort(List<Main> newList) {
         if (newList == null) {
-            return null;
+            return newList;
         }
         if (newList.size() < 2) {
             return newList;

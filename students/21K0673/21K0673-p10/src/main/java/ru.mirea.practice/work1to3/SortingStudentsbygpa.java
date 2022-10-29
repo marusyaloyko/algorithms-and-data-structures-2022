@@ -95,7 +95,7 @@ public class SortingStudentsbygpa implements Comparator<SortingStudentsbygpa> {
 
     public static List<Main> mergeSort(List<Main> newList) {
         if (newList == null) {
-            return null;
+            return newList;
         }
         if (newList.size() < 2) {
             return newList;
@@ -138,7 +138,7 @@ public class SortingStudentsbygpa implements Comparator<SortingStudentsbygpa> {
 
     public static int[] mergeSort(int[] arr) {
         if (arr == null) {
-            return null;
+            return arr;
         }
         if (arr.length < 2) {
             return arr;
