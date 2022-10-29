@@ -28,13 +28,5 @@ class ProcessStrings implements Strings {
             builder.append(string.charAt(i));
         }
         return builder.toString();
-
-    }
-
-    public static void main(String[] args) {
-        ProcessStrings processStrings = new ProcessStrings("apple");
-        System.out.println(processStrings.symbols());
-        System.out.println(processStrings.refactor());
-        System.out.println(processStrings.invert());
     }
 }

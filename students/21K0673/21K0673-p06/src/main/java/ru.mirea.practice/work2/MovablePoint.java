@@ -13,6 +13,7 @@ public class MovablePoint implements Movable {
         this.yspeed = yspeed;
     }
 
+    @Override
     public String toString() {
         return "MovablePoint: {x = " + x + ", y = " + y + ", xSpeed = " + xspeed + ", ySpeed = " + yspeed + "}";
     }

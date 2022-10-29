@@ -1,6 +1,6 @@
 package ru.mirea.practice.work5;
 
-public class Main {
+abstract class Main {
     public static void main(String[] args) {
 
     }

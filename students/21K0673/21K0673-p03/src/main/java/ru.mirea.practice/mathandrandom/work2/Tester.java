@@ -14,25 +14,31 @@ public class Tester {
     }
 
     public void getBig() {
-        for (int i = 0; i < a; i++) {
-            for (int j = i + 1; j < a; ) {
-                if (arr[i].getR() < arr[j].getR()) {
-                    i = j;
-                } else {
-                    j++;
+        Circle buff = arr[0];
+        for (int i = 0; i < a - 1; i++) {
+            for (int j = i + 1; j < a; j++) {
+                if (arr[i].getR() >= arr[j].getR() & buff.getR() < arr[i].getR()) {
+                    buff = arr[i];
+                } else if (buff.getR() < arr[j].getR()) {
+                    buff = arr[j];
                 }
             }
-            System.out.println(arr[i]);
         }
+        System.out.println(buff);
     }
 
     public void getSmall() {
-        for (int i = 0; i < a; i++) {
-            if(arr[i].getR()>arr[i+1].getR()){
-                    i++;
+        Circle buff = arr[0];
+        for (int i = 0; i < a - 1; i++) {
+            for (int j = i + 1; j < a; j++) {
+                if (arr[i].getR() <= arr[j].getR() & buff.getR() > arr[i].getR()) {
+                    buff = arr[i];
+                } else if (buff.getR() > arr[j].getR()) {
+                    buff = arr[j];
+                }
             }
-            System.out.println(arr[i]);
         }
+        System.out.println(buff);
     }
 
     public void sort() {
@@ -47,30 +53,12 @@ public class Tester {
         }
     }
 
+    @Override
     public String toString() {
         System.out.println("\n");
         for (int i = 0; i < this.a; i++) {
             System.out.println("{" + this.arr[i].toString() + "}");
         }
         return " ";
-    }
-
-    public static void main(String[] args) {
-        Point p = new Point(35, 24);
-        Circle a = new Circle(p, Math.random());
-        Circle b = new Circle(p, Math.random());
-        Circle c = new Circle(p, Math.random());
-
-        Tester ar = new Tester(3);
-        ar.setCircle(a, 0);
-        ar.setCircle(b, 1);
-        ar.setCircle(c, 2);
-
-        ar.getBig();
-        ar.getSmall();
-
-        ar.sort();
-
-        System.out.println(ar.toString());
     }
 }

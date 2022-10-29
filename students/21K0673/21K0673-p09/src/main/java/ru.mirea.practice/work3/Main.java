@@ -4,18 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class Main {
-    int mark;
-
-    public int getMark() {
-        return this.mark;
-    }
-
-    Main(int mark) {
-        this.mark = mark;
-    }
-
-    public static List<Main> mergeSort(List<Main> newList) {
+abstract class Main {
+    public static List<Work> mergeSort(List<Work> newList) {
         if (newList == null) {
             return newList;
         }
@@ -23,8 +13,8 @@ public class Main {
             return newList;
         }
 
-        List<Main> left = new ArrayList<>(newList.size() / 2);
-        List<Main> right = new ArrayList<>(newList.size() - newList.size() / 2);
+        List<Work> left = new ArrayList<>(newList.size() / 2);
+        List<Work> right = new ArrayList<>(newList.size() - newList.size() / 2);
 
         for (int i = 0; i < newList.size() / 2; i++) {
             left.add(i, newList.get(i));
@@ -40,7 +30,7 @@ public class Main {
         for (int i = 0; i < left.size(); i++) {
             for (int j = 0; j < right.size(); j++) {
                 if (left.get(i).getMark() > right.get(j).getMark()) {
-                    Main buff = new Main(left.get(i).getMark());
+                    Work buff = new Work(left.get(i).getMark());
                     left.set(i, right.get(j));
                     right.set(j, buff);
                 }
@@ -59,17 +49,17 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        List<Main> list1 = new ArrayList<>(3);
-        list1.add(new Main(27));
-        list1.add(new Main(132));
-        list1.add(new Main(1));
+        List<Work> list1 = new ArrayList<>(3);
+        list1.add(new Work(27));
+        list1.add(new Work(132));
+        list1.add(new Work(1));
 
-        List<Main> list2 = new ArrayList<>(3);
-        list2.add(new Main(100));
-        list2.add(new Main(23));
-        list2.add(new Main(11));
+        List<Work> list2 = new ArrayList<>(3);
+        list2.add(new Work(100));
+        list2.add(new Work(23));
+        list2.add(new Work(11));
 
-        List<Main> newList = new ArrayList<>(Stream.concat(list1.stream(), list2.stream()).toList());
+        List<Work> newList = new ArrayList<>(Stream.concat(list1.stream(), list2.stream()).toList());
 
         for (int i = 0; i < newList.size(); i++) {
             System.out.println(mergeSort(newList).get(i).getMark());

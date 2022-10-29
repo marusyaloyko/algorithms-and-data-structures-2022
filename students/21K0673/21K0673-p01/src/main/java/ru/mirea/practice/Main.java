@@ -28,12 +28,10 @@ abstract class Main {
 
         int[] a = new int[6];
         System.out.println("Введите число");
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         try {
-
-
             for (int i = 0; i <= 5; i++) {
-                a[i] = sc.nextInt();
+                a[i] = scanner.nextInt();
             }
 
             int sum = 0;
@@ -84,9 +82,9 @@ abstract class Main {
             System.out.println(mod(3));
         } catch (InputMismatchException e) {
             System.out.println("Error");
-            sc.nextInt();
+            scanner.nextInt();
         } finally {
-            sc.close();
+            scanner.close();
         }
     }
 }

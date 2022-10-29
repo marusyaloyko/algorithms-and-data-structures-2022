@@ -6,8 +6,19 @@ public class MovableCircle extends MovablePoint {
 
     MovableCircle(int x, int y, int xspeed, int yspeed, int radius, MovablePoint center) {
         super(x, y, xspeed, yspeed);
+        this.radius = radius;
+        this.center = center;
     }
 
+    public int getRadius() {
+        return radius;
+    }
+
+    public MovablePoint getCenter() {
+        return center;
+    }
+
+    @Override
     public String toString() {
         return "MovableCircle: {center: " + center + ", radius = " + radius + "}";
     }

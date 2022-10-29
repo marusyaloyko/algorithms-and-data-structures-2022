@@ -4,7 +4,7 @@ import java.util.Random;
 
 import static java.lang.Math.pow;
 
-public class Digitsnumbersfromrighttoleft {
+abstract class Digitsnumbersfromrighttoleft {
     private static void rec(int i, int n) {
         int buff = n;
         buff /= pow(10, i);

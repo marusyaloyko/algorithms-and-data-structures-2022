@@ -1,6 +1,6 @@
 package ru.mirea.practice.work13;
 
-public class Main {
+abstract class Main {
     public static void main(String[] strings) {
         OvservableString undoablestringbuilder = new OvservableString();
         undoablestringbuilder.setOnChangeListener(new MyListener());

@@ -4,7 +4,7 @@ import java.util.Random;
 
 import static java.lang.Math.pow;
 
-public class Thesumofthedigitsofthenumber {
+abstract class Thesumofthedigitsofthenumber {
     private static void sum(int i, int n, int sum) {
         int buff = n;
         buff /= pow(10, i);
