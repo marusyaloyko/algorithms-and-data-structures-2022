@@ -8,7 +8,7 @@ public class MathFunc implements MathCalculable {
     private double y;
     private String num;
 
-    public String getNum(){
+    public String getNum() {
         return num;
     }
 

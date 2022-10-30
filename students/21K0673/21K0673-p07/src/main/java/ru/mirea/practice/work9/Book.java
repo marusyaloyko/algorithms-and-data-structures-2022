@@ -2,8 +2,8 @@ package ru.mirea.practice.work9;
 
 public class Book implements Printable {
     public static void printBooks(Printable[] printable) {
-        for (int i = 0; i < printable.length; i++) {
-            System.out.println(printable[i] instanceof Book);
+        for (Printable value : printable) {
+            System.out.println(value instanceof Book);
         }
     }
 

@@ -1,6 +1,10 @@
 package ru.mirea.practice.work1to3;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
 import java.util.stream.Stream;
 
 abstract class Main {
@@ -63,7 +67,6 @@ abstract class Main {
         }
 
         for (int i = arr.length / 2; i < arr.length; i++) {
-            int j = i - arr.length / 2;
             System.arraycopy(arr, arr.length / 2, right, 0, arr.length - arr.length / 2);
         }
         mergeSort(left);

@@ -13,7 +13,7 @@ public class Address {
 
     Address(String string, boolean a) {
         if (a) {
-            String buff = ((string + " ").split(" ")[0]);
+            String buff = (string + " ").split(" ")[0];
             this.country = buff.substring(0, buff.length() - 1);
             buff = (string + " ").split(" ")[1];
             this.region = buff.substring(0, buff.length() - 1);
@@ -46,6 +46,7 @@ public class Address {
         }
     }
 
+    @Override
     public String toString() {
         return country + " " + region + " " + city + " " + street + " " + house + " " + building + " " + flat;
     }

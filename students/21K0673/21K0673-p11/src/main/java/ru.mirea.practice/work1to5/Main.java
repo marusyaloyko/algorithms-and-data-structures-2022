@@ -3,6 +3,7 @@ package ru.mirea.practice.work1to5;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 abstract class Main {
@@ -27,23 +28,30 @@ abstract class Main {
             System.out.println("Введённая дата меньше");
         }
 
-        Scanner in = new Scanner(System.in);
-        System.out.print("Input year: ");
-        int year = in.nextInt();
-        cal.set(Calendar.YEAR, year);
+        Scanner scanner = new Scanner(System.in);
+        try {
+            System.out.print("Input year: ");
+            int year = scanner.nextInt();
+            cal.set(Calendar.YEAR, year);
 
-        System.out.print("Input month: ");
-        int month = in.nextInt();
-        cal.set(Calendar.MONTH, month);
+            System.out.print("Input month: ");
+            int month = scanner.nextInt();
+            cal.set(Calendar.MONTH, month);
 
-        System.out.print("Input day: ");
-        int day = in.nextInt();
-        cal.set(Calendar.DAY_OF_MONTH, day);
+            System.out.print("Input day: ");
+            int day = scanner.nextInt();
+            cal.set(Calendar.DAY_OF_MONTH, day);
 
-        System.out.println("Calendar: " + sdf.format(cal.getTime()));
+            System.out.println("Calendar: " + sdf.format(cal.getTime()));
 
-        long startTime = System.currentTimeMillis();
-        long estimatedTime = System.currentTimeMillis() - startTime;
-        System.out.println(estimatedTime);
+            long startTime = System.currentTimeMillis();
+            long estimatedTime = System.currentTimeMillis() - startTime;
+            System.out.println(estimatedTime);
+        } catch (InputMismatchException e) {
+            System.out.println("Error");
+            scanner.nextInt();
+        } finally {
+            scanner.close();
+        }
     }
 }
