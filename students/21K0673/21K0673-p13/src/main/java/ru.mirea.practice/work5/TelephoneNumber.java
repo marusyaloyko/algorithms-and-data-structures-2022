@@ -7,6 +7,7 @@ public class TelephoneNumber {
         this.number = string;
     }
 
+    @Override
     public String toString() {
         if (number.startsWith("8")) {
             return "+7-" + number.substring(1, 4) + "-" + number.substring(4, 7) + "-" + number.substring(7, 11);

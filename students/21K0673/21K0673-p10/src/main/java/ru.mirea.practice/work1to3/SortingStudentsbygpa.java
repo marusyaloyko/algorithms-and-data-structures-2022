@@ -1,8 +1,6 @@
 package ru.mirea.practice.work1to3;
 
 import java.util.Comparator;
-import java.util.List;
-import java.util.ArrayList;
 
 public class SortingStudentsbygpa implements Comparator<SortingStudentsbygpa> {
     public int[] idNumber;
@@ -25,7 +23,7 @@ public class SortingStudentsbygpa implements Comparator<SortingStudentsbygpa> {
 
     @Override
     public int compare(SortingStudentsbygpa o1, SortingStudentsbygpa o2) {
-        if (o1 == o2) {
+        if (o1.equals(o2)) {
             return 0;
         }
         for (int i = 0; i < idNumber.length - 1; i++) {

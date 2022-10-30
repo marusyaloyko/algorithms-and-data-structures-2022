@@ -1,5 +1,7 @@
 package ru.mirea.practice.work1;
 
+import java.util.Locale;
+
 public class Work {
     private String string;
 
@@ -31,9 +33,9 @@ public class Work {
 
         System.out.println(string.replace('a', 'o'));
 
-        System.out.println(string.toUpperCase());
+        System.out.println(string.toUpperCase(Locale.ENGLISH));
 
-        System.out.println(string.toLowerCase());
+        System.out.println(string.toLowerCase(Locale.ENGLISH));
 
         System.out.println(string.substring(1));
     }

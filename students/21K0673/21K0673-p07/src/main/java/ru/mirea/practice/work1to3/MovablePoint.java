@@ -18,18 +18,22 @@ public class MovablePoint implements Movable {
         return "MovablePoint: {x = " + x + ", y = " + y + ", xSpeed = " + xspeed + ", ySpeed = " + yspeed + "}";
     }
 
+    @Override
     public void moveUp() {
         this.y++;
     }
 
+    @Override
     public void moveDown() {
         this.y--;
     }
 
+    @Override
     public void moveLeft() {
         this.x--;
     }
 
+    @Override
     public void moveRight() {
         this.x++;
     }

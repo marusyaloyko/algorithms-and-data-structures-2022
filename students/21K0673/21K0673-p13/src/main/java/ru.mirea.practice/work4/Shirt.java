@@ -7,10 +7,11 @@ public class Shirt {
         this.strings = strings;
     }
 
+    @Override
     public String toString() {
         String buff = "";
-        for (int i = 0; i < strings.length; i++) {
-            buff += strings[i] + "\n";
+        for (String string : strings) {
+            buff += string + "\n";
         }
         return buff;
     }

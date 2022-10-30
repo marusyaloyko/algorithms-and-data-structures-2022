@@ -67,6 +67,7 @@ class Student {
         this.surname = surname;
     }
 
+    @Override
     public String toString() {
         return "{" + "Имя: " + name + ", Фамилия: " + surname + ", Специальность: " + speciality + ", Курс: " + course
                 + ", Группа: " + group + ", Дата рождения: " + birthdate + "}";
