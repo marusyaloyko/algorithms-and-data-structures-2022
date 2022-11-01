@@ -46,13 +46,13 @@ public class Group {
                     return true;
                 }
                 currentNode = currentNode.nextNode;
-            } while (currentNode != head);
+            } while (!currentNode.equals(head));
             return false;
         }
     }
 
     public boolean isEmpty() {
-        return (head == null);
+        return head == null;
     }
 
     public void traverseList() {
@@ -62,7 +62,7 @@ public class Group {
             do {
                 currentNode = currentNode.nextNode;
                 System.out.println(currentNode);
-            } while (currentNode != head);
+            } while (!currentNode.equals(head));
         }
     }
 
@@ -74,21 +74,21 @@ public class Group {
         do {
             Node nextNode = currentNode.nextNode;
             if (nextNode.data == student) {
-                if (tail == head) {
+                if (tail.equals(head)) {
                     head = null;
                     tail = null;
                 } else {
                     currentNode.nextNode = nextNode.nextNode;
-                    if (head == nextNode) {
+                    if (head.equals(nextNode)) {
                         head = head.nextNode;
                     }
-                    if (tail == nextNode) {
+                    if (tail.equals(nextNode)) {
                         tail = currentNode;
                     }
                 }
                 break;
             }
             currentNode = nextNode;
-        } while (currentNode != head);
+        } while (!currentNode.equals(head));
     }
 }
