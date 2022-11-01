@@ -2,16 +2,13 @@ package ru.mirea.workeleven.task3;
 
 import java.text.SimpleDateFormat;
 
-public class Student  {
+public class Student {
     private String name;
     public int idnumber;
     public int gpa;
 
     public SimpleDateFormat s;
 
-
-
-    Student() {}
 
     public int getIdnumber() {
         return idnumber;

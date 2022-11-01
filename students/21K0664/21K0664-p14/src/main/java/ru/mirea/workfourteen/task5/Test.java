@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class Test {
+abstract class Test {
 
     private static final Pattern DATE_PATTERN = Pattern.compile(
 
@@ -27,7 +27,7 @@ public class Test {
             int day = Integer.parseInt(m.group(1));
             int month = Integer.parseInt(m.group(2));
             int year = Integer.parseInt(m.group(3));
-            if (month == 2 && day > 28) {
+            if (month == 2 && day > 28 && year > 9999) {
                 System.out.println("Error");
             }
         }

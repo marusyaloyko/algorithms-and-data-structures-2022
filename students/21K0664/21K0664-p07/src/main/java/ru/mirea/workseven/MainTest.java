@@ -1,7 +1,6 @@
-import java.util.Arrays;
-import java.util.Scanner;
+package ru.mirea.workseven;
 
-public class Main {
+abstract class MainTest {
     public static void main(String[] args) {
         System.out.println("Седьмая практическая работа\n");
     }

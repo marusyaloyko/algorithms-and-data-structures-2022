@@ -2,45 +2,7 @@ package ru.mirea.worknine.task3;
 
 import java.util.ArrayList;
 
-public class Contain {
-
-    private int n;
-
-    private ArrayList<Student> a;
-
-    public int getN() {
-        return n;
-    }
-
-    public void setN(int n) {
-        this.n = n;
-    }
-
-    public ArrayList<Student> getA() {
-        return a;
-    }
-
-    public void setA(ArrayList<Student> a) {
-        this.a = a;
-    }
-
-    @Override
-    public String toString() {
-        for (Student student : a) {
-            System.out.print(student);
-        }
-        return " ";
-    }
-
-    Contain(int n) {
-        this.n = n;
-        this.a = new ArrayList<Student>(n);
-    }
-
-    public void set(Student k, int n) {
-        this.a.set(n, k);
-    }
-
+abstract class Test {
     public static void main(String[] args) {
 
         Student a = new Student("Ivan", 2155, 60);

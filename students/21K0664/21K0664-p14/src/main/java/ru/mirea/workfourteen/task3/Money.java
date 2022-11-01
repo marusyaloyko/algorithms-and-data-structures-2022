@@ -10,5 +10,6 @@ abstract class Money {
 
         System.out.println(dollar.matcher("25.98 USD").find());
         System.out.println(euro.matcher("44 ERR").find());
+        System.out.println(ruble);
     }
 }

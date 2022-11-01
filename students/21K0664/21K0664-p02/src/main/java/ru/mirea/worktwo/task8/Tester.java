@@ -1,6 +1,6 @@
 package ru.mirea.worktwo.task8;
 
-public class Tester {
+abstract class Tester {
     public static void main(String[] args) {
         String[] b = new String[3];
         b[0] = "qwerty";

@@ -1,6 +1,6 @@
-import java.util.Scanner;
+package ru.mirea.workthirteen;
 
-public class Main {
+abstract class MainTest {
     public static void main(String[] args) {
         System.out.println("Тринадцатая практическая работа");
 

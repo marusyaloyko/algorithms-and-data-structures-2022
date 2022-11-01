@@ -6,7 +6,6 @@ public class Number {
     private String secondthree;
     private String four;
 
-
     Number(String stroke) {
         int size = stroke.length();
         if (stroke.charAt(0) == '+') {
