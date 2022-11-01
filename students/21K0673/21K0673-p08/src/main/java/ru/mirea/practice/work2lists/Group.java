@@ -24,7 +24,7 @@ public class Group {
     public Node last = null;
 
     public void addFirst(Student student) {
-        Node newnode=new Node(student);
+        Node newnode = new Node(student);
         if (isEmpty()) {
             newnode.next = null;
             newnode.prev = null;
@@ -40,7 +40,7 @@ public class Group {
     }
 
     public boolean isEmpty() {
-        return (first == null);
+        return first == null;
     }
 
     public void displayList() {
