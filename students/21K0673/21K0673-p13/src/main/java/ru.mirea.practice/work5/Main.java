@@ -6,7 +6,7 @@ abstract class Main {
         String string = "89123456789";
         TelephoneNumber telephonenumber = new TelephoneNumber(strings);
         TelephoneNumber number = new TelephoneNumber(string);
-        System.out.println(telephonenumber.toString());
-        System.out.println(number.toString());
+        System.out.println(telephonenumber);
+        System.out.println(number);
     }
 }

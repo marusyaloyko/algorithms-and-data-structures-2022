@@ -15,6 +15,6 @@ abstract class Main {
         shirts[9] = "S010, Orange T - Shirt, Orange, S";
         shirts[10] = "S011,Maroon Polo Shirt,Maroon,S";
         Shirt shirt = new Shirt(shirts);
-        System.out.println(shirt.toString());
+        System.out.println(shirt);
     }
 }
