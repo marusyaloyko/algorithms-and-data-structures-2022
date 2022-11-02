@@ -12,7 +12,7 @@ abstract class Main {
         try {
             String read = scanner.nextLine();
             // String fileName = "C:\\Users\\ProPc\\IdeaProjects\\algorithm-forkedd\\students\\21K0673\\21K0673-p13\\
-            // src\\main\\java\\ru.mirea.practice\\work6\\txt.txt";
+            // src\\main\\java\\ru.mirea.practice\\ru.mirea.practice.work6\\txt.txt";
             String string = "";
             try (FileReader reader = new FileReader(read)) {
                 char[] chars = new char[256];
