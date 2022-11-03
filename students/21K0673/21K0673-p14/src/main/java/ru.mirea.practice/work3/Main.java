@@ -6,12 +6,11 @@ import java.util.regex.Pattern;
 
 abstract class Main {
     public static void main(String[] args) {
-        String string = "44 ERR, 0.004 EU, 25.98 USD, 28 RUB";
         Pattern pattern = Pattern.compile(", ");
-        Pattern pattern1 = Pattern.compile(" ");
-        Pattern pattern2 = Pattern.compile("00");
+        String[] words = pattern.split("44 ERR, 0.004 EU, 25.98 USD, 28 RUB");
 
-        String[] words = pattern.split(string);
+        Pattern pattern1 = Pattern.compile(" ");
+        Pattern pattern2 = Pattern.compile("\\.");
 
         Pattern p = Pattern.compile("USD");
         Pattern p1 = Pattern.compile("RUB");
@@ -20,9 +19,11 @@ abstract class Main {
         for (int i = 0; i < words.length; i++) {
             String[] word1 = pattern1.split(words[i]);
             String[] word2 = pattern2.split(word1[0]);
-            if (word2.length > 1) {
-                words[i] = "";
-                continue;
+            if (word2.length == 2) {
+                if (word2[1].length() > 2) {
+                    words[i] = "";
+                    continue;
+                }
             }
             Matcher matcher = p.matcher(word1[1]);
             Matcher matcher1 = p1.matcher(word1[1]);

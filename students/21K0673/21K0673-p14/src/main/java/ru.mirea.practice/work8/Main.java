@@ -1,14 +1,14 @@
 package ru.mirea.practice.work8;
 
-import java.util.regex.Pattern;
-
 abstract class Main {
     public static void main(String[] args) {
-        String string = "soeiugh seoiugh aseoiguh";
-        Pattern pattern = Pattern.compile(" ");
-        String[] words = pattern.split(string);
-        for (String word : words) {
-            System.out.println(word);
-        }
+
+        String[] strings = new String[3];
+        strings[0] = "aseg";
+        strings[1] = "dsfh";
+        strings[2] = "soeikg";
+        Test test = new Test();
+        test.filter(strings);
+        test.apply("aseg");
     }
 }
