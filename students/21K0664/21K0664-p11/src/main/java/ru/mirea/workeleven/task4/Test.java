@@ -5,7 +5,7 @@ import java.util.Calendar;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Test {
+abstract class Test {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Calendar cal = Calendar.getInstance();

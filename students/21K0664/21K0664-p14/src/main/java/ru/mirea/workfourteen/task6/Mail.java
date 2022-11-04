@@ -3,7 +3,7 @@ package ru.mirea.workfourteen.task6;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Mail {
+abstract class Mail {
     public static void main(String[] args) {
         Pattern a = Pattern.compile(", ");
         String[] b = a.split("user@example.com, myhost@@@com.ru");
