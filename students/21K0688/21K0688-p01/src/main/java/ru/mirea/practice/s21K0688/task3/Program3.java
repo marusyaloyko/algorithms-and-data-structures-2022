@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21K0688;
+package ru.mirea.practice.s21K0688.task3;
 
 public class Program3 {
     public static void main(String[] args) {
