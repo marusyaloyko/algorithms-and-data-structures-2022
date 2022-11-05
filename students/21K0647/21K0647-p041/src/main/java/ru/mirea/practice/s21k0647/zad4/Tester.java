@@ -5,7 +5,6 @@ public final class Tester {
 
     }
 
-
     public static void main(String[] args) {
         float[][] arr1 = {{-2, 1},{5, 4}};
         Matrix matrix1 = new Matrix(2, 2, arr1);

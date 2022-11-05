@@ -1,6 +1,10 @@
 package ru.mirea.practice.s21k0647.zad10;
 
 public final class Tester {
+    private Tester() {
+
+    }
+
     public static void main(String[] args) {
         Transport[] transports = new Transport[4];
         transports[0] = new Auto(20, 80, "Груз");

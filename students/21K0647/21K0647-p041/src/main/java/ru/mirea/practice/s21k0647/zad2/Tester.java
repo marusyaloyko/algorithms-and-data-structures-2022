@@ -1,7 +1,9 @@
 package ru.mirea.practice.s21k0647.zad2;
 
 public final class Tester {
-    private Tester() {}
+    private Tester() {
+
+    }
 
     public static void main(String[] args) {
         Phone phone1 = new Phone("3-93-21", "001", 100);

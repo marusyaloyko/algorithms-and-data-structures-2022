@@ -1,7 +1,9 @@
 package ru.mirea.practice.s21k0647.zad1;
 
 public final class Tester {
-    private Tester() {}
+    private Tester() {
+
+    }
 
     public static void main(String[] args) {
         Shape shape1 = new Circle("Circle", 13);

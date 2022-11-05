@@ -1,6 +1,10 @@
 package ru.mirea.practice.s21k0647.zad9;
 
-public class FurnitureShop {
+public final class FurnitureShop {
+    private FurnitureShop() {
+
+    }
+
     public static void main(String[] args) {
         Furniture[] furnitures = new Furniture[3];
         furnitures[0] = new Bed(20000, "Дерево", 150, 220, 50, 55);

@@ -3,6 +3,9 @@ package ru.mirea.practice.s21k0647.zad7;
 
 
 public final class Tester {
+    private Tester() {
+
+    }
 
     public static void allStudents(Pupil... pupils) {
         System.out.println("Students: ");

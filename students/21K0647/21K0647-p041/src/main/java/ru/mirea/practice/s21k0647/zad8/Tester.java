@@ -1,6 +1,10 @@
 package ru.mirea.practice.s21k0647.zad8;
 
-public class Tester {
+public final class Tester {
+    private Tester() {
+
+    }
+
     public static void main(String[] args) {
         Shape square1 = new Circle("blue", true, 13);
         Shape square2 = new Rectangle("yellow", false, 5, 10);
