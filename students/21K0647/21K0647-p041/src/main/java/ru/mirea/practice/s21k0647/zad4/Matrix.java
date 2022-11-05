@@ -4,6 +4,7 @@ public class Matrix {
     int n;
     int m;
     float[][] array = new float[n][m];
+
     Matrix(int n, int m) {
         this.n = n;
         this.m = m;
@@ -27,7 +28,7 @@ public class Matrix {
     }
 
     public void sum(Matrix matrix2) {
-        if (n == matrix2.n && m == matrix2.m ) {
+        if (n == matrix2.n && m == matrix2.m) {
             System.out.println("Sum");
             float[][] arr3 = new float[n][m];
             for (int i = 0; i < n; ++i) {

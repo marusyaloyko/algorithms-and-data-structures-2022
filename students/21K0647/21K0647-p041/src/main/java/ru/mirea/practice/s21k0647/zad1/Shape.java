@@ -2,6 +2,7 @@ package ru.mirea.practice.s21k0647.zad1;
 
 public class Shape {
     String type;
+
     Shape(String type) {
         this.type = type;
     }
@@ -14,11 +15,11 @@ public class Shape {
         return " ";
     }
 
-    public String getPerimeter(){
+    public String getPerimeter() {
         return " ";
     }
 
-    public String toString(){
+    public String toString() {
         return getType() + getAria() + getPerimeter();
     }
 }

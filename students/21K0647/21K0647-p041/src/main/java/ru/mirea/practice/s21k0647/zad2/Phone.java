@@ -29,17 +29,17 @@ public class Phone {
         return "Звонит " + name + " " + number;
     }
 
-    public void sendMessage(String... numbers){
+    public void sendMessage(String... numbers) {
         for (String x: numbers) {
             System.out.println(x);
         }
     }
 
-    public String getNumber(){
+    public String getNumber() {
         return this.number;
     }
 
-    public String toString(){
+    public String toString() {
         return "Number: " + this.number + " Model: " + this.model + " Weight: " + this.weight;
     }
 

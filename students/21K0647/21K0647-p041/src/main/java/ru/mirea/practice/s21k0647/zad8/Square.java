@@ -35,9 +35,9 @@ public class Square extends Rectangle {
     }
 
     public String toString() {
-        String s = "Закрашенный";
-        if(filled){
-            s = "Полый";
+        String s = "Полый";
+        if (filled) {
+            s = "Закрашенный";
         }
         return "Квадрат со сторонами " + side + "\nЦвет:" + color + " " + s + "\nПлощадь: " + this.getArea() + "\nПериметр:" + this.getPerimeter();
     }

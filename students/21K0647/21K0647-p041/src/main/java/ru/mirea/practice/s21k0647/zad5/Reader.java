@@ -22,7 +22,7 @@ public class Reader {
 
     public void takeBook(String... books) {
         System.out.println(fio + " взял : ");
-        for(String x: books){
+        for (String x: books) {
             System.out.println(x);
         }
         System.out.println();
@@ -30,7 +30,7 @@ public class Reader {
 
     public void takeBook(Book... books) {
         System.out.println(fio + " взял : ");
-        for(Book x: books){
+        for (Book x: books) {
             System.out.println(x.title);
         }
         System.out.println();
@@ -43,7 +43,7 @@ public class Reader {
 
     public void returnBook(Book... books) {
         System.out.println(fio + " вернул : ");
-        for(Book x: books){
+        for (Book x: books) {
             System.out.println(x.title);
         }
         System.out.println();
@@ -51,7 +51,7 @@ public class Reader {
 
     public void returnBook(String... books) {
         System.out.println(fio + " вернул : ");
-        for(String x: books){
+        for (String x: books) {
             System.out.println(x);
         }
         System.out.println();

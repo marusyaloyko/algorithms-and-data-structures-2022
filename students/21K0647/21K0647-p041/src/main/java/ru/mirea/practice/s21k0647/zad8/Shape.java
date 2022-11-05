@@ -40,9 +40,9 @@ public abstract class Shape {
     }
 
     public String toString() {
-        String s = "Закрашена";
-        if(filled){
-            s = "Полая";
+        String s = "Полый";
+        if (filled) {
+            s = "Закрашенная";
         }
         return "Фигура не определена \nЦвет:" + color + " " + s;
     }

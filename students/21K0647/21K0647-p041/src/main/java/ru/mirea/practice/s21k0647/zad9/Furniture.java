@@ -19,11 +19,12 @@ public abstract class Furniture {
         this.width = width;
         this.length = length;
         this.height = height;
-        this.weight= weight;
+        this.weight = weight;
     }
 
     public String toString() {
-        return "Мебель не определена \nЦена: " + price + "\nМатериал: " + material + "Длина х ширина х высота: " + width + " x " + length + " x " + height + "\nВес" + weight;
+        return "Мебель не определена \nЦена: " + price + "\nМатериал: " + material + "Длина х ширина х высота: " + width + " x "
+                + length + " x " + height + "\nВес" + weight;
     }
 
 

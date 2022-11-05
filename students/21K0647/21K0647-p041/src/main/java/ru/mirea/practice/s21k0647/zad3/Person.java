@@ -4,7 +4,7 @@ public class Person {
     String fullName;
     int age;
 
-    Person() {};
+    Person() {}
 
     Person(String fullName, int age) {
         this.fullName = fullName;
@@ -16,7 +16,7 @@ public class Person {
 
     }
 
-    public void talk(){
+    public void talk() {
         System.out.println(this.fullName + " говорит");
     }
 

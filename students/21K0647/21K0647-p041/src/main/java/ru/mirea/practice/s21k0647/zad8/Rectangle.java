@@ -29,6 +29,7 @@ public class Rectangle extends Shape {
     public void setWidth(double width) {
         this.width = width;
     }
+
     public double getLength() {
         return length;
     }
@@ -46,11 +47,12 @@ public class Rectangle extends Shape {
     }
 
     public String toString() {
-        String s = "Закрашенный";
-        if(filled){
-            s = "Полый";
+        String s = "Полый";
+        if (filled) {
+            s = "Закрашенный";
         }
-        return "Прямоугольник со сторонами " + width + " " + length + "\nЦвет:" + color + " " + s + "\nПлощадь: " + this.getArea() + "\nПериметр:" + this.getPerimeter();
+        return "Прямоугольник со сторонами " + width + " " + length + "\nЦвет:" + color + " " + s
+                + "\nПлощадь: " + this.getArea() + "\nПериметр:" + this.getPerimeter();
     }
 
 

@@ -12,7 +12,7 @@ public final class Tester {
         System.out.println(phone2.receiveCall("Mia") + " " + phone2.getNumber());
         System.out.println(phone3.receiveCall("Peter") + " " + phone3.getNumber());
         Phone phone4 = new Phone();
-        System.out.println(phone4.receiveCall("Bob", "3-22-71") );
+        System.out.println(phone4.receiveCall("Bob", "3-22-71"));
         phone4.sendMessage("3-19-21", "3-15-21", "3-55-99");
 
 

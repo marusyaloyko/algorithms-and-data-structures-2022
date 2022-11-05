@@ -27,7 +27,7 @@ public class Circle extends Shape {
     }
 
     public double getArea() {
-        String s = String.format("%.2f", pi * radius * radius );
+        String s = String.format("%.2f", pi * radius * radius);
         s = s.replace(",", ".");
         double s1 = Double.parseDouble(s);
         return s1;
@@ -41,9 +41,9 @@ public class Circle extends Shape {
     }
 
     public String toString() {
-        String s = "Закрашенная";
-        if(filled){
-            s = "Полая";
+        String s = "Полая";
+        if (filled) {
+            s = "Закрашенная";
         }
         return "Окружность с радиусом " + radius + "\nЦвет:" + color + " " + s + "\nПлощадь: " + this.getArea() + "\nПериметр:" + this.getPerimeter();
 

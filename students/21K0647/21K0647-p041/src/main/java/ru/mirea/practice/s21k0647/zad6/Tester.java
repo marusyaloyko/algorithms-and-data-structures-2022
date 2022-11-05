@@ -1,9 +1,11 @@
 package ru.mirea.practice.s21k0647.zad6;
 
 public final class Tester {
+
     private Tester() {
 
     }
+
     public static void main(String[] args) {
         Employer employer = new Manager("Ivan", "Ivanov", 100000, 15000);
         Employer[] employers = new Employer[3];

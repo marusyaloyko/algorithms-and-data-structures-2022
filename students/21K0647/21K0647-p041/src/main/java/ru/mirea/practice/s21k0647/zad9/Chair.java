@@ -10,8 +10,8 @@ public class Chair extends Furniture {
 
     @Override
     public String toString() {
-        return "Cтул \nЦена: " + price + "\nМатериал: " + material + "\nДлина х ширина х высота: " + width +
-                " x " + length + " x " + height + "\nВес: " + weight + "\nВысота подлокотников: " + armrestHeight;
+        return "Cтул \nЦена: " + price + "\nМатериал: " + material + "\nДлина х ширина х высота: " + width
+                + " x " + length + " x " + height + "\nВес: " + weight + "\nВысота подлокотников: " + armrestHeight;
     }
 
 

@@ -12,7 +12,7 @@ public class Wardrobe extends Furniture {
 
     @Override
     public String toString() {
-        return "Кровать \nЦена: " + price + "\nМатериал: " + material + "\nДлина х ширина х высота: " +
-                width + " x " + length + " x " + height + "\nВес: " + weight + "\nКоличество полок: " + numberOfShelves + "\nРазмер полок: " + shelfSize;
+        return "Кровать \nЦена: " + price + "\nМатериал: " + material + "\nДлина х ширина х высота: " +  width + " x " + length
+                + " x " + height + "\nВес: " + weight + "\nКоличество полок: " + numberOfShelves + "\nРазмер полок: " + shelfSize;
     }
 }
