@@ -1,7 +1,7 @@
 package ru.mirea.practice;
 
-abstract class Main {
+abstract class Class {
     public static void main(String[] args) {
-        System.out.println("a");
+        System.out.println("d");
     }
 }
