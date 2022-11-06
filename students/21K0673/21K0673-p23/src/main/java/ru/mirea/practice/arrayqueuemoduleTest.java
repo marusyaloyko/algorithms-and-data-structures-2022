@@ -1,6 +1,6 @@
 package ru.mirea.practice;
 
-abstract class Main {
+abstract class arrayqueuemoduleTest {
     public static void main(String[] args) {
         System.out.println("a");
     }
