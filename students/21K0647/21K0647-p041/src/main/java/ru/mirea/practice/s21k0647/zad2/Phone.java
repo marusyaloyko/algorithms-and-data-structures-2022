@@ -39,6 +39,7 @@ public class Phone {
         return this.number;
     }
 
+    @Override
     public String toString() {
         return "Number: " + this.number + " Model: " + this.model + " Weight: " + this.weight;
     }

@@ -4,7 +4,9 @@ public class Person {
     String fullName;
     int age;
 
-    Person() {}
+    Person() {
+        //pus
+    }
 
     Person(String fullName, int age) {
         this.fullName = fullName;
@@ -22,6 +24,7 @@ public class Person {
 
     public static void main(String[] args) {
         Person person1 = new Person();
+        person1.move();
         Person person2 = new Person("Leonid Ivanov", 29);
         person2.move();
 

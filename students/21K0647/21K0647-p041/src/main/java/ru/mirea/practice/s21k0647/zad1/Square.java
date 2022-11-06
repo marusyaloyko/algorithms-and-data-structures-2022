@@ -9,18 +9,22 @@ public class Square extends Shape {
         this.a = a;
     }
 
+    @Override
     public String getType() {
         return "Square";
     }
 
+    @Override
     public String getAria() {
-        return String.valueOf((a * a));
+        return String.valueOf(a * a);
     }
 
+    @Override
     public String getPerimeter() {
         return String.valueOf(4 * a);
     }
 
+    @Override
     public String toString() {
         return getType() + " a = " + this.a + " Aria: " + getAria() + " Perimeter: " + getPerimeter();
     }

@@ -2,6 +2,7 @@ package ru.mirea.practice.s21k0647.zad2;
 
 public enum Size {
     XXS(32) {
+        @Override
         public String getDescription() {
             return "Kids size";
         }

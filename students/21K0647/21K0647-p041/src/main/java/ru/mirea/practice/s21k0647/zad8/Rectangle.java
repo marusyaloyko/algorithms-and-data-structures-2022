@@ -1,14 +1,12 @@
 package ru.mirea.practice.s21k0647.zad8;
 
 
-import java.util.WeakHashMap;
-
 public class Rectangle extends Shape {
     protected double width;
     protected double length;
 
     Rectangle() {
-
+        //pus
     }
 
     Rectangle(double width, double length) {
@@ -38,14 +36,17 @@ public class Rectangle extends Shape {
         this.length = length;
     }
 
+    @Override
     public double getArea() {
         return width * length;
     }
 
+    @Override
     public double getPerimeter() {
         return 2 * (width + length);
     }
 
+    @Override
     public String toString() {
         String s = "Полый";
         if (filled) {

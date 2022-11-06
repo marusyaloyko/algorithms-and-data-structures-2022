@@ -6,10 +6,12 @@ public class Auto extends Transport {
         super(price, speed, cargo);
     }
 
+    @Override
     public double cost(double distance) {
         return distance * price;
     }
 
+    @Override
     public String time(double distance) {
         double v = distance / speed;
         int hh = (int) v;
@@ -18,6 +20,7 @@ public class Auto extends Transport {
         return hh + " часов " + mm + " минут";
     }
 
+    @Override
     public String toString() {
         return "На машине " + cargo;
     }

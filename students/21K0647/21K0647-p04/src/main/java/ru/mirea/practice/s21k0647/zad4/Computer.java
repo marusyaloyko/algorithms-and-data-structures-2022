@@ -15,6 +15,7 @@ public class Computer {
         this.processor = processor;
     }
 
+    @Override
     public String toString() {
         return "Logo: " + log + "\nPrice " + price + "\nMempry : \n"
                 + memory.toString() + "\nMonitor : \n" + monitor.toString() + "\nProcessor : \n" + processor.toString();

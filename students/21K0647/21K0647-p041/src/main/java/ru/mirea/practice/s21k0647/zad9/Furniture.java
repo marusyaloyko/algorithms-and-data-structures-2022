@@ -10,7 +10,7 @@ public abstract class Furniture {
 
 
     Furniture() {
-
+        //pus
     }
 
     Furniture(double price, String material, double width, double length, double height, double weight) {
@@ -22,6 +22,7 @@ public abstract class Furniture {
         this.weight = weight;
     }
 
+    @Override
     public String toString() {
         return "Мебель не определена \nЦена: " + price + "\nМатериал: " + material + "Длина х ширина х высота: " + width + " x "
                 + length + " x " + height + "\nВес" + weight;

@@ -8,18 +8,22 @@ public class Circle extends Shape {
         this.r = r;
     }
 
+    @Override
     public String getType() {
         return "Circle";
     }
 
+    @Override
     public String getAria() {
-        return String.format("%.2f", Math.PI * (r * r));
+        return String.format("%.2f", Math.PI * r * r);
     }
 
+    @Override
     public String getPerimeter() {
         return String.format("%.2f", Math.PI * r * 2);
     }
 
+    @Override
     public String toString() {
         return getType() + " r = " + this.r + " Aria: " + getAria() + " Perimeter: " + getPerimeter();
     }

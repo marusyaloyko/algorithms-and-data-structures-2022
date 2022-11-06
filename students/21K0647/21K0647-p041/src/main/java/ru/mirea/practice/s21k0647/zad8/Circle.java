@@ -6,7 +6,7 @@ public class Circle extends Shape {
     protected double radius;
 
     Circle() {
-
+        //pus
     }
 
     Circle(double radius) {
@@ -26,20 +26,21 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
+    @Override
     public double getArea() {
         String s = String.format("%.2f", pi * radius * radius);
         s = s.replace(",", ".");
-        double s1 = Double.parseDouble(s);
-        return s1;
+        return Double.parseDouble(s);
     }
 
+    @Override
     public double getPerimeter() {
         String s = String.format("%.2f", 2 * pi * radius);
         s = s.replace(",", ".");
-        double s1 = Double.parseDouble(s);
-        return s1;
+        return Double.parseDouble(s);
     }
 
+    @Override
     public String toString() {
         String s = "Полая";
         if (filled) {

@@ -8,6 +8,7 @@ public class Manager extends Employer {
         this.averageSum = averageSum;
     }
 
+    @Override
     public double getIncome() {
         return income + averageSum;
     }

@@ -10,18 +10,22 @@ public class Rectangle extends Shape {
         this.b = b;
     }
 
+    @Override
     public String getType() {
         return "Rectangle";
     }
 
+    @Override
     public String getAria() {
-        return String.valueOf((a * b));
+        return String.valueOf(a * b);
     }
 
+    @Override
     public String getPerimeter() {
         return String.valueOf(2 * (a + b));
     }
 
+    @Override
     public String toString() {
         return getType() + " a = " + this.a + " b = " + this.b + " Aria: " + getAria() + " Perimeter: " + getPerimeter();
     }

@@ -11,6 +11,7 @@ public class Memory {
         this.speed = speed;
     }
 
+    @Override
     public String toString() {
         return "Memory read only \n" + this.memoryreadonly + "Memory read-record \n" + this.memoryreadrecord + "Speed \n" + this.speed;
     }

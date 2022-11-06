@@ -19,6 +19,7 @@ public abstract class Transport {
         return "";
     }
 
+    @Override
     public String toString() {
         return "Вид транспорта не определен";
     }

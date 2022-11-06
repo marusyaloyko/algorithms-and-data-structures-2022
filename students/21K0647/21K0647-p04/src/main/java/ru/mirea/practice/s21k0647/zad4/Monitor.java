@@ -11,6 +11,7 @@ public class Monitor {
         this.frequency = frequency;
     }
 
+    @Override
     public String toString() {
         return "Diagonal\n" + this.diagonal + "Brightness \n" + this.brightness + "Frequency\n" + this.frequency;
     }

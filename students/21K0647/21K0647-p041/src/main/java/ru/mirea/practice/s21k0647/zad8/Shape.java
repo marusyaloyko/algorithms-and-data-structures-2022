@@ -1,13 +1,12 @@
 package ru.mirea.practice.s21k0647.zad8;
 
-import java.security.PublicKey;
 
 public abstract class Shape {
     protected String color;
     protected boolean filled;
 
     Shape() {
-
+        //pus
     }
 
     Shape(String color, boolean filled) {
@@ -39,6 +38,7 @@ public abstract class Shape {
         return 0;
     }
 
+    @Override
     public String toString() {
         String s = "Полый";
         if (filled) {
