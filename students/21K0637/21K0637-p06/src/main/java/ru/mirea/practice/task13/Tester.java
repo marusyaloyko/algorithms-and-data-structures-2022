@@ -6,7 +6,7 @@ public abstract class Tester {
         stringBuilderPublisher.setListener(stringBuilderPublisher1
             -> System.out.println("CHANGE: " + stringBuilderPublisher1.toString()));
 
-        stringBuilderPublisher.append("I love ");
+        stringBuilderPublisher.append("I love !");
         stringBuilderPublisher.insert(7, "Java");
         stringBuilderPublisher.replace(7, stringBuilderPublisher.length(), "MIREA");
         stringBuilderPublisher.reverse();

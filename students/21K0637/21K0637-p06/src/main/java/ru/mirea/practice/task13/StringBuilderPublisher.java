@@ -1,12 +1,8 @@
 package ru.mirea.practice.task13;
 
 public class StringBuilderPublisher {
-    private final StringBuilder stringBuilder;
+    private String string = "";
     private OnStringBuilderChangeListener listener;
-
-    public StringBuilderPublisher() {
-        this.stringBuilder = new StringBuilder();
-    }
 
     public void setListener(OnStringBuilderChangeListener listener) {
         this.listener = listener;
@@ -19,59 +15,58 @@ public class StringBuilderPublisher {
     }
 
     public StringBuilderPublisher append(String str) {
-        stringBuilder.append(str);
+        string += str;
         notifyListener();
         return this;
     }
 
     public StringBuilderPublisher delete(int start, int end) {
-        stringBuilder.delete(start, end);
+        string = new StringBuilder(string).delete(start, end).toString();
         notifyListener();
         return this;
     }
 
     public StringBuilderPublisher deleteCharAt(int idx) {
-        stringBuilder.deleteCharAt(idx);
-        notifyListener();
+        string = new StringBuilder(string).deleteCharAt(idx).toString();
         return this;
     }
 
     public StringBuilderPublisher insert(int idx, String str) {
-        stringBuilder.insert(idx, str);
+        string = string.substring(0, idx) + str + string.substring(idx);
         notifyListener();
         return this;
     }
 
     public int lastIndexOf(String str) {
-        return stringBuilder.lastIndexOf(str);
+        return string.lastIndexOf(str);
     }
 
     public int lastIndexOf(String str, int idx) {
-        return stringBuilder.lastIndexOf(str, idx);
+        return string.lastIndexOf(str, idx);
     }
 
     public int indexOf(String str) {
-        return stringBuilder.indexOf(str);
+        return string.indexOf(str);
     }
 
     public StringBuilderPublisher replace(int start, int end, String str) {
-        stringBuilder.replace(start, end, str);
+        string = new StringBuilder(string).replace(start, end, str).toString();
         notifyListener();
         return this;
     }
 
     public StringBuilderPublisher reverse() {
-        stringBuilder.reverse();
+        string = new StringBuilder(string).reverse().toString();
         notifyListener();
         return this;
     }
 
     @Override
     public String toString() {
-        return stringBuilder.toString();
+        return string.toString();
     }
 
     public int length() {
-        return stringBuilder.length();
+        return string.length();
     }
 }
