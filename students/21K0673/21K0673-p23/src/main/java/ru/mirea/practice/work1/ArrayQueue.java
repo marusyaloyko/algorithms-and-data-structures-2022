@@ -1,13 +1,21 @@
-package ru.mirea.practice;
+package ru.mirea.practice.work1;
 
 public class ArrayQueue {
-    int SIZE = 5;
-    int[] items = new int[SIZE];
-    int front, rear;
+    private int SIZE = 5;
+    private int[] items = new int[SIZE];
+    private int front, rear;
 
     ArrayQueue() {
         front = -1;
         rear = -1;
+    }
+
+    public int getSIZE() {
+        return SIZE;
+    }
+
+    public int getElement(int index) {
+        return items[index];
     }
 
     public boolean isFull() {
