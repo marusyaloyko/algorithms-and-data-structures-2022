@@ -1,4 +1,4 @@
-package ru.mirea.practice;
+package ru.mirea.practice.work1;
 
 abstract class arrayqueueTest {
     public static void main(String[] args) {
