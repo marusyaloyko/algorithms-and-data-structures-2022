@@ -14,6 +14,6 @@ public class Main {
         String name = "John";
         a.receiveCall(name);
         a.receiveCall(name, b.getNumber());
-        a.sendMessage(b.getNumber() + " " +  c.getNumber() + " " + a.getNumber());
+        a.sendMessage(b.getNumber() + " " + c.getNumber() + " " + a.getNumber());
     }
 }

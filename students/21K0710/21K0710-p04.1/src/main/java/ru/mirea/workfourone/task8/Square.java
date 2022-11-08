@@ -1,5 +1,6 @@
 package ru.mirea.workfourone.task8;
-public class Square extends Rectangle{
+
+public class Square extends Rectangle {
     private double side;
 
     public Square() {

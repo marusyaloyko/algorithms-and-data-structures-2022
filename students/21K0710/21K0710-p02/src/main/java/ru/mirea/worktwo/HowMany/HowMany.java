@@ -10,15 +10,15 @@ public class HowMany {
         String line = sc.nextLine();
         int k = 0;
 
-        if(line.length() != 0){
+        if (line.length() != 0) {
             k++;
             for (int i = 0; i < line.length(); i++) {
-                if(line.charAt(i) == ' '){
+                if (line.charAt(i) == ' ') {
                     k++;
                 }
             }
         }
 
-        System.out.println("Вы ввели "+ k +"слов");
+        System.out.println("Вы ввели " + k + "слов");
     }
 }

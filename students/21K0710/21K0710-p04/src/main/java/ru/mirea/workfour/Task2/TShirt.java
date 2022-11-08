@@ -9,6 +9,7 @@ public class TShirt extends Clothes implements MenClothing, WomenClothing {
     public void dressMan() {
         System.out.println("Мужская футболка, размер: " + getDescription() + " " + getSize() + ", евро - " + getEuro() + ", цвет: " + getColor() + ", цена: " + getPrice());
     }
+
     @Override
     public void dressWomen() {
         System.out.println("Женская футболка, размер: " + getDescription() + " " + getSize() + ", евро - " + getEuro() + ", цвет: " + getColor() + ", цена: " + getPrice());

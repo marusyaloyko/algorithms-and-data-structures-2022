@@ -1,6 +1,6 @@
 package ru.mirea.workfour.Task2;
 
-public abstract class Clothes implements MenClothing, WomenClothing{
+public abstract class Clothes implements MenClothing, WomenClothing {
     private Size size;
     private double price;
     private String color;
@@ -34,15 +34,19 @@ public abstract class Clothes implements MenClothing, WomenClothing{
     public void setColor(String color) {
         this.color = color;
     }
-    public int getEuro(){
+
+    public int getEuro() {
         return this.size.getEuroSize();
     }
-    public String getDescription(){
+
+    public String getDescription() {
         return size.getDescription();
     }
+
     @Override
     public void dressMan() {
     }
+
     @Override
     public void dressWomen() {
     }

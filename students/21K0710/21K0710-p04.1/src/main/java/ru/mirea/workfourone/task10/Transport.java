@@ -33,8 +33,11 @@ public abstract class Transport {
     }
 
     abstract double getTime(double distance);
+
     abstract double getPassengerPrice(double distance);
+
     abstract double getCargoPrice(double distance, double cargoWeight);
+
     @Override
     public String toString() {
         return "task10.Transport{" +

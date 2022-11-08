@@ -9,6 +9,7 @@ public class Phone {
         this.number = number;
         this.model = model;
     }
+
     public Phone(String number, String model, double weight) {
         this(number, model);
         this.weight = weight;
@@ -50,13 +51,15 @@ public class Phone {
                 '}';
     }
 
-    public void receiveCall(String name){
+    public void receiveCall(String name) {
         System.out.println("Звонит " + name);
     }
-    public void receiveCall(String name, String number){
+
+    public void receiveCall(String name, String number) {
         System.out.println("Звонит " + name + " - " + number);
     }
-    public void sendMessage(String numbers){
+
+    public void sendMessage(String numbers) {
         System.out.println(numbers);
     }
 }

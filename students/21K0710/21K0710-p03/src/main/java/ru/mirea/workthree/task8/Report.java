@@ -1,8 +1,8 @@
 package ru.mirea.workthree.task8;
 
 public class Report {
-    public static void generateReport(Employee arr[], int n){
-        for (int i = 0; i < n; i++){
+    public static void generateReport(Employee arr[], int n) {
+        for (int i = 0; i < n; i++) {
             System.out.printf("Имя, выплаты: %s %30.2f", arr[i].getFullname(), arr[i].getSalary());
             System.out.println();
         }

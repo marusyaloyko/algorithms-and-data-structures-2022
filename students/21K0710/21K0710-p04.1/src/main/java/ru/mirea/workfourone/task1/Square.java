@@ -1,4 +1,5 @@
 package ru.mirea.workfourone.task1;
+
 public class Square extends Shape {
     double a;
 
@@ -13,12 +14,12 @@ public class Square extends Shape {
 
     @Override
     public double getPerimeter() {
-        return (4*a);
+        return (4 * a);
     }
 
     @Override
     public double getArea() {
-        return (a*a);
+        return (a * a);
     }
 
     @Override

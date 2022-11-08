@@ -14,7 +14,7 @@ public class Tester {
         dogShelter.addDogs(a, b, c, d);
         dogShelter.addDogs(a, b, c, d, e);
         int N = 20;
-        for (int i = 0; i < N; i++){
+        for (int i = 0; i < N; i++) {
             System.out.println(dogShelter.arrDog[i]);
         }
     }

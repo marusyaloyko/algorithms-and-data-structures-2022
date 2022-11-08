@@ -1,7 +1,5 @@
 package ru.mirea.worktwo.Circle;
 
-import java.nio.channels.Pipe;
-
 public class Circle {
     private Point point;
     private double radius;
@@ -11,14 +9,14 @@ public class Circle {
         this.radius = radius;
     }
 
-    public void setPoint(double x, double y)
-    {
+    public void setPoint(double x, double y) {
         this.point.setXY(x, y);
     }
 
     public double getPointX() {
         return point.getX();
     }
+
     public double getPointY() {
         return point.getY();
     }

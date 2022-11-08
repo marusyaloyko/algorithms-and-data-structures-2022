@@ -1,6 +1,6 @@
 package ru.mirea.workfourone.task8;
 
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
     protected double width;
     protected double length;
 
@@ -36,12 +36,12 @@ public class Rectangle extends Shape{
 
     @Override
     public double getPerimeter() {
-        return (this.width+this.length)*2;
+        return (this.width + this.length) * 2;
     }
 
     @Override
     public double getArea() {
-        return this.length*this.width;
+        return this.length * this.width;
     }
 
     @Override

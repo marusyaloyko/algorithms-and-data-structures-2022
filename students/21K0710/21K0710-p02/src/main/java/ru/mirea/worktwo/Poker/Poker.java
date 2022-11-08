@@ -9,7 +9,7 @@ public class Poker {
         deck.shuffle();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        if (n <= 8){
+        if (n <= 8) {
             deck.give(n);
         }
     }

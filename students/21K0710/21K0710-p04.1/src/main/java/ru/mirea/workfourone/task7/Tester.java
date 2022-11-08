@@ -14,8 +14,8 @@ public class Tester {
             }
         }
         System.out.println("Студенты в базе:");
-        for (int i=0; i<arr.length; i++){
-            if (arr[i].getClass() == Student.class){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].getClass() == Student.class) {
                 System.out.println(arr[i]);
             }
         }

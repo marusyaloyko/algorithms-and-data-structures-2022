@@ -1,6 +1,6 @@
 package ru.mirea.workfourone.task6;
 
-public class Manager extends Employer{
+public class Manager extends Employer {
     private double averageSum;
 
     public Manager(String firstName, String lastName, double income, double averageSum) {
@@ -8,8 +8,8 @@ public class Manager extends Employer{
         this.averageSum = averageSum;
     }
 
-    public double getIncome(int i){
-        return super.getIncome(i) + this.averageSum*i;
+    public double getIncome(int i) {
+        return super.getIncome(i) + this.averageSum * i;
     }
 
     @Override

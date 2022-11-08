@@ -8,7 +8,7 @@ public class FurnitureShop {
         furnitures[2] = new Table("wood", 400, 120);
         furnitures[3] = new Chair(70, true);
         furnitures[4] = new Sofa();
-        for (Furniture furniture: furnitures){
+        for (Furniture furniture : furnitures) {
             System.out.println(furniture);
         }
     }

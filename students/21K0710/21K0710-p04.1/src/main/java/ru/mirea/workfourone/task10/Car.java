@@ -1,6 +1,6 @@
 package ru.mirea.workfourone.task10;
 
-public class Car extends Transport{
+public class Car extends Transport {
     protected double averageSpeed;
 
     public Car() {
@@ -26,17 +26,17 @@ public class Car extends Transport{
 
     @Override
     double getTime(double distance) {
-        return distance/this.averageSpeed;
+        return distance / this.averageSpeed;
     }
 
     @Override
     double getPassengerPrice(double distance) {
-        return this.pricePerKilometer*distance;
+        return this.pricePerKilometer * distance;
     }
 
     @Override
     double getCargoPrice(double distance, double cargoWeight) {
-        return this.pricePerKilometer*this.multiplierPerKilogram*cargoWeight*distance;
+        return this.pricePerKilometer * this.multiplierPerKilogram * cargoWeight * distance;
     }
 
     @Override

@@ -1,6 +1,6 @@
 package ru.mirea.workfourone.task9;
 
-public class Chair extends Furniture{
+public class Chair extends Furniture {
     protected double height;
     protected boolean chairback;
 

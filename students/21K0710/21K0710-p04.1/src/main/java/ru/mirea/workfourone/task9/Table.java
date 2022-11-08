@@ -1,6 +1,6 @@
 package ru.mirea.workfourone.task9;
 
-public class Table extends Furniture{
+public class Table extends Furniture {
     protected double height;
 
     public Table() {

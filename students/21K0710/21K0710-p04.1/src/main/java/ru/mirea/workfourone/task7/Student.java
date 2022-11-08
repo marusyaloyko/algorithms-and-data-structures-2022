@@ -1,6 +1,6 @@
 package ru.mirea.workfourone.task7;
 
-public class Student extends Learner{
+public class Student extends Learner {
     private String ticket;
     private String faculty;
 

@@ -11,9 +11,10 @@ public class Employer {
         this.income = income;
     }
 
-    public double getIncome(int i){
-        return this.income*i;
+    public double getIncome(int i) {
+        return this.income * i;
     }
+
     @Override
     public String toString() {
         return "Employer{" +

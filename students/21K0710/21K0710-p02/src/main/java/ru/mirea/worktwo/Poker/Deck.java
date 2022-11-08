@@ -7,32 +7,34 @@ public class Deck {
     String suits[] = new String[]{"Diamonds", "Hearts", "Clubs", "Spades"};
     String ranks[] = new String[]{"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
 
-    public void deckCreate(){
+    public void deckCreate() {
         int h = 0;
-        for (int i = 0; i < 4; i++){
-            for (int g = 0; g < 13; g++){
+        for (int i = 0; i < 4; i++) {
+            for (int g = 0; g < 13; g++) {
                 Card temp = new Card(suits[i], ranks[g]);
                 deck[h] = temp;
                 h++;
             }
         }
     }
-    public void shuffle(){
+
+    public void shuffle() {
         int index;
         Card temp;
         Random random = new Random();
-        for (int i = deck.length - 1 ; i >= 0; i--){
+        for (int i = deck.length - 1; i >= 0; i--) {
             index = random.nextInt(i + 1);
             temp = deck[i];
             deck[i] = deck[index];
             deck[index] = temp;
         }
     }
-    public void give(int n){
+
+    public void give(int n) {
         int h = 0;
-        for (int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             System.out.print("[");
-            for (int g = 0; g < 5; g++){
+            for (int g = 0; g < 5; g++) {
                 System.out.print(deck[h]);
                 h++;
             }

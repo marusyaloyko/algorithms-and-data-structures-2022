@@ -1,5 +1,4 @@
 package ru.mirea.workthree.task2;
-import java.util.*;
 
 public class Circle {
     private Point point;
@@ -9,7 +8,7 @@ public class Circle {
     public Circle(double x, double y, double radius) {
         this.point = new Point(x, y);
         this.radius = radius;
-        this.length = 2*Math.PI*this.radius;
+        this.length = 2 * Math.PI * this.radius;
     }
 
     public double getRadius() {
@@ -20,14 +19,14 @@ public class Circle {
         this.radius = radius;
     }
 
-    public void setPoint(double x, double y)
-    {
+    public void setPoint(double x, double y) {
         this.point.setXY(x, y);
     }
 
     public double getPointX() {
         return point.getX();
     }
+
     public double getPointY() {
         return point.getY();
     }

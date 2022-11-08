@@ -1,7 +1,8 @@
 package ru.mirea.workfourone.task10;
 
-public class Plane extends Transport{
+public class Plane extends Transport {
     protected double averageSpeed;
+
     public Plane() {
     }
 
@@ -25,17 +26,17 @@ public class Plane extends Transport{
 
     @Override
     double getTime(double distance) {
-        return distance/this.averageSpeed;
+        return distance / this.averageSpeed;
     }
 
     @Override
     double getPassengerPrice(double distance) {
-        return this.pricePerKilometer*distance;
+        return this.pricePerKilometer * distance;
     }
 
     @Override
     double getCargoPrice(double distance, double cargoWeight) {
-        return this.pricePerKilometer*this.multiplierPerKilogram*cargoWeight*distance;
+        return this.pricePerKilometer * this.multiplierPerKilogram * cargoWeight * distance;
     }
 
     @Override

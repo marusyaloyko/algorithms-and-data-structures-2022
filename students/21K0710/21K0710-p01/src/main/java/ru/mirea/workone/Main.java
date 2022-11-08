@@ -1,4 +1,5 @@
 package ru.mirea.workone;
+
 import java.util.Scanner;
 
 public class Main {
@@ -17,8 +18,9 @@ public class Main {
 
 
         // Задание 4
+        int min = 10000;
+        int max = 0;
         int f = 0;
-        int min = 10000, max = 0;
         while (f <= array.length - 1) {
             if (array[f] < min) {
                 min = array[f];
@@ -39,9 +41,8 @@ public class Main {
 
 
         // Задание 6
-        for (int i = 1; i < 11; i++)
-        {
-            System.out.print(1/(double)i + " ");
+        for (int i = 1; i < 11; i++) {
+            System.out.print(1 / (double) i + " ");
         }
         System.out.println();
 
@@ -53,12 +54,9 @@ public class Main {
     }
 
 
-
-    public static int factorial(int a)
-    {
+    public static int factorial(int a) {
         int result = 1;
-        for (int i = a; i > 0; i--)
-        {
+        for (int i = a; i > 0; i--) {
             result *= i;
         }
         return result;

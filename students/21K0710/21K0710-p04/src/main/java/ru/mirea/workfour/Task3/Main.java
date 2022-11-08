@@ -18,11 +18,11 @@ public class Main {
         products[9] = new Product(45, Categories.GRAINS, "oatmeal");
         shop.printCategories();
         int next = 1;
-        Scanner sc =  new Scanner(System.in);
-        while (next == 1){
+        Scanner sc = new Scanner(System.in);
+        while (next == 1) {
             System.out.println("Выберете категорию товаров(1-3)");
             int category = sc.nextInt();
-            switch (category){
+            switch (category) {
                 case 1:
                     shop.getCategory(Categories.FRUITS, products);
                     break;

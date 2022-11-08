@@ -1,16 +1,15 @@
 package ru.mirea.workfourone.task1;
 
 public class Shape {
-    public String getType()
-    {
+    public String getType() {
         return "Figure";
     }
-    public double getPerimeter()
-    {
+
+    public double getPerimeter() {
         return 0;
     }
-    public double getArea()
-    {
+
+    public double getArea() {
         return 0;
     }
 

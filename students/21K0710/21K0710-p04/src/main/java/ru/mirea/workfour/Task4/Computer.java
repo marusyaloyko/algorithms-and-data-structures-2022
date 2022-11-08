@@ -1,7 +1,5 @@
 package ru.mirea.workfour.Task4;
 
-import ru.mirea.workfour.Task3.Product;
-
 public class Computer {
     private Producers producer;
     private Processor processor;
