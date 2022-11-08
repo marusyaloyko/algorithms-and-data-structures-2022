@@ -1,4 +1,4 @@
-package Task3;
+package ru.mirea.workfour.Task3;
 
 public class Product {
     private double price;

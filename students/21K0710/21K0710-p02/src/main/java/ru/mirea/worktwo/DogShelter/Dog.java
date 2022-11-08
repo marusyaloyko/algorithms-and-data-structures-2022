@@ -1,4 +1,4 @@
-package DogShelter;
+package ru.mirea.worktwo.DogShelter;
 
 public class Dog {
     private String name;

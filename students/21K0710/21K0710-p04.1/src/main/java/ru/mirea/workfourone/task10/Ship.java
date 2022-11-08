@@ -1,5 +1,4 @@
-package task10;
-
+package ru.mirea.workfourone.task10;
 public class Ship extends Transport{
     protected double averageSpeed;
 

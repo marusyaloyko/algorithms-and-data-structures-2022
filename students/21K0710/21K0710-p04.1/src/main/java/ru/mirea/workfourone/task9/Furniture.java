@@ -1,4 +1,4 @@
-package task9;
+package ru.mirea.workfourone.task9;
 
 public abstract class Furniture {
     protected String material;

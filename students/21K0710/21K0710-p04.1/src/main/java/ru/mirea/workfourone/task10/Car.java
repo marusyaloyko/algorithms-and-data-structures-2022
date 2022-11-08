@@ -1,4 +1,4 @@
-package task10;
+package ru.mirea.workfourone.task10;
 
 public class Car extends Transport{
     protected double averageSpeed;

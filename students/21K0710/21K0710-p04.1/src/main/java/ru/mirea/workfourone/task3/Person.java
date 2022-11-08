@@ -1,4 +1,4 @@
-package task3;
+package ru.mirea.workfourone.task3;
 
 public class Person {
     private String fullName;

@@ -1,4 +1,4 @@
-package BackwardString;
+package ru.mirea.worktwo.BackwardString;
 
 public class Main {
     public static void main(String[] args) {

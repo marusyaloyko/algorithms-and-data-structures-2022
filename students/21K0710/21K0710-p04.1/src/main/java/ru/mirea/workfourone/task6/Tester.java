@@ -1,4 +1,4 @@
-package task6;
+package ru.mirea.workfourone.task6;
 
 public class Tester {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Task2;
+package ru.mirea.workfour.Task2;
 
 public class Tie extends Clothes implements MenClothing {
     public Tie(Size size, double price, String color) {

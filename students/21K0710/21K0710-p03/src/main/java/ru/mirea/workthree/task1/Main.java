@@ -1,4 +1,4 @@
-package task1;
+package ru.mirea.workthree.task1;
 
 import java.util.*;
 

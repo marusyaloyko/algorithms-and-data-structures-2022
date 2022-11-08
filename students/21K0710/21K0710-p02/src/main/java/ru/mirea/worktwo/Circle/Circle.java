@@ -1,4 +1,4 @@
-package Circle;
+package ru.mirea.worktwo.Circle;
 
 import java.nio.channels.Pipe;
 

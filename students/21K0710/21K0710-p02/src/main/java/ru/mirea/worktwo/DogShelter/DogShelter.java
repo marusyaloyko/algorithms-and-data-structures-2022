@@ -1,4 +1,4 @@
-package DogShelter;
+package ru.mirea.worktwo.DogShelter;
 
 public class DogShelter {
     private int N;

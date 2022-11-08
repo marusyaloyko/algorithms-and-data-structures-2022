@@ -1,4 +1,4 @@
-package task8;
+package ru.mirea.workfourone.task8;
 
 public abstract class Shape {
     protected String color;

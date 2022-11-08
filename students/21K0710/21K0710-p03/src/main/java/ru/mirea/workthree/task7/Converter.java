@@ -1,4 +1,4 @@
-package task7;
+package ru.mirea.workthree.task7;
 
 public class Converter {
     double RUB;

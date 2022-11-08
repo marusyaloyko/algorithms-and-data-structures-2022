@@ -1,4 +1,4 @@
-package Task3;
+package ru.mirea.workfour.Task3;
 
 public enum Categories {
     VEGETABLES, FRUITS, GRAINS

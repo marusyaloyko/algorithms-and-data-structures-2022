@@ -1,4 +1,4 @@
-package Task3;
+package ru.mirea.workfour.Task3;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

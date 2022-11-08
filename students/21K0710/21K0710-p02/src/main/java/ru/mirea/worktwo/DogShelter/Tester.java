@@ -1,4 +1,4 @@
-package DogShelter;
+package ru.mirea.worktwo.DogShelter;
 
 public class Tester {
     public static void main(String[] args) {

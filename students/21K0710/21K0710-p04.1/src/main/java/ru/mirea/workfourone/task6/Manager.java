@@ -1,4 +1,4 @@
-package task6;
+package ru.mirea.workfourone.task6;
 
 public class Manager extends Employer{
     private double averageSum;

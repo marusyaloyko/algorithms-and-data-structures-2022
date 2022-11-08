@@ -1,4 +1,4 @@
-package task6;
+package ru.mirea.workthree.task6;
 
 public class Main {
     public static void main(String[] args) {

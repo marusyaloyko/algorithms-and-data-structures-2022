@@ -1,4 +1,4 @@
-package task5;
+package ru.mirea.workfourone.task5;
 
 public class Reader {
     private String name;

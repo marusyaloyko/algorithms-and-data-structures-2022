@@ -1,4 +1,4 @@
-package Task2;
+package ru.mirea.workfour.Task2;
 
 public enum Size {
     XXS(32), XS(34), S(36), M(38), L(40);

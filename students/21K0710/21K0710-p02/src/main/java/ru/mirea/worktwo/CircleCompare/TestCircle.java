@@ -1,4 +1,4 @@
-package CircleCompare;
+package ru.mirea.worktwo.CircleCompare;
 
 public class TestCircle {
     public static void main(String[] args) {

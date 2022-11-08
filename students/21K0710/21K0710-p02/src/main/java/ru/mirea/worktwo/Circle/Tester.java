@@ -1,4 +1,4 @@
-package Circle;
+package ru.mirea.worktwo.Circle;
 
 public class Tester {
     public static Circle[] arrCircle;

@@ -1,4 +1,4 @@
-package task;
+package ru.mirea.workone;
 import java.util.Scanner;
 
 public class Main {
@@ -49,7 +49,7 @@ public class Main {
         // Задание 7
         int a;
         a = sc.nextInt();
-        System.out.println("Факториал числа " + a + ": "factorial(a));
+        System.out.println("Факториал числа " + a + ": " + factorial(a));
     }
 
 

@@ -1,4 +1,4 @@
-package task2;
+package ru.mirea.worktwo.Author;
 import java.util.Scanner;
 
 public class TestAuthor {

@@ -1,4 +1,4 @@
-package CircleCompare;
+package ru.mirea.worktwo.CircleCompare;
 
 public class Circle {
     private double radius;

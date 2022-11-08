@@ -1,4 +1,4 @@
-package task8;
+package ru.mirea.workthree.task8;
 
 public class Employee {
     String fullname;

@@ -1,4 +1,4 @@
-package HowMany;
+package ru.mirea.worktwo.HowMany;
 
 import java.util.Scanner;
 

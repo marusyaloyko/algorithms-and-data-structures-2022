@@ -1,4 +1,4 @@
-package Book;
+package ru.mirea.worktwo.Book;
 
 import java.util.Arrays;
 

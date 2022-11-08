@@ -1,4 +1,4 @@
-package task2;
+package ru.mirea.worktwo.Author;
 
 public class Author {
     String name;

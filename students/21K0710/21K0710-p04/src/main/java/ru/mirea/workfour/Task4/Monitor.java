@@ -1,4 +1,4 @@
-package Task4;
+package ru.mirea.workfour.Task4;
 
 public class Monitor {
     private int refresh_rate;

@@ -1,4 +1,4 @@
-package Ball;
+package ru.mirea.worktwo.Ball;
 
 public class Ball {
     private double x = 0.0;

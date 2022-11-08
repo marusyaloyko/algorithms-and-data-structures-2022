@@ -1,4 +1,4 @@
-package task7;
+package ru.mirea.workthree.task7;
 
 import java.text.NumberFormat;
 import java.util.Locale;

@@ -1,4 +1,4 @@
-package Circle;
+package ru.mirea.worktwo.Circle;
 
 public class Point {
     private double x;

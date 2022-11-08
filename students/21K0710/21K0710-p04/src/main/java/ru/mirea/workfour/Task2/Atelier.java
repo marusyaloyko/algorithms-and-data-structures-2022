@@ -1,4 +1,4 @@
-package Task2;
+package ru.mirea.workfour.Task2;
 
 public class Atelier{
     public void dressWomen(Clothes arr[]){

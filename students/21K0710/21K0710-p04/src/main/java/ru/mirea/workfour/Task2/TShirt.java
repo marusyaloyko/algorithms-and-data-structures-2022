@@ -1,4 +1,4 @@
-package Task2;
+package ru.mirea.workfour.Task2;
 
 public class TShirt extends Clothes implements MenClothing, WomenClothing {
     public TShirt(Size size, double price, String color) {

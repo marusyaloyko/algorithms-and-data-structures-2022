@@ -1,4 +1,4 @@
-package Shop;
+package ru.mirea.worktwo.Shop;
 
 import java.util.Scanner;
 

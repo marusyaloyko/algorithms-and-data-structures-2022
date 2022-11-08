@@ -1,4 +1,4 @@
-package Poker;
+package ru.mirea.worktwo.Poker;
 
 public class Card {
     String suit;

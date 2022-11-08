@@ -1,4 +1,4 @@
-package Task1;
+package ru.mirea.workfour.Task1;
 
 public enum Seasons {
     WINTER (-7.9),

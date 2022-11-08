@@ -1,4 +1,4 @@
-package task1;
+package ru.mirea.workfourone.task1;
 
 public class Rectangle extends Shape {
     double a;

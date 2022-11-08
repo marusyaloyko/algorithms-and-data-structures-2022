@@ -1,6 +1,6 @@
-package Task4;
+package ru.mirea.workfour.Task4;
 
-import Task3.Product;
+import ru.mirea.workfour.Task3.Product;
 
 public class Computer {
     private Producers producer;

@@ -1,4 +1,4 @@
-package task1;
+package ru.mirea.workfourone.task1;
 
 public class Shape {
     public String getType()

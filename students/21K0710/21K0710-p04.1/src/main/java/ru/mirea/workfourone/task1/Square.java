@@ -1,5 +1,4 @@
-package task1;
-
+package ru.mirea.workfourone.task1;
 public class Square extends Shape {
     double a;
 

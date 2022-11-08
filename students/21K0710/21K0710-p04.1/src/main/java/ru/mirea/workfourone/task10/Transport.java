@@ -1,4 +1,4 @@
-package task10;
+package ru.mirea.workfourone.task10;
 
 public abstract class Transport {
     protected double pricePerKilometer;

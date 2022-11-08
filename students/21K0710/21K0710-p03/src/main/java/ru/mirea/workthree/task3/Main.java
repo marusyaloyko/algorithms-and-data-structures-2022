@@ -1,4 +1,4 @@
-package task3;
+package ru.mirea.workthree.task3;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package Task2;
+package ru.mirea.workfour.Task2;
 
 public abstract class Clothes implements MenClothing, WomenClothing{
     private Size size;

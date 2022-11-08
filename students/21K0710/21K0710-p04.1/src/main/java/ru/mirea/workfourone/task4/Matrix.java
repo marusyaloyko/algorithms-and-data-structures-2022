@@ -1,4 +1,4 @@
-package task4;
+package ru.mirea.workfourone.task4;
 
 import java.util.Arrays;
 
