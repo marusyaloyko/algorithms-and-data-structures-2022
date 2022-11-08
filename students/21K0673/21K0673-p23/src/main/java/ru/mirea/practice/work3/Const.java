@@ -1,7 +1,18 @@
 package ru.mirea.practice.work3;
 
-abstract class Const {
-    public static void main(String[] args) {
-        System.out.println("f");
+public class Const {
+    private int constant;
+
+    public Const(int constant) {
+        this.constant = constant;
+    }
+
+    public int getConstant() {
+        return constant;
+    }
+
+    @Override
+    public String toString() {
+        return constant + "";
     }
 }
