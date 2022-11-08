@@ -1,8 +1,10 @@
 package ru.mirea.workfourteen.task9;
 
+import java.util.Locale;
+
 public abstract class Alphabet {
-    public static void Alpha(String str) {
-        str = str.toLowerCase();
+    public static void alpha(String str) {
+        str = str.toLowerCase(Locale.ENGLISH);
 
         int[] result = new int['z' - 'a' + 1];
         for (int i = 0; i < str.length(); i++) {
@@ -18,6 +20,6 @@ public abstract class Alphabet {
     }
 
     public static void main(String[] args) {
-        Alpha("Hello World!");
+        alpha("Hello World!");
     }
 }
