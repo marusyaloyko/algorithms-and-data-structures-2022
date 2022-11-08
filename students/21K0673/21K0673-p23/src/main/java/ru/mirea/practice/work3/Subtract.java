@@ -14,7 +14,7 @@ public class Subtract<T> {
         return div;
     }
 
-    public int evaluate(int number) {
+    public double evaluate(int number) {
         Pattern p1 = Pattern.compile("[0-9]");
         Pattern p2 = Pattern.compile("-");
         Pattern p3 = Pattern.compile("\\+");
@@ -31,7 +31,7 @@ public class Subtract<T> {
             }
         }
 
-        int answer = 0;
+        double answer = 0;
         switch (buff) {
             case 0:
                 if (p2.matcher(words[3]).matches()) {
