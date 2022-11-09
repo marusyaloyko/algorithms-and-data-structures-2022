@@ -29,6 +29,7 @@ public class CurrencyConverter {
 
 
 
+    @Override
     public String toString() {
         return "Translation " + s + "\nfrom " + from + " in " + inlang + "\nOutput " + formated();
     }
