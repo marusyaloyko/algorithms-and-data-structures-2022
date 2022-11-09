@@ -1,13 +1,12 @@
-package ru.mirea.practice.work3;
+package ru.mirea.practice.work3to4;
 
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Subtract<T> {
+public class Divide<T> {
     private String div;
 
-    Subtract(T a, T b) {
-        div = a.toString() + " - " + b.toString();
+    Divide(T a, T b) {
+        div = a.toString() + " / " + b.toString();
     }
 
     public String getDiv() {
