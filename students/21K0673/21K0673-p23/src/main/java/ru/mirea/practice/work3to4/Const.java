@@ -1,4 +1,4 @@
-package ru.mirea.practice.work3;
+package ru.mirea.practice.work3to4;
 
 public class Const {
     private int constant;
