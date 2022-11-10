@@ -34,3 +34,4 @@ public class Dog {
         return "Age:" + age + ", Name: " + name + ", Human age: " + humanAge();
     }
 }
+

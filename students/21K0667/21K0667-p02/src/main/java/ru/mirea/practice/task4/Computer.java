@@ -57,3 +57,4 @@ public class Computer {
         System.out.println("GPU: " + this.getGraphicCard() + " CPU: " + this.getCpu() + " RAM: " + this.getRam() + "\n");
     }
 }
+

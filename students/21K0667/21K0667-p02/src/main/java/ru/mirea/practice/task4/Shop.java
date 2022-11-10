@@ -64,7 +64,5 @@ abstract class Shop {
             System.out.println();
         }
     }
-
-
-
 }
+
