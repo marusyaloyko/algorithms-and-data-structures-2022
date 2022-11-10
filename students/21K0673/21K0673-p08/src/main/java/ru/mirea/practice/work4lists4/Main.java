@@ -8,11 +8,11 @@ abstract class Main {
                 System.out.println("Check");
             }
         }
-        list.addFront("apple");
+        list.addFront("bol");
         System.out.println(list);
-        list.addFront("book");
+        list.addFront("aa");
         System.out.println(list);
-        list.addFront("water");
+        list.addFront("bol");
         System.out.println(list);
         list.remove("water");
         System.out.println(list);
