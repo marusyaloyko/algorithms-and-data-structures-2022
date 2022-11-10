@@ -30,4 +30,5 @@ public class Circle extends Point {
         center.setX(x);
         center.setY(y);
     }
+
 }

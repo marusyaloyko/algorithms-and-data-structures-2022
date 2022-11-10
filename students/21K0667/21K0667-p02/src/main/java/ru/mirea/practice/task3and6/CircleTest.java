@@ -17,6 +17,7 @@ abstract class CircleTest {
         System.out.println(circle2.square());
         System.out.println(circle2.lenght());
     }
+
 }
 
 

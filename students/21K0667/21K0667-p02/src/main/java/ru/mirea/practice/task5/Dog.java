@@ -33,5 +33,6 @@ public class Dog {
     public String toString() {
         return "Age:" + age + ", Name: " + name + ", Human age: " + humanAge();
     }
+
 }
 

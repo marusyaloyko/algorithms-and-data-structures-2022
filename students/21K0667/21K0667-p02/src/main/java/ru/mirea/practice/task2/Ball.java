@@ -45,4 +45,5 @@ public class Ball {
     public String toString() {
         return "Ball: X = " + x + ", Y = " + y;
     }
+
 }

@@ -8,5 +8,6 @@ abstract class Test {
         listDogs.addDogs(list);
 
     }
+
 }
 
