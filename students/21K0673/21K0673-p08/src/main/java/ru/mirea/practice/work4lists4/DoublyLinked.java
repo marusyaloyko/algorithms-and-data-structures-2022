@@ -8,31 +8,61 @@ public class DoublyLinked<String> {
         front = null;
     }
 
-    public void addFront(String x) {
-        if (isEmpty()) {
-            front = new ListNode<>(x);
-        } else {
-            ListNode<String> temp = front;
-            front = new ListNode<>(null, x, temp);
-            if (size > 0) {
-                if (front.data.toString().charAt(0) < front.next.data.toString().charAt(0) | (front.data.toString().charAt(0) == front.next.data.toString().charAt(0) & front.data.toString().length() == front.next.data.toString().length())) {
-                    front.next.prev = front;
-                } else {
-                    addAfter(front.next.data, front.data);
-                    remove(front.data);
-                    size--;
-                    for (int i = 1; i < size; i++) {
-                        front = new ListNode<>(front, front.next.data, front.next.next);
-                        System.out.println(front.prev.data + " " + front.data + " " + front.next.data);
-                        addAfter(front.next.data, front.data);
-                        remove(front.data);
-                        addFront(front.prev.data);
-                        size--;
-                    }
+    public void compare(String string) {
+        ListNode<String> current = front;
+        boolean bool = false;
+        int s = 0;
+        for (int i = -1; i < string.toString().length(); ) {
+            for (int j = 0; j < current.data.toString().length(); j++) {
+                i++;
+                if (string.toString().charAt(i) < current.data.toString().charAt(j) | (string.toString().charAt(i) == current.data.toString().charAt(j) & string.toString().length() < current.data.toString().length() & i == string.toString().length() - 1)) {
+                    bool = true;
+                    s = 1;
+                    break;
+                } else if (string.toString().charAt(i) > current.data.toString().charAt(j) | (string.toString().charAt(i) == current.data.toString().charAt(j) & string.toString().length() > current.data.toString().length() & j == current.data.toString().length() - 1)) {
+                    s = 1;
+                    break;
                 }
-            } else {
-                front.next.prev = front;
             }
+            if (s == 1) {
+                s = 0;
+                break;
+            }
+        }
+        if (bool) {
+            addBefore(current.data, string);
+            size--;
+            s = 1;
+        } else {
+            addAfter(current.data, string);
+            size--;
+        }
+        while (current.next != null) {
+            if (string.toString().charAt(0) >= current.data.toString().charAt(0)) {
+                if (string == current.data) {
+                    break;
+                }
+                current = current.next;
+            } else {
+                break;
+            }
+        }
+        if (s == 0) {
+            addAfter(current.data, string);
+            if (string == current.data) {
+                remove(current.data);
+            } else if (string == current.prev.data) {
+                remove(current.prev.data);
+            }
+        }
+        size--;
+    }
+
+    public void addFront(String string) {
+        if (isEmpty()) {
+            front = new ListNode<>(string);
+        } else {
+            compare(string);
         }
         size++;
     }
@@ -42,18 +72,43 @@ public class DoublyLinked<String> {
             System.out.println("Элемент " + x.toString() + " не найден");
         } else {
             ListNode<String> current = front;
-            while (current != null && !current.data.equals(x))
+            while (current != null && !current.data.equals(x)) {
                 current = current.next;
+            }
             if (current == null) {
-                System.out.println("Элемент " + x.toString() + " найден");
+                System.out.println("Элемент " + x.toString() + " не найден");
             } else {
                 ListNode<String> newNode = new ListNode<>(current, y, current.next);
-                if (current.next != null)
+                if (current.next != null) {
                     current.next.prev = newNode;
+                }
                 current.next = newNode;
             }
         }
         size++;
+    }
+
+    public void addBefore(String x, String y) {
+        if (isEmpty()) {
+            System.out.println("Элемент " + x.toString() + " не найден");
+        } else {
+            ListNode<String> current = front;
+            while (current != null && !current.data.equals(x)) {
+                current = current.next;
+            }
+            if (current == null) {
+                System.out.println("Элемент " + x.toString() + " не найден");
+            } else {
+                ListNode<String> newNode = new ListNode<>(current.prev, y, current);
+                if (current.prev != null) {
+                    current.prev.next = newNode;
+                } else {
+                    front = newNode;
+                }
+                current.prev = newNode;
+                size++;
+            }
+        }
     }
 
     public void remove(String x) {
