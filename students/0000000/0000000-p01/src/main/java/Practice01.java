@@ -1,6 +1,4 @@
-package ru;
-
-abstract class Practice01 {
+public final class Practice01 {
     public static void main(String[] args) {
         System.out.println("Hello world!");
     }
