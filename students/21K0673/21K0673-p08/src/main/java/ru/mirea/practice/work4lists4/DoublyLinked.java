@@ -9,10 +9,10 @@ public class DoublyLinked<String> {
     }
 
     public void compare(String string) {
-        ListNode<String> current = front;
-        boolean bool = false;
-        int s = 0;
-        for (int i = -1; i < string.toString().length(); ) {
+        ListNode<String> current = front; //буферный узел
+        boolean bool = false; //буферная переменная для постановки перед или за первым элементом
+        int s = 0; //буферная переменная для завершения цикла и не добавления элемента, если он уже был добавлен
+        for (int i = -1; i < string.toString().length(); ) { //цикл, определяющий, куда, относительно первого элемента необходимо поставить строку
             for (int j = 0; j < current.data.toString().length(); j++) {
                 i++;
                 if (string.toString().charAt(i) < current.data.toString().charAt(j) | (string.toString().charAt(i) == current.data.toString().charAt(j) & string.toString().length() < current.data.toString().length() & i == string.toString().length() - 1)) {
@@ -37,7 +37,7 @@ public class DoublyLinked<String> {
             addAfter(current.data, string);
             size--;
         }
-        while (current.next != null) {
+        while (current.next != null) { //цикл для не первых элементов
             if (string.toString().charAt(0) >= current.data.toString().charAt(0)) {
                 if (string == current.data) {
                     break;
@@ -49,7 +49,7 @@ public class DoublyLinked<String> {
         }
         if (s == 0) {
             addAfter(current.data, string);
-            if (string == current.data) {
+            if (string == current.data) { //убираем лишние элементы, если поставились
                 remove(current.data);
             } else if (string == current.prev.data) {
                 remove(current.prev.data);
