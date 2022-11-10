@@ -1,7 +1,7 @@
 package ru.mirea.practice.work3;
 
 public interface ICreateDocument {
-    IDocument CreateNew();
+    IDocument CreateNew(String string);
 
-    IDocument CreateOpen();
+    IDocument CreateOpen(String string);
 }
