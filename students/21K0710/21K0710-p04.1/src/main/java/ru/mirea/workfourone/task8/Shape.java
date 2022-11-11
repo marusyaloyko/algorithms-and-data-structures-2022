@@ -5,6 +5,7 @@ public abstract class Shape {
     protected boolean filled;
 
     public Shape() {
+        // constructor
     }
 
     public Shape(String color, boolean filled) {
@@ -34,9 +35,6 @@ public abstract class Shape {
 
     @Override
     public String toString() {
-        return "Shape{" +
-                "color='" + color + '\'' +
-                ", filled=" + filled +
-                '}';
+        return "Shape{" + "color='" + color + '\'' + ", filled=" + filled + '}';
     }
 }

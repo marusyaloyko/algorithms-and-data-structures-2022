@@ -1,8 +1,11 @@
 package ru.mirea.workfourone.task7;
 
-public class Tester {
+public final class Tester {
+    private Tester() {
+    }
+
     public static void main(String[] args) {
-        Learner arr[] = new Learner[4];
+        Learner[] arr = new Learner[4];
         arr[0] = new Student("1", "1", 1, "1", "1");
         arr[1] = new Student("2", "2", 2, "2", "2");
         arr[2] = new Schoolboy("3", "3", 3, "3");
@@ -14,9 +17,9 @@ public class Tester {
             }
         }
         System.out.println("Студенты в базе:");
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i].getClass() == Student.class) {
-                System.out.println(arr[i]);
+        for (Learner learner: arr) {
+            if (learner.getClass() == Student.class) {
+                System.out.println(learner);
             }
         }
     }

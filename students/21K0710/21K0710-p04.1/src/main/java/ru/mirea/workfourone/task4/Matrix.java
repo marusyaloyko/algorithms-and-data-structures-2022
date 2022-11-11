@@ -47,7 +47,7 @@ public class Matrix {
             }
         }
         c = new Matrix(arrc, this.lanes, this.columns);
-        return (c);
+        return c;
     }
 
     public Matrix mul(int b) {
@@ -59,15 +59,11 @@ public class Matrix {
             }
         }
         c = new Matrix(arrc, this.lanes, this.columns);
-        return (c);
+        return c;
     }
 
     @Override
     public String toString() {
-        return "Matrix{" +
-                "array=" + Arrays.toString(array) +
-                ", lanes=" + lanes +
-                ", columns=" + columns +
-                '}';
+        return "Matrix{" + "array=" + Arrays.toString(array) + ", lanes=" + lanes + ", columns=" + columns + '}';
     }
 }

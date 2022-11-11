@@ -1,7 +1,7 @@
 package ru.mirea.workthree.task2;
 
 public class Circle {
-    private Point point;
+    private final Point point;
     private double radius;
     private double length;
 
@@ -9,6 +9,14 @@ public class Circle {
         this.point = new Point(x, y);
         this.radius = radius;
         this.length = 2 * Math.PI * this.radius;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
     }
 
     public double getRadius() {
@@ -33,9 +41,6 @@ public class Circle {
 
     @Override
     public String toString() {
-        return "Circle{" +
-                "point=" + point +
-                ", radius=" + radius +
-                '}';
+        return "Circle{" + "point=" + point + ", radius=" + radius + '}';
     }
 }

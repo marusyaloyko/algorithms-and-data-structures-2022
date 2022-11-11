@@ -5,6 +5,7 @@ public abstract class Transport {
     protected double multiplierPerKilogram;
 
     public Transport() {
+        // constructor
     }
 
     public Transport(double pricePerKilometer, double multiplierPerKilogram) {
@@ -40,9 +41,6 @@ public abstract class Transport {
 
     @Override
     public String toString() {
-        return "task10.Transport{" +
-                "pricePerKilometer=" + pricePerKilometer +
-                ", multiplierPerKilogram=" + multiplierPerKilogram +
-                '}';
+        return "task10.Transport{" + "pricePerKilometer=" + pricePerKilometer + ", multiplierPerKilogram=" + multiplierPerKilogram + '}';
     }
 }

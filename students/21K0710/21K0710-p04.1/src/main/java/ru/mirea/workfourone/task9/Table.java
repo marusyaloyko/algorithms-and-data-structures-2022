@@ -4,6 +4,7 @@ public class Table extends Furniture {
     protected double height;
 
     public Table() {
+        // constructor
     }
 
     public Table(double height) {
@@ -25,10 +26,6 @@ public class Table extends Furniture {
 
     @Override
     public String toString() {
-        return "Table{" +
-                "height=" + height +
-                ", material='" + material + '\'' +
-                ", price=" + price +
-                '}';
+        return "Table{" + "height=" + height + ", material='" + material + '\'' + ", price=" + price + '}';
     }
 }

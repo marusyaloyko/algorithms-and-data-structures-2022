@@ -13,10 +13,6 @@ public class Learner {
 
     @Override
     public String toString() {
-        return "Learner{" +
-                "name='" + name + '\'' +
-                ", number='" + number + '\'' +
-                ", averageMark=" + averageMark +
-                '}';
+        return "Learner{" + "name='" + name + '\'' + ", number='" + number + '\'' + ", averageMark=" + averageMark + '}';
     }
 }

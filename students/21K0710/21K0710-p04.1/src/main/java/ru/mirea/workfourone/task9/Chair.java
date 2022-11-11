@@ -5,6 +5,7 @@ public class Chair extends Furniture {
     protected boolean chairback;
 
     public Chair() {
+        // constructor
     }
 
     public Chair(double height, boolean chairback) {
@@ -36,11 +37,6 @@ public class Chair extends Furniture {
 
     @Override
     public String toString() {
-        return "Chair{" +
-                "height=" + height +
-                ", chairback=" + chairback +
-                ", material='" + material + '\'' +
-                ", price=" + price +
-                '}';
+        return "Chair{" + "height=" + height + ", chairback=" + chairback + ", material='" + material + '\'' + ", price=" + price + '}';
     }
 }

@@ -10,8 +10,6 @@ public class Schoolboy extends Learner {
 
     @Override
     public String toString() {
-        return "Schoolboy{" + super.toString() +
-                "grade='" + grade + '\'' +
-                '}';
+        return "Schoolboy{" + super.toString() + "grade='" + grade + '\'' + '}';
     }
 }

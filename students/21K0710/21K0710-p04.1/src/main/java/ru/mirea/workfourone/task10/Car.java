@@ -4,6 +4,7 @@ public class Car extends Transport {
     protected double averageSpeed;
 
     public Car() {
+        // constructor
     }
 
     public Car(double pricePerKilometer, double multiplierPerKilogram, double averageSpeed) {
@@ -41,10 +42,7 @@ public class Car extends Transport {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "averageSpeed=" + averageSpeed +
-                ", pricePerKilometer=" + pricePerKilometer +
-                ", multiplierPerKilogram=" + multiplierPerKilogram +
-                '}';
+        return "Car{" + "averageSpeed=" + averageSpeed + ", pricePerKilometer=" + pricePerKilometer + ", multiplierPerKilogram="
+                + multiplierPerKilogram + '}';
     }
 }

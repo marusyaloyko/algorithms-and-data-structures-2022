@@ -4,6 +4,7 @@ public class Square extends Rectangle {
     private double side;
 
     public Square() {
+        // constructor
     }
 
     public Square(double side) {
@@ -26,12 +27,12 @@ public class Square extends Rectangle {
 
     @Override
     public void setWidth(double side) {
-        super.setWidth(side);
+        this.width = side;
     }
 
     @Override
     public void setLength(double side) {
-        super.setLength(side);
+        this.length = side;
     }
 
     @Override

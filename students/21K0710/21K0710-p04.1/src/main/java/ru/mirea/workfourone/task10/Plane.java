@@ -4,6 +4,7 @@ public class Plane extends Transport {
     protected double averageSpeed;
 
     public Plane() {
+        // constructor
     }
 
     public Plane(double pricePerKilometer, double multiplierPerKilogram, double averageSpeed) {
@@ -41,11 +42,8 @@ public class Plane extends Transport {
 
     @Override
     public String toString() {
-        return "Plane{" +
-                "averageSpeed=" + averageSpeed +
-                ", pricePerKilometer=" + pricePerKilometer +
-                ", multiplierPerKilogram=" + multiplierPerKilogram +
-                '}';
+        return "Plane{" + "averageSpeed=" + averageSpeed + ", pricePerKilometer=" + pricePerKilometer + ", multiplierPerKilogram="
+                + multiplierPerKilogram + '}';
     }
 
 }

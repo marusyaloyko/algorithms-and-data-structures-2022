@@ -5,6 +5,7 @@ public class Sofa extends Furniture {
     protected double height;
 
     public Sofa() {
+        // constructor
     }
 
     public Sofa(double width, double height) {
@@ -36,11 +37,6 @@ public class Sofa extends Furniture {
 
     @Override
     public String toString() {
-        return "Sofa{" +
-                "width=" + width +
-                ", height=" + height +
-                ", material='" + material + '\'' +
-                ", price=" + price +
-                '}';
+        return "Sofa{" + "width=" + width + ", height=" + height + ", material='" + material + '\'' + ", price=" + price + '}';
     }
 }

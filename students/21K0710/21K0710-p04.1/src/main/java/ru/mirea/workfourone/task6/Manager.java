@@ -14,8 +14,6 @@ public class Manager extends Employer {
 
     @Override
     public String toString() {
-        return "Manager{" + super.toString() +
-                "averageSum=" + averageSum +
-                '}';
+        return "Manager{" + super.toString() + "averageSum=" + averageSum + '}';
     }
 }

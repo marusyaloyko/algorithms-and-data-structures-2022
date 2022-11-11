@@ -1,6 +1,9 @@
 package ru.mirea.workfourone.task2;
 
-public class Main {
+public final class Main {
+    private Main() {
+    }
+
     public static void main(String[] args) {
         Phone a = new Phone("89123145385", "A", 128.3);
         Phone b = new Phone("89265263589", "B", 150.7);

@@ -1,9 +1,11 @@
 package ru.mirea.workthree.task5;
 
-public class Main {
+public final class Main {
+    private Main() {
+    }
+
     public static void main(String[] args) {
         Double a = Double.valueOf("368.17798237984");
-        Double b = Double.valueOf(14.174826395769);
         Double.parseDouble("27.12646873254");
         System.out.println(a.byteValue());
         System.out.println(a.toString());

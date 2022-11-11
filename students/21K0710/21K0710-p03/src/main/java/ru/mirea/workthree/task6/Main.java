@@ -1,6 +1,9 @@
 package ru.mirea.workthree.task6;
 
-public class Main {
+public final class Main {
+    private Main() {
+    }
+
     public static void main(String[] args) {
         System.out.println("                          Boolean Byte Character Double Float Integer Long Short isStatic");
         System.out.println("byteValue                          x                x     x      x      x    x           ");

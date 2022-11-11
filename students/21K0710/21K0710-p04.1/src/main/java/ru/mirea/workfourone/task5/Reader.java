@@ -59,20 +59,8 @@ public class Reader {
         System.out.println(name + " взял(а) " + n + " книг(и)");
     }
 
-    public void returnBook(int n) {
-        System.out.println(name + " вернул(а) " + n + " книг(и)");
-    }
-
     public void takeBook(String... books) {
         System.out.print(name + " взял(а) книгу(и): ");
-        for (int i = 0; i < books.length - 1; i++) {
-            System.out.print(books[i] + ", ");
-        }
-        System.out.println(books[books.length - 1]);
-    }
-
-    public void returnBook(String... books) {
-        System.out.print(name + " вернул(а) книгу(и): ");
         for (int i = 0; i < books.length - 1; i++) {
             System.out.print(books[i] + ", ");
         }
@@ -87,6 +75,18 @@ public class Reader {
         System.out.println(books[books.length - 1].getName());
     }
 
+    public void returnBook(int n) {
+        System.out.println(name + " вернул(а) " + n + " книг(и)");
+    }
+
+    public void returnBook(String... books) {
+        System.out.print(name + " вернул(а) книгу(и): ");
+        for (int i = 0; i < books.length - 1; i++) {
+            System.out.print(books[i] + ", ");
+        }
+        System.out.println(books[books.length - 1]);
+    }
+
     public void returnBook(Book... books) {
         System.out.print(name + " вернул(а) книгу(и): ");
         for (int i = 0; i < books.length - 1; i++) {
@@ -97,12 +97,7 @@ public class Reader {
 
     @Override
     public String toString() {
-        return "Reader{" +
-                "name='" + name + '\'' +
-                ", ticket='" + ticket + '\'' +
-                ", faculty='" + faculty + '\'' +
-                ", birthday='" + birthday + '\'' +
-                ", number='" + number + '\'' +
-                '}';
+        return "Reader{" + "name='" + name + '\'' + ", ticket='" + ticket + '\'' + ", faculty='" + faculty + '\'' + ", birthday='"
+                + birthday + '\'' + ", number='" + number + '\'' + '}';
     }
 }

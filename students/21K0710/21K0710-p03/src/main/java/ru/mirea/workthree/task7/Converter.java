@@ -1,29 +1,29 @@
 package ru.mirea.workthree.task7;
 
 public class Converter {
-    double RUB;
+    double rub;
 
-    public Converter(double RUB) {
-        this.RUB = RUB;
+    public Converter(double rub) {
+        this.rub = rub;
     }
 
-    public double getRUB() {
-        return RUB;
+    public double getRub() {
+        return rub;
     }
 
-    public void setRUB(double RUB) {
-        this.RUB = RUB;
+    public void setRub(double rub) {
+        this.rub = rub;
     }
 
-    public double EUR() {
-        return this.RUB / 62.6;
+    public double eur() {
+        return this.rub / 62.6;
     }
 
-    public double USD() {
-        return this.RUB / 63.5;
+    public double usd() {
+        return this.rub / 63.5;
     }
 
-    public double CNY() {
-        return this.RUB / 8.7;
+    public double cny() {
+        return this.rub / 8.7;
     }
 }

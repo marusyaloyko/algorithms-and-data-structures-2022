@@ -3,9 +3,12 @@ package ru.mirea.workthree.task1;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Main {
+public final class Main {
+    private Main() {
+    }
+
     public static void main(String[] args) {
-        double arr[] = new double[10];
+        double[] arr = new double[10];
         for (int i = 0; i < 5; i++) {
             arr[i] = Math.random();
         }

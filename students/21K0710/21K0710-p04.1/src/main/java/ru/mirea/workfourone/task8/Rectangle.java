@@ -5,6 +5,7 @@ public class Rectangle extends Shape {
     protected double length;
 
     public Rectangle() {
+        // constructor
     }
 
     public Rectangle(double width, double length) {

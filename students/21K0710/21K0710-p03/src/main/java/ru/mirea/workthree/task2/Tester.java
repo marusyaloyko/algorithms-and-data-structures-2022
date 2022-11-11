@@ -2,11 +2,14 @@ package ru.mirea.workthree.task2;
 
 import java.util.Random;
 
-public class Tester {
+public final class Tester {
+    private Tester() {
+    }
+
     public static Circle[] arrCircle;
     public static int N;
 
-    public static Circle biggestCircle(Circle arr[], int n) {
+    public static Circle biggestCircle(Circle[] arr, int n) {
         Circle ans = new Circle(0, 0, 0);
         for (int i = 0; i < n; i++) {
             if (ans.getRadius() < arr[i].getRadius()) {
@@ -16,7 +19,7 @@ public class Tester {
         return ans;
     }
 
-    public static Circle smallestCircle(Circle arr[], int n) {
+    public static Circle smallestCircle(Circle[] arr, int n) {
         Circle ans = new Circle(0, 0, 10000000);
         for (int i = 0; i < n; i++) {
             if (ans.getRadius() > arr[i].getRadius()) {
@@ -26,7 +29,7 @@ public class Tester {
         return ans;
     }
 
-    public static void sortCircle(Circle arr[], int n) {
+    public static void sortCircle(Circle[] arr, int n) {
         for (int i = 0; i < n - 1; i++) {
             for (int g = 0; g < n - 1; g++) {
                 if (arr[i].getRadius() > arr[i + 1].getRadius()) {
@@ -41,12 +44,12 @@ public class Tester {
     public static void main(String[] args) {
         Random rand = new Random();
         Circle a = new Circle(1.3, 2.5, rand.nextDouble());
-        Circle b = new Circle(0.0, 0.0, rand.nextDouble());
-        Circle c = new Circle(150.5, 12.0, rand.nextDouble());
         N = 3;
         arrCircle = new Circle[N];
         arrCircle[0] = a;
+        Circle b = new Circle(0.0, 0.0, rand.nextDouble());
         arrCircle[1] = b;
+        Circle c = new Circle(150.5, 12.0, rand.nextDouble());
         arrCircle[2] = c;
         System.out.println(arrCircle[0]);
         System.out.println(arrCircle[1]);

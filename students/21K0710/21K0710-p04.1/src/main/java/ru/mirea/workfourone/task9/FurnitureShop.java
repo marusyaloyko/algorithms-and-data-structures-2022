@@ -1,6 +1,9 @@
 package ru.mirea.workfourone.task9;
 
-public class FurnitureShop {
+public final class FurnitureShop {
+    private FurnitureShop() {
+    }
+
     public static void main(String[] args) {
         Furniture[] furnitures = new Furniture[5];
         furnitures[0] = new Chair();

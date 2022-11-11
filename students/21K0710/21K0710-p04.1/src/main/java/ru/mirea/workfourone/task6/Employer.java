@@ -17,10 +17,6 @@ public class Employer {
 
     @Override
     public String toString() {
-        return "Employer{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", income=" + income +
-                '}';
+        return "Employer{" + "firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", income=" + income + '}';
     }
 }

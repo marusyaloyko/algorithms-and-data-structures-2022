@@ -21,17 +21,12 @@ public class Rectangle extends Shape {
 
     @Override
     public double getArea() {
-        return (a * b);
+        return a * b;
     }
 
     @Override
     public String toString() {
-        return "task1.Rectangle{" +
-                ", a=" + a +
-                ", b=" + b +
-                ", type: " + getType() +
-                ", perimeter: " + getPerimeter() +
-                ", area: " + getArea() +
-                '}';
+        return "task1.Rectangle{" + ", a=" + a + ", b=" + b + ", type: " + getType() + ", perimeter: " + getPerimeter()
+                + ", area: " + getArea() + '}';
     }
 }

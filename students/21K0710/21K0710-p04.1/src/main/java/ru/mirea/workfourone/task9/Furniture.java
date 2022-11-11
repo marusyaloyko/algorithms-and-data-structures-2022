@@ -5,6 +5,7 @@ public abstract class Furniture {
     protected double price;
 
     public Furniture() {
+        // constructor
     }
 
     public Furniture(String material, double price) {
@@ -30,9 +31,6 @@ public abstract class Furniture {
 
     @Override
     public String toString() {
-        return "Furniture{" +
-                "material='" + material + '\'' +
-                ", price=" + price +
-                '}';
+        return "Furniture{" + "material='" + material + '\'' + ", price=" + price + '}';
     }
 }

@@ -12,9 +12,6 @@ public class Student extends Learner {
 
     @Override
     public String toString() {
-        return "Student{" + super.toString() +
-                "ticket='" + ticket + '\'' +
-                ", faculty='" + faculty + '\'' +
-                '}';
+        return "Student{" + super.toString() + "ticket='" + ticket + '\'' + ", faculty='" + faculty + '\'' + '}';
     }
 }

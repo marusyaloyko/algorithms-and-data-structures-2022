@@ -2,10 +2,13 @@ package ru.mirea.workthree.task3;
 
 import java.util.Random;
 
-public class Main {
+public final class Main {
+    private Main() {
+    }
+
     public static void main(String[] args) {
         Random rand = new Random();
-        int arr[] = new int[4];
+        int[] arr = new int[4];
         for (int i = 0; i < 4; i++) {
             arr[i] = rand.nextInt(90) + 10;
             System.out.print(arr[i] + " ");

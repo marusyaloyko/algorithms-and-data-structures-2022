@@ -1,7 +1,10 @@
 package ru.mirea.workthree.task8;
 
-public class Report {
-    public static void generateReport(Employee arr[], int n) {
+public final class Report {
+    private Report() {
+    }
+
+    public static void generateReport(Employee[] arr, int n) {
         for (int i = 0; i < n; i++) {
             System.out.printf("Имя, выплаты: %s %30.2f", arr[i].getFullname(), arr[i].getSalary());
             System.out.println();
@@ -9,7 +12,7 @@ public class Report {
     }
 
     public static void main(String[] args) {
-        Employee arr[] = new Employee[5];
+        Employee[] arr = new Employee[5];
         arr[1] = new Employee("John", 1000);
         arr[2] = new Employee("Mary", 500.154325);
         arr[3] = new Employee("Sarah", 32.167);
