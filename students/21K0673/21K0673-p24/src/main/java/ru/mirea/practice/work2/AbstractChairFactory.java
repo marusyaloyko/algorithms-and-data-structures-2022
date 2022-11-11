@@ -5,5 +5,5 @@ interface AbstractChairFactory {
 
     MagicChair createMagicChair();
 
-    FunctionalСhair createFunctionalСhair();
+    Functionalchair createfunctionalChair();
 }

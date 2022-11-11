@@ -1,9 +1,10 @@
 package ru.mirea.practice.work1;
 
 abstract class ArrayQueueadt {
-    int SIZE;
+    int size;
     int[] items;
-    int front, rear;
+    int front;
+    int rear;
 
     abstract int getElement(int index);
 

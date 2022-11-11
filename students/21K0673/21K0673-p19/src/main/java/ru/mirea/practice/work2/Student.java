@@ -1,7 +1,5 @@
 package ru.mirea.practice.work2;
 
-import java.util.Date;
-
 class Student {
     int mark;
     private String fullname;

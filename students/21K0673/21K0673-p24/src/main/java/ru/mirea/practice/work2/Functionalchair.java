@@ -1,6 +1,6 @@
 package ru.mirea.practice.work2;
 
-public class FunctionalСhair implements Chair {
+public class Functionalchair implements Chair {
     public int sum(int a, int b) {
         return a + b;
     }

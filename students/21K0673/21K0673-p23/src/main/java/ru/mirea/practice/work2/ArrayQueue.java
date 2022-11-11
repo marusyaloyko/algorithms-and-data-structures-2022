@@ -1,17 +1,18 @@
 package ru.mirea.practice.work2;
 
 public class ArrayQueue {
-    private int SIZE = 5;
-    private int[] items = new int[SIZE];
-    private int front, rear;
+    private int size = 5;
+    private int[] items = new int[size];
+    private int front;
+    private int rear;
 
     ArrayQueue() {
         front = -1;
         rear = -1;
     }
 
-    public int getSIZE() {
-        return SIZE;
+    public int getSize() {
+        return size;
     }
 
     public int getElement(int index) {
@@ -19,7 +20,7 @@ public class ArrayQueue {
     }
 
     public boolean isFull() {
-        return front == 0 && rear == SIZE - 1;
+        return front == 0 && rear == size - 1;
     }
 
     public boolean isEmpty() {
@@ -43,7 +44,7 @@ public class ArrayQueue {
         int element;
         if (isEmpty()) {
             System.out.println("Queue is empty");
-            return (-1);
+            return -1;
         } else {
             element = items[front];
             if (front >= rear) {
@@ -53,7 +54,7 @@ public class ArrayQueue {
                 front++;
             }
             System.out.println(element + "Deleted");
-            return (element);
+            return element;
         }
     }
 

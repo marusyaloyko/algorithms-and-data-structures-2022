@@ -1,6 +1,5 @@
 package ru.mirea.practice.work3to4;
 
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Subtract<T> {
@@ -25,7 +24,8 @@ public class Subtract<T> {
         String[] words = pattern.split(div);
         int buff = 0;
         for (int i = 0; i < words.length; i += 2) {
-            if (!p1.matcher(words[i]).matches() & !p2.matcher(words[i]).matches() & !p3.matcher(words[i]).matches() & !p4.matcher(words[i]).matches() & !p5.matcher(words[i]).matches()) {
+            if (!p1.matcher(words[i]).matches() & !p2.matcher(words[i]).matches() & !p3.matcher(words[i]).matches()
+                    & !p4.matcher(words[i]).matches() & !p5.matcher(words[i]).matches()) {
                 buff = i;
                 break;
             }
@@ -174,6 +174,9 @@ public class Subtract<T> {
                         answer = answer / Integer.parseInt(words[2]);
                     }
                 }
+                break;
+            default:
+                System.out.println("Error");
                 break;
         }
         System.out.println(answer);

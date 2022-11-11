@@ -1,13 +1,18 @@
 package ru.mirea.practice.work1;
 
-abstract class arrayqueuemoduleTest {
+abstract class ArrayqueueTest {
     public static void main(String[] args) {
         ArrayQueue q = new ArrayQueue();
         q.dequeue();
         for (int i = 1; i < 6; i++) {
             q.enqueue(i);
         }
-        ArrayQueuemodule element = new ArrayQueuemodule(q, 3);
-        System.out.println(element.getElement());
+        q.enqueue(6);
+        q.display();
+        q.dequeue();
+        q.display();
+        q.element();
+        q.size();
+        q.clear();
     }
 }

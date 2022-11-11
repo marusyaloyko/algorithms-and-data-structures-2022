@@ -2,15 +2,10 @@ package ru.mirea.practice.work2;
 
 import java.util.Collection;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.Queue;
 
 public class LinkedQueue<T> implements Queue<T> {
     Queue<T> numbers;
-
-    LinkedQueue(LinkedList<T> linkedList) {
-        numbers = linkedList;
-    }
 
     @Override
     public int size() {
@@ -19,26 +14,18 @@ public class LinkedQueue<T> implements Queue<T> {
 
     @Override
     public boolean isEmpty() {
-        if (numbers.size() == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return numbers.size() == 0;
     }
 
     @Override
     public boolean contains(Object o) {
         boolean a = false;
         for (int i = 0; i < numbers.size(); i++) {
-            if (numbers.element() == o) {
+            if (numbers.element().equals(o)) {
                 a = true;
             }
         }
-        if (!a) {
-            return false;
-        } else {
-            return true;
-        }
+        return a;
     }
 
     @Override
@@ -53,7 +40,7 @@ public class LinkedQueue<T> implements Queue<T> {
 
     @Override
     public <T1> T1[] toArray(T1[] a) {
-        return null;
+        return a;
     }
 
     @Override
@@ -64,6 +51,11 @@ public class LinkedQueue<T> implements Queue<T> {
     @Override
     public boolean remove(Object o) {
         return numbers.remove(o);
+    }
+
+    @Override
+    public T remove() {
+        return null;
     }
 
     @Override
@@ -94,11 +86,6 @@ public class LinkedQueue<T> implements Queue<T> {
     @Override
     public boolean offer(T t) {
         return false;
-    }
-
-    @Override
-    public T remove() {
-        return null;
     }
 
     @Override
