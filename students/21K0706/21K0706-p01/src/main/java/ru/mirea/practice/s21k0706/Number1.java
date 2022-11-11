@@ -1,5 +1,7 @@
 package ru.mirea.practice.s21k0706;
+
 import java.util.Scanner;
+
 public final class Number1 {
     private Number1() {
 
@@ -15,9 +17,9 @@ public final class Number1 {
                 a[i] = n;
                 s += a[i];
             }
-        /*for (int i=0; i<a.length;i++) {
-            System.out.print(a[i] + " ");
-        }*/
+            /*for (int i=0; i<a.length;i++) {
+                System.out.print(a[i] + " ");
+            }*/
             double sr;
             sr = s / a.length;
             System.out.print("Sum of array elements: " + s);
