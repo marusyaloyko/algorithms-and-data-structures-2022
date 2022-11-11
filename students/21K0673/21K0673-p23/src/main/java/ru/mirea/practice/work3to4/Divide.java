@@ -24,8 +24,7 @@ public class Divide<T> {
         String[] words = pattern.split(div);
         int buff = 0;
         for (int i = 0; i < words.length; i += 2) {
-            if (!p1.matcher(words[i]).matches() & !p2.matcher(words[i]).matches() & !p3.matcher(words[i]).matches()
-                    & !p4.matcher(words[i]).matches() & !p5.matcher(words[i]).matches()) {
+            if (!p1.matcher(words[i]).matches() & !p2.matcher(words[i]).matches() & !p3.matcher(words[i]).matches() & !p4.matcher(words[i]).matches() & !p5.matcher(words[i]).matches()) {
                 buff = i;
                 break;
             }
@@ -174,9 +173,6 @@ public class Divide<T> {
                         answer = answer / Integer.parseInt(words[2]);
                     }
                 }
-                break;
-            default:
-                System.out.println("Error");
                 break;
         }
         System.out.println(answer);

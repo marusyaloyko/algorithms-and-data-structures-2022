@@ -1,29 +1,25 @@
 package ru.mirea.practice.work4lists4;
 
-public class DoublyLinked<T> {
-    private ListNode<T> front;
+public class DoublyLinked<String> {
+    private ListNode<String> front;
     private int size;
 
     public DoublyLinked() {
         front = null;
     }
 
-    public void compare(T string) {
-        ListNode<T> current = front; //буферный узел
+    public void compare(String string) {
+        ListNode<String> current = front; //буферный узел
         boolean bool = false; //буферная переменная для постановки перед или за первым элементом
         int s = 0; //буферная переменная для завершения цикла и не добавления элемента, если он уже был добавлен
         for (int i = -1; i < string.toString().length(); ) { //цикл, определяющий, куда, относительно первого элемента необходимо поставить строку
             for (int j = 0; j < current.data.toString().length(); j++) {
                 i++;
-                if (string.toString().charAt(i) < current.data.toString().charAt(j) | (string.toString().charAt(i)
-                        == current.data.toString().charAt(j) & string.toString().length()
-                        < current.data.toString().length() & i == string.toString().length() - 1)) {
+                if (string.toString().charAt(i) < current.data.toString().charAt(j) | (string.toString().charAt(i) == current.data.toString().charAt(j) & string.toString().length() < current.data.toString().length() & i == string.toString().length() - 1)) {
                     bool = true;
                     s = 1;
                     break;
-                } else if (string.toString().charAt(i) > current.data.toString().charAt(j)
-                        | (string.toString().charAt(i) == current.data.toString().charAt(j) & string.toString().length()
-                        > current.data.toString().length() & j == current.data.toString().length() - 1)) {
+                } else if (string.toString().charAt(i) > current.data.toString().charAt(j) | (string.toString().charAt(i) == current.data.toString().charAt(j) & string.toString().length() > current.data.toString().length() & j == current.data.toString().length() - 1)) {
                     s = 1;
                     break;
                 }
@@ -62,7 +58,7 @@ public class DoublyLinked<T> {
         size--;
     }
 
-    public void addFront(T string) {
+    public void addFront(String string) {
         if (isEmpty()) {
             front = new ListNode<>(string);
         } else {
@@ -71,18 +67,18 @@ public class DoublyLinked<T> {
         size++;
     }
 
-    public void addAfter(T x, T y) {
+    public void addAfter(String x, String y) {
         if (isEmpty()) {
             System.out.println("Элемент " + x.toString() + " не найден");
         } else {
-            ListNode<T> current = front;
+            ListNode<String> current = front;
             while (current != null && !current.data.equals(x)) {
                 current = current.next;
             }
             if (current == null) {
                 System.out.println("Элемент " + x.toString() + " не найден");
             } else {
-                ListNode<T> newNode = new ListNode<>(current, y, current.next);
+                ListNode<String> newNode = new ListNode<>(current, y, current.next);
                 if (current.next != null) {
                     current.next.prev = newNode;
                 }
@@ -92,18 +88,18 @@ public class DoublyLinked<T> {
         size++;
     }
 
-    public void addBefore(T x, T y) {
+    public void addBefore(String x, String y) {
         if (isEmpty()) {
             System.out.println("Элемент " + x.toString() + " не найден");
         } else {
-            ListNode<T> current = front;
+            ListNode<String> current = front;
             while (current != null && !current.data.equals(x)) {
                 current = current.next;
             }
             if (current == null) {
                 System.out.println("Элемент " + x.toString() + " не найден");
             } else {
-                ListNode<T> newNode = new ListNode<>(current.prev, y, current);
+                ListNode<String> newNode = new ListNode<>(current.prev, y, current);
                 if (current.prev != null) {
                     current.prev.next = newNode;
                 } else {
@@ -115,7 +111,7 @@ public class DoublyLinked<T> {
         }
     }
 
-    public void remove(T x) {
+    public void remove(String x) {
         if (isEmpty()) {
             System.out.println("Элемент " + x.toString() + " не найден");
         } else {
@@ -123,7 +119,7 @@ public class DoublyLinked<T> {
                 front = front.next;
                 return;
             }
-            ListNode<T> current = front;
+            ListNode<String> current = front;
             while (current != null && !current.data.equals(x)) {
                 current = current.next;
             }
@@ -147,8 +143,8 @@ public class DoublyLinked<T> {
     }
 
     @Override
-    public String toString() {
-        ListNode<T> temp = front;
+    public java.lang.String toString() {
+        ListNode<String> temp = front;
         StringBuilder builder = new StringBuilder("[");
         while (temp != null) {
             builder.append(temp.data).append(",");

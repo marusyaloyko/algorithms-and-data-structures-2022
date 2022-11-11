@@ -1,5 +1,7 @@
 package ru.mirea.practice.work2;
 
+import ru.mirea.practice.work1.InnisWrongexception;
+
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;

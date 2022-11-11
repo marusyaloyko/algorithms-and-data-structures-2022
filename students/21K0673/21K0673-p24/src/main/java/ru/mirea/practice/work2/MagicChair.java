@@ -1,7 +1,7 @@
 package ru.mirea.practice.work2;
 
-public class MagicChair implements Chair {
-    public void doMagic() {
+public class MagicChair implements Chair{
+    public void doMagic(){
         System.out.println("Magic");
     }
 

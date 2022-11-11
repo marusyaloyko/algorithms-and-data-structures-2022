@@ -1,6 +1,6 @@
 package ru.mirea.practice.work1to3;
 
-abstract class Class<T, V, K> extends Animal<K> implements Comparable<T>, Serializable<V> {
+abstract class Class<T, V, K> extends Animal<K> implements Comparable<T>, Serializable<V>{
     private T variable1;
     private V variable2;
     private K variable3;

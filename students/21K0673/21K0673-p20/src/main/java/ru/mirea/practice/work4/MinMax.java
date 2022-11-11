@@ -12,10 +12,6 @@ public class MinMax<T> {
         return arr;
     }
 
-    public int getSize() {
-        return size;
-    }
-
     public void setArr(T[] arr) {
         this.arr = arr;
     }

@@ -3,19 +3,19 @@ package ru.mirea.practice.work3;
 public class File {
     private Create create;
 
-    public void newe(String string) {
-        create.createNew(string);
+    public void New(String string) {
+        create.CreateNew(string);
     }
 
-    public void open(String string) {
-        create.createOpen(string);
+    public void Open(String string) {
+        create.CreateOpen(string);
     }
 
-    public void save() {
+    public void Save() {
         System.out.println("Файлы сохранены");
     }
 
-    public void exit() {
+    public void Exit() {
         System.out.println("Теперь вы можете открыть другой файл");
     }
 

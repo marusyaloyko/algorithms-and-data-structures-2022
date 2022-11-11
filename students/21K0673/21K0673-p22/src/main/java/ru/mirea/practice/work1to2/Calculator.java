@@ -64,9 +64,7 @@ public class Calculator {
                 switch (arr[i]) {
                     case "x":
                         if ((i + 1) <= arr.length - 1) { // проверка на конец массива
-                            if ((Objects.equals(arr[i + 1], "/") | Objects.equals(arr[i + 1], "+")
-                                    | Objects.equals(arr[i + 1], "-") | Objects.equals(arr[i + 1], "x")) & !s) {
-                                // проверка на наличие идущих подряд двух спец. знаков
+                            if ((Objects.equals(arr[i + 1], "/") | Objects.equals(arr[i + 1], "+") | Objects.equals(arr[i + 1], "-") | Objects.equals(arr[i + 1], "x")) & !s) { // проверка на наличие идущих подряд двух спец. знаков
                                 s = true;
                                 answer = answer * Double.parseDouble(arr[i - 2]); // записываем ответ
                                 arr[i] = String.valueOf(answer); //заменяем текущую ячейку ответом
@@ -77,9 +75,7 @@ public class Calculator {
                                 answer = Double.parseDouble(arr[buff]) * answer;
                                 arr[i] = String.valueOf(answer);
                                 buff--; //передвигаем буфер на один назад
-                                if (!Objects.equals(arr[i + 1], "/") & !Objects.equals(arr[i + 1], "+")
-                                        & !Objects.equals(arr[i + 1], "-") & !Objects.equals(arr[i + 1], "x")) {
-                                    //опускаем флаг, если дальше нет идущих подряд двух спец. знаков
+                                if (!Objects.equals(arr[i + 1], "/") & !Objects.equals(arr[i + 1], "+") & !Objects.equals(arr[i + 1], "-") & !Objects.equals(arr[i + 1], "x")) { //опускаем флаг, если дальше нет идущих подряд двух спец. знаков
                                     s = false;
                                 }
                             } else { //обычная запись подряд
@@ -99,8 +95,7 @@ public class Calculator {
                         break; //далее идентчино для знаков деления, сложения и вычитания
                     case "/":
                         if ((i + 1) <= arr.length - 1) {
-                            if ((Objects.equals(arr[i + 1], "/") | Objects.equals(arr[i + 1], "+")
-                                    | Objects.equals(arr[i + 1], "-") | Objects.equals(arr[i + 1], "x")) & !s) {
+                            if ((Objects.equals(arr[i + 1], "/") | Objects.equals(arr[i + 1], "+") | Objects.equals(arr[i + 1], "-") | Objects.equals(arr[i + 1], "x")) & !s) {
                                 s = true;
                                 answer = answer / Double.parseDouble(arr[i - 1]);
                                 arr[i] = String.valueOf(answer);
@@ -111,8 +106,7 @@ public class Calculator {
                                 answer = Double.parseDouble(arr[buff]) / answer;
                                 arr[i] = String.valueOf(answer);
                                 buff--;
-                                if (!Objects.equals(arr[i + 1], "/") & !Objects.equals(arr[i + 1], "+")
-                                        & !Objects.equals(arr[i + 1], "-") & !Objects.equals(arr[i + 1], "x")) {
+                                if (!Objects.equals(arr[i + 1], "/") & !Objects.equals(arr[i + 1], "+") & !Objects.equals(arr[i + 1], "-") & !Objects.equals(arr[i + 1], "x")) {
                                     s = false;
                                 }
                             } else {
@@ -132,8 +126,7 @@ public class Calculator {
                         break;
                     case "+":
                         if ((i + 1) <= arr.length - 1) {
-                            if ((Objects.equals(arr[i + 1], "/") | Objects.equals(arr[i + 1], "+")
-                                    | Objects.equals(arr[i + 1], "-") | Objects.equals(arr[i + 1], "x")) & !s) {
+                            if ((Objects.equals(arr[i + 1], "/") | Objects.equals(arr[i + 1], "+") | Objects.equals(arr[i + 1], "-") | Objects.equals(arr[i + 1], "x")) & !s) {
                                 s = true;
                                 answer = answer + Double.parseDouble(arr[i - 2]);
                                 arr[i] = String.valueOf(answer);
@@ -144,8 +137,7 @@ public class Calculator {
                                 answer = Double.parseDouble(arr[buff]) + answer;
                                 arr[i] = String.valueOf(answer);
                                 buff--;
-                                if (!Objects.equals(arr[i + 1], "/") & !Objects.equals(arr[i + 1], "+")
-                                        & !Objects.equals(arr[i + 1], "-") & !Objects.equals(arr[i + 1], "x")) {
+                                if (!Objects.equals(arr[i + 1], "/") & !Objects.equals(arr[i + 1], "+") & !Objects.equals(arr[i + 1], "-") & !Objects.equals(arr[i + 1], "x")) {
                                     s = false;
                                 }
                             } else {
@@ -165,8 +157,7 @@ public class Calculator {
                         break;
                     case "-":
                         if ((i + 1) <= arr.length - 1) {
-                            if ((Objects.equals(arr[i + 1], "/") | Objects.equals(arr[i + 1], "+")
-                                    | Objects.equals(arr[i + 1], "-") | Objects.equals(arr[i + 1], "x")) & !s) {
+                            if ((Objects.equals(arr[i + 1], "/") | Objects.equals(arr[i + 1], "+") | Objects.equals(arr[i + 1], "-") | Objects.equals(arr[i + 1], "x")) & !s) {
                                 s = true;
                                 answer = answer - Double.parseDouble(arr[i - 2]);
                                 arr[i] = String.valueOf(answer);
@@ -177,8 +168,7 @@ public class Calculator {
                                 answer = Double.parseDouble(arr[buff]) - answer;
                                 arr[i] = String.valueOf(answer);
                                 buff--;
-                                if (!Objects.equals(arr[i + 1], "/") & !Objects.equals(arr[i + 1], "+")
-                                        & !Objects.equals(arr[i + 1], "-") & !Objects.equals(arr[i + 1], "x")) {
+                                if (!Objects.equals(arr[i + 1], "/") & !Objects.equals(arr[i + 1], "+") & !Objects.equals(arr[i + 1], "-") & !Objects.equals(arr[i + 1], "x")) {
                                     s = false;
                                 }
                             } else {
@@ -195,9 +185,6 @@ public class Calculator {
                             answer = Double.parseDouble(arr[i - 1]) - answer;
                             arr[i] = String.valueOf(answer);
                         }
-                        break;
-                    default:
-                        System.out.println("Error");
                         break;
                 }
             }

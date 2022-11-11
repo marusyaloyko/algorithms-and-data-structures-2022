@@ -1,7 +1,7 @@
 package ru.mirea.practice.work2;
 
 abstract class AbstractQueue {
-    abstract int getSize();
+    abstract int getSIZE();
 
     abstract boolean isEmpty();
 

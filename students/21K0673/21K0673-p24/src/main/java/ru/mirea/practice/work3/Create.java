@@ -13,7 +13,7 @@ public class Create implements ICreateDocument {
     }
 
     @Override
-    public IDocument createNew(String string) {
+    public IDocument CreateNew(String string) {
         Pattern pattern = Pattern.compile("\\.");
         String[] words = pattern.split(string);
         if (Objects.equals(string, words[0] + words[1])) {
@@ -30,16 +30,13 @@ public class Create implements ICreateDocument {
                 case "jpg":
                     files[size - 1] = new ImageDocument(string);
                     return new ImageDocument(string);
-                default:
-                    System.out.println("Error");
-                    break;
             }
         }
         return null;
     }
 
     @Override
-    public IDocument createOpen(String string) {
+    public IDocument CreateOpen(String string) {
         for (IDocument file : files) {
             if (Objects.equals(file.getString(), string)) {
                 return file;

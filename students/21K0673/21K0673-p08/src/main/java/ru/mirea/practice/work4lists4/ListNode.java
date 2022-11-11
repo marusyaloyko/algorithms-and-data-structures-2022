@@ -1,15 +1,15 @@
 package ru.mirea.practice.work4lists4;
 
-class ListNode<T> {
-    T data;
-    ListNode<T> next;
-    ListNode<T> prev;
+class ListNode<String> {
+    String data;
+    ListNode<String> next;
+    ListNode<String> prev;
 
-    ListNode(T data) {
+    ListNode(String data) {
         this(null, data, null);
     }
 
-    ListNode(ListNode<T> prev, T data, ListNode<T> next) {
+    ListNode(ListNode<String> prev, String data, ListNode<String> next) {
         this.data = data;
         this.next = next;
         this.prev = prev;
