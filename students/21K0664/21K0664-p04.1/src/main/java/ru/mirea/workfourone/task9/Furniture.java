@@ -4,8 +4,6 @@ public abstract class Furniture {
 
     private double price;
 
-    Furniture() {
-    }
 
     Furniture(double price) {
         this.price = price;
