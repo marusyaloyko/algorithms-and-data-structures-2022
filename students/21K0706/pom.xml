@@ -10,7 +10,7 @@
     </parent>
     <artifactId>21K0706</artifactId>
     <packaging>pom</packaging>
-    <description>Практические работы студента Тимаковой Анастасии КВБО-03-21</description>
+    <description>Практические работы студента Тимаковой Анастасии</description>
 
     <modules>
         <module>21K0706-p01</module>

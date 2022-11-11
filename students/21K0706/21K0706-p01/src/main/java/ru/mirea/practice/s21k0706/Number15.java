@@ -1,7 +1,7 @@
 package ru.mirea.practice.s21k0706;
 import java.util.Scanner;
 public final class Number15 {
-    private Number15 () {
+    private  Number15() {
 
     }
 
@@ -12,7 +12,6 @@ public final class Number15 {
         }
         return b;
     }
-
     public static void main(String[] args) {
         try (Scanner in = new Scanner(System.in)) {
             System.out.print("Enter a number: ");

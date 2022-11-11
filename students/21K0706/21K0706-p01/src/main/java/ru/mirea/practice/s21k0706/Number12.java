@@ -1,7 +1,6 @@
 package ru.mirea.practice.s21k0706;
 import java.util.Scanner;
-public  final class Number12 {
-
+public final class Number12 {
     private Number12() {
 
     }

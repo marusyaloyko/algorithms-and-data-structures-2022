@@ -1,6 +1,5 @@
 package ru.mirea.practice.s21k0706;
 public final class Number13 {
-
     private Number13() {
 
     }
