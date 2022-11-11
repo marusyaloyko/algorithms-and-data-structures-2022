@@ -21,7 +21,8 @@
     <scm>
         <connection>scm:git:https://github.com/BasePractice/algorithms-and-data-structures-2022.git</connection>
         <url>https://github.com/BasePractice/algorithms-and-data-structures-2022</url>
-        <developerConnection>scm:git:https://github.com/BasePractice/algorithms-and-data-structures-2022.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/BasePractice/algorithms-and-data-structures-2022.git
+        </developerConnection>
         <tag>2022.1</tag>
     </scm>
 
@@ -36,7 +37,7 @@
         <module>students/21K0719</module>
         <module>students/21K0706</module>
         <module>students/21K0645</module>
-        <!--        <module>students/21K0664</module>-->
+        <module>students/21K0664</module>
         <!--        <module>students/21K0709</module>-->
         <!--        <module>students/21K0673</module>-->
         <!--        <module>students/21K0654</module>-->

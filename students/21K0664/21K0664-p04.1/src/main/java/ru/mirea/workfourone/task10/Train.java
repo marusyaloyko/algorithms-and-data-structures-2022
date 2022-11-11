@@ -1,27 +1,49 @@
 package ru.mirea.workfourone.task10;
 
 public class Train extends Vehicle {
-    private double time;
-    private double price;
+    private int time;
+    private int price;
+    private int speed;
 
-    public double getPrice() {
+    Train(int time, int price, int speed) {
+        super(time, price, speed);
+    }
+
+    @Override
+    public int getSpeed() {
+        return speed;
+    }
+
+    @Override
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    @Override
+
+    public int getPrice() {
         return price;
     }
 
-    public double getTime() {
+    @Override
+    public int getTime() {
         return time;
     }
 
-    public void setTime(double time) {
+    @Override
+    public void setTime(int time) {
         this.time = time;
     }
 
-    public void setPrice(double price) {
+    @Override
+    public void setPrice(int price) {
         this.price = price;
     }
 
     @Override
     public String toString() {
-        return "Train{" + "time=" + time + ", price=" + price + '}';
+        return "Train{" + "time=" + time + ", price=" + price + ", speed=" + speed + '}';
     }
 }
+
+
