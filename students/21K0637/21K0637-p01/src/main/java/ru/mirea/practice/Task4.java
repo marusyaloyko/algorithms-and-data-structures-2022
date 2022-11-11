@@ -1,6 +1,9 @@
-package ru.mirea.practice.s21k0637;
+package ru.mirea.practice;
 
-public class Task4 {
+public final class Task4 {
+    private Task4() {
+    }
+
     public static int gsd(int a, int b) {
         while (b != 0) {
             int tmp = a % b;
