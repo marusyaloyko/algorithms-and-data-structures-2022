@@ -1,10 +1,6 @@
 package ru.mirea.workfourone.task10;
 
 public class Ship extends Vehicle {
-    private int time;
-    private int price;
-
-    private int speed;
 
     Ship(int time, int price, int speed) {
         super(time, price, speed);

@@ -1,9 +1,6 @@
 package ru.mirea.workfourone.task10;
 
 public class Airplane extends Vehicle {
-    private int time;
-    private int price;
-    private int speed;
 
     Airplane(int time, int price, int speed) {
         super(time, price, speed);
