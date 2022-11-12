@@ -9,5 +9,5 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>21K0689-p01</artifactId>
-    <description>Массивы</description>
+    <description>Первая практическая работа</description>
 </project>
