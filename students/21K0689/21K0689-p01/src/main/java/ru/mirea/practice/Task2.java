@@ -23,8 +23,7 @@ abstract class Task2 {
         do {
             sum += a[b];
             b++;
-        }
-        while (b < a.length);
+        } while (b < a.length);
         System.out.println("sum = " + sum);
 
         int max = 0;
