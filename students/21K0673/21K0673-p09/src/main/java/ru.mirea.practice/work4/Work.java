@@ -1,7 +1,6 @@
 package ru.mirea.practice.work4;
 
 public class Work implements Comparable {
-
     int number;
 
     public int getNumber() {

@@ -2,8 +2,13 @@ package ru.mirea.practice.work4;
 
 abstract class Main {
     public static void main(String[] args) {
-        Work[] mains = new Work[]{new Work(8), new Work(4), new Work(1), new Work(3),
-                new Work(3)};
+        Work[] mains = new Work[5];
+        mains[0] = new Work(8);
+        mains[1] = new Work(4);
+        mains[2] = new Work(1);
+        mains[3] = new Work(3);
+        mains[4] = new Work(3);
+
         Work main = new Work(0);
         main.compareTo(mains);
 
