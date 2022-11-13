@@ -8,6 +8,10 @@ public class MinMax<T> {
         arr = arr1;
     }
 
+    public int getSize() {
+        return size;
+    }
+
     public T[] getArr() {
         return arr;
     }

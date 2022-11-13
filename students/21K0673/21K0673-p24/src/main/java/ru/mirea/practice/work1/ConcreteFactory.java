@@ -14,7 +14,8 @@ public class ConcreteFactory implements ComplexAbstractFactory {
         return new Complex(x, y);
     }
 
-    public Complex CreateComplex(int real, int image) {
+    @Override
+    public Complex createComplex1(int real, int image) {
         return new Complex(real, image);
     }
 }

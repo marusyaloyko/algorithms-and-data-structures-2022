@@ -1,18 +1,24 @@
 package ru.mirea.practice.work2;
 
-public class ChairFactory implements AbstractChairFactory{
+public class ChairFactory implements AbstractChairFactory {
     private double age;
 
     ChairFactory(double age) {
         this.age = age;
     }
-    public VictorianChair createVictorianChair(){
+
+    @Override
+    public VictorianChair createVictorianChair() {
         return new VictorianChair(age);
     }
-    public MagicChair createMagicChair(){
+
+    @Override
+    public MagicChair createMagicChair() {
         return new MagicChair();
     }
-    public FunctionalСhair createFunctionalСhair(){
-        return new FunctionalСhair();
+
+    @Override
+    public Functionalchair createFunctionalchair() {
+        return new Functionalchair();
     }
 }

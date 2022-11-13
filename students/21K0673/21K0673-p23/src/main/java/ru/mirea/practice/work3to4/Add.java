@@ -27,7 +27,8 @@ public class Add<T> {
         int buff = 0;
         boolean dob = false;
         for (int i = 0; i < words.length; i += 2) {
-            if (!p1.matcher(words[i]).matches() & !p2.matcher(words[i]).matches() & !p3.matcher(words[i]).matches() & !p4.matcher(words[i]).matches() & !p5.matcher(words[i]).matches()) {
+            if (!p1.matcher(words[i]).matches() & !p2.matcher(words[i]).matches() & !p3.matcher(words[i]).matches()
+                    & !p4.matcher(words[i]).matches() & !p5.matcher(words[i]).matches()) {
                 if (buff != 0) {
                     dob = true;
                 } else {
@@ -179,6 +180,9 @@ public class Add<T> {
                             answer = answer / Integer.parseInt(words[2]);
                         }
                     }
+                    break;
+                default:
+                    System.out.println("Error");
                     break;
             }
         } else {

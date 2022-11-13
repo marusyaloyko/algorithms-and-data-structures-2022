@@ -1,6 +1,6 @@
 package ru.mirea.practice.work4;
 
-public class Calculator {
+abstract class Calculator {
     public static <T> Integer sum(T e, T e1) {
         return (Integer) e + (Integer) e1;
     }

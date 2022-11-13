@@ -7,6 +7,10 @@ public class Client {
         System.out.println("Sits");
     }
 
+    public Chair getChair() {
+        return chair;
+    }
+
     public void setChair(Chair chair) {
         System.out.println("Sets");
     }

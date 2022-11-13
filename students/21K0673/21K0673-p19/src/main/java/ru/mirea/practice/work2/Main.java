@@ -1,10 +1,7 @@
 package ru.mirea.practice.work2;
 
-import ru.mirea.practice.work1.InnisWrongexception;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 abstract class Main {
     public static void main(String[] args) {

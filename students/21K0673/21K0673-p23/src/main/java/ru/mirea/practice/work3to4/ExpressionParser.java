@@ -3,7 +3,7 @@ package ru.mirea.practice.work3to4;
 import java.util.regex.Pattern;
 
 public class ExpressionParser {
-    public double TripleExpressionparse(String string, int... ints) {
+    public double tripleExpressionparse(String string, int... ints) {
         int z = 0;
         double answer = 0;
         Pattern p1 = Pattern.compile("[0-9]");
@@ -19,7 +19,9 @@ public class ExpressionParser {
 
         for (int i = 0; i < string.length(); i++) {
             String a = string.charAt(i) + "";
-            if (!p1.matcher(a).matches() & !p2.matcher(a).matches() & !p3.matcher(a).matches() & !p4.matcher(a).matches() & !p5.matcher(a).matches() & !p6.matcher(a).matches() & !p7.matcher(a).matches() & !p8.matcher(a).matches() & !p9.matcher(a).matches()) {
+            if (!p1.matcher(a).matches() & !p2.matcher(a).matches() & !p3.matcher(a).matches()
+                    & !p4.matcher(a).matches() & !p5.matcher(a).matches() & !p6.matcher(a).matches()
+                    & !p7.matcher(a).matches() & !p8.matcher(a).matches() & !p9.matcher(a).matches()) {
                 System.out.println("Error");
                 return 0;
             }
@@ -112,6 +114,9 @@ public class ExpressionParser {
                             }
                             words = buff;
                             break;
+                        default:
+                            System.out.println("Error");
+                            break;
                     }
                     i += 2;
                 } while (!p7.matcher(words[i]).matches());
@@ -173,6 +178,9 @@ public class ExpressionParser {
                     words = buff;
                     i = 0;
                     break;
+                default:
+                    System.out.println("Error");
+                    break;
             }
         }
 
@@ -185,6 +193,9 @@ public class ExpressionParser {
                 case "-":
                     answer = Double.parseDouble(words[i - 1]) - Double.parseDouble(words[i + 1]);
                     words[i + 1] = String.valueOf(answer);
+                    break;
+                default:
+                    System.out.println("Error");
                     break;
             }
         }
