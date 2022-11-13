@@ -4,3 +4,4 @@ target
 .build_m64
 .build_w64
 *.iml
+.DS_Store
