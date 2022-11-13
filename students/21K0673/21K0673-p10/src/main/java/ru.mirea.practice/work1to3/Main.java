@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
-import java.util.stream.Stream;
 
 abstract class Main {
     public static List<Work> mergeSort(List<Work> newList) {
@@ -136,11 +135,5 @@ abstract class Main {
         list2.add(new Work(100));
         list2.add(new Work(23));
         list2.add(new Work(11));
-
-        List<Work> newList = new ArrayList<>(Stream.concat(list1.stream(), list2.stream()).toList());
-
-        for (int i = 0; i < newList.size(); i++) {
-            System.out.println(mergeSort(newList).get(i).getMark());
-        }
     }
 }
