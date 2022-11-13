@@ -1,6 +1,6 @@
 package ru.mirea.practice.work1;
 
-abstract class ArrayqueuemoduleTest {
+abstract class arrayqueuemoduleTest {
     public static void main(String[] args) {
         ArrayQueue q = new ArrayQueue();
         q.dequeue();
