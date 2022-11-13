@@ -10,7 +10,7 @@ public abstract class Test {
         Student b = new Student("Max", "Maxiomv", 199);
         Student c = new Student("Jack", "Jackson", 121);
 
-        ArrayList<Student> students = new ArrayList<Student>();
+        ArrayList<Student> students = new ArrayList<>();
         students.add(a);
         students.add(b);
         students.add(c);

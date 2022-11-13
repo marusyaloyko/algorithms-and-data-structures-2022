@@ -29,8 +29,9 @@ public abstract class Vehicle {
         return count;
     }
 
-    protected abstract double price (double distance);
-    protected abstract double time (double speed);
+    protected abstract double price(double distance);
+
+    protected abstract double time(double speed);
 
     @Override
     public String toString() {

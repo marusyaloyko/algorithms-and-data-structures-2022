@@ -19,7 +19,7 @@ public class Airplane extends Vehicle {
 
     @Override
     public int getCount() {
-        return super.getCount();
+        return count;
     }
 
     @Override

@@ -1,6 +1,6 @@
 package ru.mirea.worknineteen.task2;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Student {
     private String name;
@@ -41,7 +41,7 @@ public class Student {
         this.gpa = gpa;
     }
 
-    public void contain(ArrayList<Student> students, String searchName, String searchSurname) throws Exception {
+    public void contain(List<Student> students, String searchName, String searchSurname) throws Exception {
         int i = 0;
         for (Student student : students) {
             if (student.getName().contains(searchName) & student.getSurname().contains(searchSurname)) {

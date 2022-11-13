@@ -18,12 +18,12 @@ public class Car extends Vehicle {
 
     @Override
     public void setCount(int count) {
-        super.setCount(count);
+        this.count = count;
     }
 
     @Override
     public int getCount() {
-        return super.getCount();
+        return count;
     }
 
     @Override
