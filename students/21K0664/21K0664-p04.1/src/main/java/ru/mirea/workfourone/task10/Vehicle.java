@@ -2,14 +2,13 @@ package ru.mirea.workfourone.task10;
 
 public abstract class Vehicle {
 
-    protected int time;
-    protected int price;
+    protected int count;
     protected int speed;
 
-    Vehicle(int time, int price, int speed) {
-        this.time = time;
+
+    Vehicle(int count, int speed) {
         this.speed = speed;
-        this.price = price;
+        this.count = count;
     }
 
     public int getSpeed() {
@@ -20,24 +19,21 @@ public abstract class Vehicle {
         this.speed = speed;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+
+    public void setCount(int count) {
+        this.count = count;
     }
 
-    public void setTime(int time) {
-        this.time = time;
+
+    public int getCount() {
+        return count;
     }
 
-    public int getPrice() {
-        return price;
-    }
-
-    public int getTime() {
-        return time;
-    }
+    protected abstract double price (double distance);
+    protected abstract double time (double speed);
 
     @Override
     public String toString() {
-        return "Vehicle{" + "time=" + time + ", price=" + price + ", speed=" + speed + '}';
+        return "Vehicle{" + "count=" + count + ", speed=" + speed + '}';
     }
 }

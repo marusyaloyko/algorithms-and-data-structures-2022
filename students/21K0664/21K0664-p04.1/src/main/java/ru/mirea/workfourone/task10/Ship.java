@@ -2,8 +2,8 @@ package ru.mirea.workfourone.task10;
 
 public class Ship extends Vehicle {
 
-    Ship(int time, int price, int speed) {
-        super(time, price, speed);
+    Ship() {
+        super(200, 50);
     }
 
     @Override
@@ -17,28 +17,28 @@ public class Ship extends Vehicle {
     }
 
     @Override
-    public int getPrice() {
-        return price;
+    public void setCount(int count) {
+        this.count = count;
     }
 
     @Override
-    public int getTime() {
-        return time;
+    public int getCount() {
+        return count;
     }
 
     @Override
-    public void setPrice(int price) {
-        this.price = price;
+    protected double price(double distance) {
+        return distance * 0.01 * this.count;
     }
 
     @Override
-    public void setTime(int time) {
-        this.time = time;
+    protected double time(double distance) {
+        return distance / speed;
     }
 
     @Override
     public String toString() {
-        return "Ship{" + "time=" + time + ", price=" + price + ", speed=" + speed + '}';
+        return "Ship{" + "count=" + count + ", speed=" + speed + '}';
     }
 }
 
