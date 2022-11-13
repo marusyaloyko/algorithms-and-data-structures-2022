@@ -2,7 +2,6 @@ package ru.mirea.practice.work3;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
 
 abstract class Main {
     public static List<Work> mergeSort(List<Work> newList) {
