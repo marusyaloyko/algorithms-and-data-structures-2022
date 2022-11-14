@@ -6,23 +6,23 @@ public class Input {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
-        int[] Array = new int[size];
+        int[] array = new int[size];
 
         for (int i = 0; i < size; i++) {
-            Array[i] = sc.nextInt();
+            array[i] = sc.nextInt();
         }
 
         int sum = 0;
         int max = 0;
-        int min = Array[0];
+        int min = array[0];
         int j = 0;
         do {
-            sum = sum + Array[j];
+            sum = sum + array[j];
 
-            if (Array[j] > max) {
-                max = Array[j];
-            } else if (Array[j] < min) {
-                min = Array[j];
+            if (array[j] > max) {
+                max = array[j];
+            } else if (array[j] < min) {
+                min = array[j];
             }
 
             j++;
@@ -31,15 +31,15 @@ public class Input {
 
         sum = 0;
         max = 0;
-        min = Array[0];
+        min = array[0];
         j = 0;
         while (j < size) {
-            sum = sum + Array[j];
+            sum = sum + array[j];
 
-            if (Array[j] > max) {
-                max = Array[j];
-            } else if (Array[j] < min) {
-                min = Array[j];
+            if (array[j] > max) {
+                max = array[j];
+            } else if (array[j] < min) {
+                min = array[j];
             }
 
             j++;
