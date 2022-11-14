@@ -1,7 +1,6 @@
 package ru.mirea.workfourone.task9;
 
 public class Chair extends Furniture {
-    private double price;
 
 
     Chair(double price) {
