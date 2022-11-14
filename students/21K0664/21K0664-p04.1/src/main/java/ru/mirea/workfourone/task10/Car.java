@@ -1,13 +1,9 @@
 package ru.mirea.workfourone.task10;
 
 public class Car extends Vehicle {
-    private int time;
-    private int price;
 
-    private int speed;
-
-    Car(int time, int price, int speed) {
-        super(time, price, speed);
+    Car() {
+        super(7, 60);
     }
 
     @Override
@@ -21,27 +17,27 @@ public class Car extends Vehicle {
     }
 
     @Override
-    public int getPrice() {
-        return price;
+    public void setCount(int count) {
+        this.count = count;
     }
 
     @Override
-    public int getTime() {
-        return time;
+    public int getCount() {
+        return count;
     }
 
     @Override
-    public void setTime(int time) {
-        this.time = time;
+    protected double price(double distance) {
+        return distance * 0.5 * this.count;
     }
 
     @Override
-    public void setPrice(int price) {
-        this.price = price;
+    protected double time(double distance) {
+        return distance / speed;
     }
 
     @Override
     public String toString() {
-        return "Car{" + "time=" + time + ", price=" + price + ", speed=" + speed + '}';
+        return "Car{" + "count=" + count + ", speed=" + speed + '}';
     }
 }

@@ -40,10 +40,12 @@
         <module>students/21K0664</module>
         <module>students/21K0710</module>
         <module>students/21K0708</module>
+        <module>students/21K0689</module>
         <!--        <module>students/21K0709</module>-->
         <!--        <module>students/21K0673</module>-->
         <!--        <module>students/21K0654</module>-->
         <!--        <module>students/21K0618</module>-->
+        <module>students/21K0623</module>
         <module>p01</module>
     </modules>
 
@@ -134,7 +136,12 @@
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.19.0</version>
                 <configuration>
+                    <analysisCache>true</analysisCache>
+                    <analysisCacheLocation>${project.build.directory}/pmd/pmd.cache</analysisCacheLocation>
                     <printFailingErrors>true</printFailingErrors>
+                    <failOnViolation>true</failOnViolation>
+                    <targetJdk>${maven.compiler.target}</targetJdk>
+                    <linkXRef>false</linkXRef>
                     <rulesets>
                         <ruleset>rulesets/java/quickstart.xml</ruleset>
                     </rulesets>
@@ -145,6 +152,13 @@
                         <phase>validate</phase>
                         <goals>
                             <goal>check</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>duplicate</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>aggregate-cpd</goal>
                         </goals>
                     </execution>
                 </executions>

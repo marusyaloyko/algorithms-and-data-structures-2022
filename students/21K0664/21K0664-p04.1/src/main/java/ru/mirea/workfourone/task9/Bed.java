@@ -2,7 +2,6 @@ package ru.mirea.workfourone.task9;
 
 public class Bed extends Furniture {
 
-    private double price;
 
     Bed(double price) {
         super(price);
