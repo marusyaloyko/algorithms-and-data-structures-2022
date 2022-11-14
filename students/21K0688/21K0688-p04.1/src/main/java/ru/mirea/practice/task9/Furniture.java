@@ -1,4 +1,4 @@
-package ru.mirea.practice.task3.task9;
+package ru.mirea.practice.task9;
 
 public abstract class Furniture {
     private int cost;

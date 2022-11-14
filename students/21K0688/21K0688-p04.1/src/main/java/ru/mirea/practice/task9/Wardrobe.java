@@ -1,4 +1,4 @@
-package ru.mirea.practice.task3.task9;
+package ru.mirea.practice.task9;
 
 public class Wardrobe extends Furniture {
     private final int numbersOfShelves;
