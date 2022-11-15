@@ -10,10 +10,10 @@ public class Task1 {
         int[] num = new int[am];
         int sum = 0;
         System.out.printf("Enter " + am + " numbers sequentially ");
-        for(int i = 0; i < num.length; i++){
+        for (int i = 0; i < num.length; i++) {
             num[i] = sc.nextInt();
-            sum+= num[i];
+            sum += num[i];
         }
-        System.out.print("sum: " + sum + "\n" + "Average:" + sum/num.length);
+        System.out.print("sum: " + sum + "\n" + "Average:" + sum / num.length);
     }
 }

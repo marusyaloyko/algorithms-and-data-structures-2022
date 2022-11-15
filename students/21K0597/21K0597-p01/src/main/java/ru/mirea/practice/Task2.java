@@ -8,20 +8,20 @@ public class Task2 {
         System.out.print("Enter the number od array elements: ");
         int am = sc.nextInt();
         int i = 0, sum = 0;
-        int max_value = -999999999;
-        int min_value = 999999999;
+        int max = -999999999;
+        int min = 999999999;
         int[] num = new int[am];
-        while(i < am){
+        while (i < am) {
             num[i] = sc.nextInt();
-            if (num[i] > max_value){
-                max_value = num[i];
+            if (num[i] > max) {
+                max = num[i];
             }
-            if (num[i] < min_value){
-                min_value = num[i];
+            if (num[i] < min) {
+                min = num[i];
             }
             sum += num[i];
             i++;
         }
-        System.out.print("Sum: " + sum + "\n" + "Max: " + max_value + "\n" + "Min: " + min_value);
+        System.out.print("Sum: " + sum + "\n" + "Max: " + max + "\n" + "Min: " + min);
     }
 }
