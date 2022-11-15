@@ -1,27 +1,12 @@
 package ru.mirea.practice.solutiontask8;
 
-import java.text.NumberFormat;
-import java.util.Locale;
 import java.util.Objects;
 import java.util.Scanner;
 
+import static ru.mirea.practice.solutiontask7.Convector.returnLocale;
+
 public final class InternetShop {
     private InternetShop() {}
-
-    public static NumberFormat returnLocale(int toconvert) {
-        switch (toconvert) {
-            case 1:
-                return NumberFormat.getCurrencyInstance(Locale.US);
-            case 2:
-                return NumberFormat.getCurrencyInstance(Locale.CHINA);
-            case 3:
-                return NumberFormat.getCurrencyInstance(Locale.FRANCE);
-            case 4:
-                return NumberFormat.getCurrencyInstance(Locale.UK);
-            default:
-                return null;
-        }
-    }
 
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
