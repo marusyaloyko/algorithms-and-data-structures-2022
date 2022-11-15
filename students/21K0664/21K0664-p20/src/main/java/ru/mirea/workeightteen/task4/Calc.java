@@ -1,0 +1,19 @@
+package ru.mirea.workeightteen.task4;
+
+public class Calc {
+    public static <T> Integer sum(T a, T b) {
+        return (Integer) a + (Integer) b;
+    }
+
+    public static <T> Integer multiply(T a, T b) {
+        return (Integer) a * (Integer) b;
+    }
+
+    public static <T> Integer divide(T a, T b) {
+        return (Integer) a / (Integer) b;
+    }
+
+    public static <T> Integer subtraction(T a, T b) {
+        return (Integer) a - (Integer) b;
+    }
+}
