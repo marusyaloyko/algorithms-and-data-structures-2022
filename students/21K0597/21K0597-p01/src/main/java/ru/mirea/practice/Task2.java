@@ -2,7 +2,7 @@ package ru.mirea.practice;
 
 import java.util.Scanner;
 
-public class Task2 {
+public abstract class Task2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number od array elements: ");
@@ -24,5 +24,6 @@ public class Task2 {
             i++;
         }
         System.out.print("Sum: " + sum + "\n" + "Max: " + max + "\n" + "Min: " + min);
+        sc.close();
     }
 }
