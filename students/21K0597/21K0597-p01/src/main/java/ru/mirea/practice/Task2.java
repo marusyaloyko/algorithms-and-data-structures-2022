@@ -7,7 +7,8 @@ public class Task2 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number od array elements: ");
         int am = sc.nextInt();
-        int i = 0, sum = 0;
+        int i = 0;
+        int sum = 0;
         int max = -999999999;
         int min = 999999999;
         int[] num = new int[am];
