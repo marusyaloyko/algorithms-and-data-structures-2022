@@ -43,8 +43,10 @@ class ListIterator implements Iterator<Integer> {
         list.remove(index);
         removeCalled = true;
     }
+
     public void invert() {
-        Stack stack=new Stack<>();
+        Stack stack = new Stack<>();
+        System.out.println(stack);
     }
 }
 
