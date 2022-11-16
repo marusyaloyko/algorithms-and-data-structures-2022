@@ -1,6 +1,5 @@
 package ru.mirea.practice.task6;
 
-import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
