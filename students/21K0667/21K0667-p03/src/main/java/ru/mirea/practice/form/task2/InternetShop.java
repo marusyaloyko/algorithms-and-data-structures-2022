@@ -1,5 +1,6 @@
 package ru.mirea.practice.form.task2;
 
+
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Scanner;
@@ -17,9 +18,9 @@ abstract class InternetShop {
 
             switch (choiceOfCurrency) {
                 case 1:
-                    bread = 0.5 * 61.321;
-                    milk = 1.5 * 61.321;
-                    cheese = 2 * 61.321;
+                    bread = ConvertorShop.getDollarToRub(bread);
+                    milk = ConvertorShop.getDollarToRub(milk);
+                    cheese = ConvertorShop.getDollarToRub(cheese);
                     Locale ru = new Locale("ru", "RU");
                     NumberFormat format1 = NumberFormat.getCurrencyInstance(ru);
                     System.out.println(format1.format(bread) + " - bread");
@@ -33,9 +34,9 @@ abstract class InternetShop {
                     System.out.println(format2.format(cheese) + " - cheese");
                     break;
                 case 3:
-                    bread = bread * 0.97;
-                    cheese = cheese * 0.97;
-                    milk = milk * 0.97;
+                    bread = ConvertorShop.getDollarToEuro(bread);
+                    cheese = ConvertorShop.getDollarToEuro(cheese);
+                    milk = ConvertorShop.getDollarToEuro(milk);;
                     NumberFormat format3 = NumberFormat.getCurrencyInstance(Locale.FRANCE);
                     System.out.println(format3.format(bread) + " - bread");
                     System.out.println(format3.format(milk) + " - milk");
