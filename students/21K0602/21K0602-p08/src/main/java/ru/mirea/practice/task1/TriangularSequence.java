@@ -6,19 +6,19 @@ public abstract class TriangularSequence {
         int sum = 0;
         int j = 0;
         if (n == 1) {
-            System.out.println("1");
+            return "1";
         } else {
             for (int i = 1; sum < n; i++) {
                 sum += i;
                 j = i;
             }
-            System.out.println(recursion(--n) + j);
+            return recursion(--n) + " " + j;
 
         }
-        return "";
+
     }
 
     public static void main(String[] args) {
-        recursion(10);
+        System.out.println(recursion(10));
     }
 }
