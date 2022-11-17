@@ -3,6 +3,7 @@ package ru.mirea.practice.solutiontask8;
 import java.util.Objects;
 import java.util.Scanner;
 
+import static ru.mirea.practice.solutiontask7.Convector.convectorMoney;
 import static ru.mirea.practice.solutiontask7.Convector.returnLocale;
 
 public final class InternetShop {
@@ -10,14 +11,17 @@ public final class InternetShop {
 
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
-            double[] milk = {0.5, 3.56, 0.48, 0.42};
-            double[] cookies = {0.75, 5.35, 0.73, 0.63};
-            double[] coffee = {1.5, 10.7, 1.45, 1.27};
-            System.out.println("Выберите товар:\n1-Молоко (0.5$ - 3.56¥ - 0,48€ - 0,42£)"
-                    + "\n2-Печенья (0.75$ - 5.35¥ - 0,73€ - 0.63£) "
-                    + "\n3-Кофе (1.5$ - 10,7¥ - 1,45€ - 1,27£ ");
-            int currentproduct = sc.nextInt();
+            Product[] products = {new Product("Молоко", 0.5),
+                                  new Product("Печенья", 0.75),
+                                  new Product("Кофе", 1.5)};
+            System.out.println("Выберите товар:");
+            int currentproduct = 0;
             while (currentproduct < 1 || currentproduct > 3) {
+                int i = 1;
+                for (Product product: products) {
+                    System.out.println(i + ". " + product.getName() + " - " + product.getCost() + "$");
+                    i++;
+                }
                 currentproduct = sc.nextInt();
             }
             System.out.println("Введите кол-во продукта");
@@ -30,22 +34,10 @@ public final class InternetShop {
             while (currentvalue < 1 || currentvalue > 4) {
                 currentvalue = sc.nextInt();
             }
-            switch (currentproduct) {
-                case 1:
-                    System.out.println("Итого:" + Objects.requireNonNull(returnLocale(currentvalue))
-                            .format(milk[currentvalue - 1] * count));
-                    break;
-                case 2:
-                    System.out.println("Итого:" + Objects.requireNonNull(returnLocale(currentvalue))
-                            .format(cookies[currentvalue - 1] * count));
-                    break;
-                case 3:
-                    System.out.println("Итого:" + Objects.requireNonNull(returnLocale(currentvalue))
-                            .format(coffee[currentvalue - 1] * count));
-                    break;
-                default:
-                    break;
-            }
+            System.out.println("Итого:" + Objects.requireNonNull(returnLocale(currentvalue))
+                    .format(convectorMoney(1, currentvalue,
+                            products[currentproduct - 1].getCost()) * count));
+
         }
     }
 }

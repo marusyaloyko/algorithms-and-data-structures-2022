@@ -8,6 +8,44 @@ import java.util.Scanner;
 public final class Convector {
     private Convector() {}
 
+    public static double convectorMoney(int converttousd, int convertfromusd, double money) {
+        if (convertfromusd == converttousd) {
+            return money;
+        }
+        boolean fromusd = false;
+        int toconvert = converttousd;
+        for (int i = 0; i < 2; i++) {
+            switch (toconvert) {
+                case 2:
+                    if (fromusd) {
+                        money *= 7.13;
+                    } else {
+                        money *= 0.14026;
+                    }
+                    break;
+                case 3:
+                    if (fromusd) {
+                        money *= 0.96937;
+                    } else {
+                        money *= 1.03;
+                    }
+                    break;
+                case 4:
+                    if (fromusd) {
+                        money *= 0.84631;
+                    } else {
+                        money *= 1.18;
+                    }
+                    break;
+                default:
+                    break;
+            }
+            fromusd = true;
+            toconvert = convertfromusd;
+        }
+        return money;
+    }
+
     public static NumberFormat returnLocale(int toconvert) {
         switch (toconvert) {
             case 1:
@@ -27,7 +65,7 @@ public final class Convector {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Какая у вас валюта: \n 1-$, 2-¥, 3-€, 4-£");
             int current = sc.nextInt();
-            while (1 > current || current > 5) {
+            while (1 > current || current > 4) {
                 System.out.println("Какая у вас валюта: \n 1-$, 2-¥, 3-€, 4-£");
                 current = sc.nextInt();
             }
@@ -39,37 +77,12 @@ public final class Convector {
             }
             System.out.println("В какую предпочитаете перевести: \n 1-$, 2-¥, 3-€, 4-£");
             int toconvert = sc.nextInt();
-            while (1 > toconvert || toconvert > 5) {
+            while (1 > toconvert || toconvert > 4) {
                 System.out.println("В какую предпочитаете перевести: \n 1-$, 2-¥, 3-€, 4-£");
                 toconvert = sc.nextInt();
             }
-            switch (current) {
-                case 2:
-                    money *= 0.14026;
-                    break;
-                case 3:
-                    money *= 1.03;
-                    break;
-                case 4:
-                    money *= 1.18;
-                    break;
-                default:
-                    break;
-            }
-            switch (toconvert) {
-                case 2:
-                    money *= 7.13;
-                    break;
-                case 3:
-                    money *= 0.96937;
-                    break;
-                case 4:
-                    money *= 0.84631;
-                    break;
-                default:
-                    break;
-            }
-            System.out.println("Итого:" + Objects.requireNonNull(returnLocale(toconvert)).format(money));
+            System.out.println("Итого:" + Objects.requireNonNull(returnLocale(toconvert))
+                    .format(convectorMoney(current, toconvert, money)));
         }
     }
 }
