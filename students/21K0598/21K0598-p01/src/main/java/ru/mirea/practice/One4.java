@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21K0598;
+package ru.mirea.practice;
 
 public class One4 {
     public static void main(String[] args) {
