@@ -13,9 +13,10 @@ public abstract class Task5 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int b = sc.nextInt();
-        System.out.print(b + "! = " + factorial(b));
-        sc.close();
+        try(Scanner sc = new Scanner(System.in)) {
+            int b = sc.nextInt();
+            sc.close();
+            System.out.print(b + "! = " + factorial(b));
+        }
     }
 }
