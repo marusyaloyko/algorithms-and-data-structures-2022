@@ -1,4 +1,5 @@
 package ru.mirea.practice.s21K0598;
+
 import java.util.Scanner;
 
 public class One5 {
