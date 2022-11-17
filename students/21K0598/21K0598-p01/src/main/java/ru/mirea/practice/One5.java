@@ -2,7 +2,7 @@ package ru.mirea.practice;
 
 import java.util.Scanner;
 
-public class One5 {
+abstract class One5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите числоб факториал которого вы желаете найти: ");
@@ -15,5 +15,6 @@ public class One5 {
         System.out.print(num);
         System.out.print(" = ");
         System.out.print(fact);
+        sc.close();
     }
 }

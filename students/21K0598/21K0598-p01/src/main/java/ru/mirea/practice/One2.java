@@ -2,7 +2,7 @@ package ru.mirea.practice;
 
 import java.util.Scanner;
 
-public class One2 {
+abstract class One2 {
     public static void main(String[] args) {
         int maslet;
         Scanner sc = new Scanner(System.in);
@@ -36,5 +36,6 @@ public class One2 {
         System.out.println(masmin);
         System.out.print("Максимальное число — ");
         System.out.print(masmax);
+        sc.close();
     }
 }

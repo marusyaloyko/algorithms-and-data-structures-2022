@@ -1,6 +1,6 @@
 package ru.mirea.practice;
 
-public class One3 {
+abstract class One3 {
     public static void main(String[] args) {
         int i = 0;
         System.out.println(i);
