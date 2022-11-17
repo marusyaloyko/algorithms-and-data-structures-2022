@@ -8,7 +8,7 @@
         <version>2022.1</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-    <artifactId>sample</artifactId>
+    <artifactId>21K0598</artifactId>
     <packaging>pom</packaging>
     <description>Практичская работа Горюшко Николая</description>
 
