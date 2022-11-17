@@ -1,21 +1,21 @@
 package ru.mirea.practice.s21K0598;
-
 import java.util.Scanner;
-public class One_2 {
-    public static void main(String[] args){
+
+public class One2 {
+    public static void main(String[] args) {
         int maslet;
-        Scanner sc= new Scanner(System.in);
-        do{
+        Scanner sc = new Scanner(System.in);
+        do {
             System.out.println("Введите размер массива в виде целого числа");
             maslet = sc.nextInt();
-        }while(maslet<=0);
+        } while (maslet <= 0);
         int[] mas = new int[maslet];
         int massum = 0;
         int ln = 0;
         System.out.println("Введите целое значение массива: ");
-        while (ln < maslet){
+        while (ln < maslet) {
             mas[ln] = sc.nextInt();
-            massum +=mas[ln];
+            massum += mas[ln];
             ln++;
         }
         System.out.print("Сумма значений равна ");
@@ -23,8 +23,8 @@ public class One_2 {
         int masmin = mas[0];
         int masmax = mas[0];
         ln = 1;
-        while(ln<maslet){
-            if (mas[ln]<masmin){
+        while (ln < maslet) {
+            if (mas[ln] < masmin) {
                 masmin = mas[ln];
             } else if (mas[ln] > masmax) {
                 masmax = mas[ln];
