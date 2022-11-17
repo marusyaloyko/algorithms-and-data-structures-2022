@@ -1,6 +1,5 @@
 package ru.mirea.practice;
 
-
 import java.util.Scanner;
 
 public abstract class Task5 {
