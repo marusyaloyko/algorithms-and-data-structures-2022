@@ -12,7 +12,7 @@ public abstract class Task5 {
     }
 
     public static void main(String[] args) {
-        try(Scanner sc = new Scanner(System.in)) {
+        try (Scanner sc = new Scanner(System.in)) {
             int b = sc.nextInt();
             sc.close();
             System.out.print(b + "! = " + factorial(b));
