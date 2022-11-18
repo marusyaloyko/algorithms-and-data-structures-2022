@@ -1,9 +1,9 @@
 package ru.mirea.workeightteen.task3;
 
-public class TextDocument implements IDocument {
+public class ImageDocument implements IDocument {
     private String string;
 
-    TextDocument(String string) {
+    ImageDocument(String string) {
         this.string = string;
     }
 
