@@ -1,16 +1,16 @@
-package ru.mirea.practice.work1;
+package ru.mirea.practice.work1to3;
 
 import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Stack;
 
-class ListIterator implements Iterator<Integer> {
-    private final List<Integer> list;
+class ListingIterator implements Iterator<Integer> {
+    private List<Integer> list;
     private int index;
     private boolean removeCalled;
 
-    ListIterator(List<Integer> list) {
+    ListingIterator(List<Integer> list) {
         this.list = list;
         index = 0;
         removeCalled = false;
@@ -34,10 +34,10 @@ class ListIterator implements Iterator<Integer> {
     @Override
     public void remove() {
         if (removeCalled) {
-            throw new IllegalStateException("remove уже вызван");
+            throw new IllegalStateException("элемент уже убран");
         }
         if (index == 0) {
-            throw new IllegalStateException("next не был вызван");
+            throw new IllegalStateException("такого элемента нет");
         }
         index--;
         list.remove(index);
@@ -45,7 +45,11 @@ class ListIterator implements Iterator<Integer> {
     }
 
     public void invert() {
-        Stack stack = new Stack<>();
+        Stack<Integer> stack = new Stack<>();
+        for (int i = list.size() - 1; i > 0; i--) {
+            stack.push(list.get(i));
+        }
+        list = stack;
         System.out.println(stack);
     }
 }
