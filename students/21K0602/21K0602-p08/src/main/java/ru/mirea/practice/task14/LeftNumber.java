@@ -2,9 +2,9 @@ package ru.mirea.practice.task14;
 
 public abstract class LeftNumber {
 
-    public static String recursion(Integer n) {
+    public static String recursion(int n) {
         if (n < 10) {
-            return n.toString();
+            return String.valueOf(n);
         } else {
             return recursion(n / 10) + " " + n % 10;
         }

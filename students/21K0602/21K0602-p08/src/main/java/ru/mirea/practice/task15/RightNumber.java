@@ -3,9 +3,9 @@ package ru.mirea.practice.task15;
 
 public abstract class RightNumber {
 
-    public static String recursion(Integer n) {
+    public static String recursion(int n) {
         if (n < 10) {
-            return n.toString();
+            return String.valueOf(n);
         } else {
             return n % 10 + " " + recursion(n / 10);
         }
