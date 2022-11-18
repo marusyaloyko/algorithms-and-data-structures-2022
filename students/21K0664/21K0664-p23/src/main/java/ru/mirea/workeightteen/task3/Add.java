@@ -7,10 +7,12 @@ public class Add extends AbstractExpression implements DoubleExpression, Express
         rightD = y;
     }
 
+    @Override
     public double evaluate(double x) {
         return (double) leftD.evaluate(x) + (double) rightD.evaluate(x);
     }
 
+    @Override
     public int evaluate(int x) {
         return (int) leftD.evaluate(x) + (int) rightD.evaluate(x);
     }

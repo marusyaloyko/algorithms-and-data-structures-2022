@@ -5,6 +5,7 @@ public class LinkedQueue extends AbstractQueue implements Queue {
     private Node head;
     private Node tail;
 
+    @Override
     protected void enqueueImpl(Object element) {
         Node key = tail;
         tail = new Node(element, null);
@@ -15,6 +16,7 @@ public class LinkedQueue extends AbstractQueue implements Queue {
         }
     }
 
+    @Override
     protected Object[] toArrayImpl(Object[] newElements) {
         newElements[0] = head.value;
         Node key = head.next;
@@ -25,15 +27,19 @@ public class LinkedQueue extends AbstractQueue implements Queue {
         return newElements;
     }
 
+    @Override
     protected void remove() {
         head = head.next;
     }
 
+    @Override
     protected Object elementImpl() {
         return head.value;
     }
 
+    @Override
     protected void clearImpl() {
+        System.out.println("Cleared");
     }
 
 }

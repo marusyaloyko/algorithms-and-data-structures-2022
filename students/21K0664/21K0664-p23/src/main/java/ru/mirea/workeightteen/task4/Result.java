@@ -20,5 +20,5 @@ public class Result {
     }
 
     public String expression;
-    Vector<Result> args = new Vector();
+    Vector<Result> args = new Vector<>();
 }

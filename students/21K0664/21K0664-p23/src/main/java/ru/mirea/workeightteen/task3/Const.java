@@ -7,10 +7,12 @@ public class Const implements DoubleExpression, Expression {
         k = x;
     }
 
+    @Override
     public double evaluate(double x) {
         return k;
     }
 
+    @Override
     public int evaluate(int x) {
         return (int) k;
     }

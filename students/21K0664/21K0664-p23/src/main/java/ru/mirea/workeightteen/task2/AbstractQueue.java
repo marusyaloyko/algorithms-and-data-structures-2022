@@ -3,6 +3,7 @@ package ru.mirea.workeightteen.task2;
 public abstract class AbstractQueue implements Queue {
     protected int size;
 
+    @Override
     public void enqueue(Object element) {
         assert element != null;
         enqueueImpl(element);
@@ -11,6 +12,7 @@ public abstract class AbstractQueue implements Queue {
 
     protected abstract void enqueueImpl(Object element);
 
+    @Override
     public Object dequeue() {
         assert size > 0;
         Object result = element();
@@ -21,6 +23,7 @@ public abstract class AbstractQueue implements Queue {
 
     protected abstract void remove();
 
+    @Override
     public Object element() {
         assert size > 0;
         return elementImpl();
@@ -28,10 +31,10 @@ public abstract class AbstractQueue implements Queue {
 
     protected abstract Object elementImpl();
 
+    @Override
     public Object[] toArray() {
         if (size == 0) {
-            Object[] newElements = new Object[0];
-            return newElements;
+            return new Object[0];
         } else {
             Object[] newElements = new Object[size];
             newElements = toArrayImpl(newElements);
@@ -41,14 +44,17 @@ public abstract class AbstractQueue implements Queue {
 
     protected abstract Object[] toArrayImpl(Object[] newElements);
 
+    @Override
     public int size() {
         return size;
     }
 
+    @Override
     public boolean isEmpty() {
         return size == 0;
     }
 
+    @Override
     public void clear() {
         clearImpl();
         size = 0;

@@ -7,10 +7,12 @@ public class Variable implements DoubleExpression, Expression {
         a = b;
     }
 
+    @Override
     public double evaluate(double x) {
         return x;
     }
 
+    @Override
     public int evaluate(int x) {
         return x;
     }

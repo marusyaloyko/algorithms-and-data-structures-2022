@@ -1,6 +1,6 @@
 package ru.mirea.workeightteen.task1;
 
-public class ArrayQueueModule {
+public abstract class ArrayQueueModule {
     private static int size = 0;
     private static int head = 0;
     private static Object[] elements = new Object[5];

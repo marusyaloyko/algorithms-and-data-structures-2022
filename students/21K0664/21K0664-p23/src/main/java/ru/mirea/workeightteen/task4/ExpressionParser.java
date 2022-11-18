@@ -1,5 +1,7 @@
 package ru.mirea.workeightteen.task4;
 
+import java.util.Objects;
+
 public class ExpressionParser implements Parser {
 
     private int index = 0;
@@ -19,7 +21,7 @@ public class ExpressionParser implements Parser {
         switch (currentExpression.args.size()) {
             case 0: {
                 if (Character.isDigit(currentExpression.expression.charAt(0))) {
-                    if (currentExpression.expression.equals("2147483648")) {
+                    if ("2147483648".equals(currentExpression.expression)) {
                         return new Const(Integer.parseInt("-2147483648"));
                     } else {
                         return new Const(Integer.parseInt(currentExpression.expression));
@@ -31,37 +33,39 @@ public class ExpressionParser implements Parser {
 
             case 1: {
                 TripleExpression a = makeResult(currentExpression.args.get(0));
-                if (currentExpression.expression == "-") {
+                if (Objects.equals(currentExpression.expression, "-")) {
                     return new Umin(a);
                 }
-                if (currentExpression.expression == "abs") {
+                if (Objects.equals(currentExpression.expression, "abs")) {
                     return new Abs(a);
                 }
-                if (currentExpression.expression == "square") {
+                if (Objects.equals(currentExpression.expression, "square")) {
                     return new Square(a);
                 }
+                break;
             }
             case 2: {
                 TripleExpression a = makeResult(currentExpression.args.get(0));
                 TripleExpression b = makeResult(currentExpression.args.get(1));
-                if (currentExpression.expression == "+") {
+                if (Objects.equals(currentExpression.expression, "+")) {
                     return new Add(a, b);
                 }
-                if (currentExpression.expression == "-") {
+                if (Objects.equals(currentExpression.expression, "-")) {
                     return new Subtract(a, b);
                 }
-                if (currentExpression.expression == "*") {
+                if (Objects.equals(currentExpression.expression, "*")) {
                     return new Multiply(a, b);
                 }
-                if (currentExpression.expression == "/") {
+                if (Objects.equals(currentExpression.expression, "/")) {
                     return new Divide(a, b);
                 }
-                if (currentExpression.expression == "<<") {
+                if (Objects.equals(currentExpression.expression, "<<")) {
                     return new ShiftLeft(a, b);
                 }
-                if (currentExpression.expression == ">>") {
+                if (Objects.equals(currentExpression.expression, ">>")) {
                     return new ShiftRight(a, b);
                 }
+                break;
             }
             default:
                 break;
@@ -74,7 +78,7 @@ public class ExpressionParser implements Parser {
 
         while (true) {
             String op = charParser();
-            int priority = get_priority(op);
+            int priority = getpriority(op);
             if (priority <= currentPriority) {
                 index -= op.length();
                 return left;
@@ -88,7 +92,7 @@ public class ExpressionParser implements Parser {
     private Result expressionsParser() {
         String currentChar = charParser();
 
-        if (currentChar == "(") {
+        if (Objects.equals(currentChar, "(")) {
             Result result = parse();
             index++;
             return result;
@@ -130,24 +134,24 @@ public class ExpressionParser implements Parser {
     }
 
 
-    private int get_priority(String operation) {
+    private int getpriority(String operation) {
         String tmp = "<<";
-        if (operation == tmp) {
+        if (Objects.equals(operation, tmp)) {
             return 1;
         }
-        if (operation == ">>") {
+        if (Objects.equals(operation, ">>")) {
             return 1;
         }
-        if (operation == "+") {
+        if (Objects.equals(operation, "+")) {
             return 2;
         }
-        if (operation == "-") {
+        if (Objects.equals(operation, "-")) {
             return 2;
         }
-        if (operation == "*") {
+        if (Objects.equals(operation, "*")) {
             return 3;
         }
-        if (operation == "/") {
+        if (Objects.equals(operation, "/")) {
             return 3;
         }
         return 0;
