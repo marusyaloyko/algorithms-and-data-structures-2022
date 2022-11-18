@@ -1,6 +1,7 @@
 package ru.mirea.workeightteen.task4;
 
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Result {
 
@@ -10,15 +11,15 @@ public class Result {
 
     public Result(String expression, Result a) {
         this.expression = expression;
-        args.addElement(a);
+        args.add(a);
     }
 
     public Result(String expression, Result a, Result b) {
         this.expression = expression;
-        args.addElement(a);
-        args.addElement(b);
+        args.add(a);
+        args.add(b);
     }
 
     public String expression;
-    Vector<Result> args = new Vector<>();
+    List<Result> args = new ArrayList<>();
 }
