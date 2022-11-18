@@ -1,6 +1,8 @@
 package ru.mirea.practice.form.task2;
 
 
+import ru.mirea.practice.form.task1.Convertor;
+
 import java.util.Scanner;
 
 abstract class InternetShop {
@@ -8,7 +10,10 @@ abstract class InternetShop {
         String language;
         String land;
         double course;
+        String currency;
         try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Write your currency: ");
+            currency = scanner.nextLine();
             System.out.println("Write your language code: ");
             language = scanner.nextLine();
             System.out.println("Write your land code");
@@ -19,8 +24,9 @@ abstract class InternetShop {
         double bread = 0.5;
         double milk = 1.5;
         double cheese = 2;
-        System.out.println("bread: " + ConvertorShop.convert(language, land, course, bread));
-        System.out.println("milk: " + ConvertorShop.convert(language, land, course, milk));
-        System.out.println("cheese: " + ConvertorShop.convert(language, land, course, cheese));
+        Convertor usersCurrency = new Convertor(language, land, course, currency);
+        System.out.println("bread: " + usersCurrency.convert(bread));
+        System.out.println("milk: " + usersCurrency.convert(milk));
+        System.out.println("cheese: " + usersCurrency.convert(cheese));
     }
 }
