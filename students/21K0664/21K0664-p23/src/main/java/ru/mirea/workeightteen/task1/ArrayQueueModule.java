@@ -5,7 +5,7 @@ public abstract class ArrayQueueModule {
     private static int head = 0;
     private static Object[] elements = new Object[5];
 
-    public static void enqueue(Object element) {
+    public void enqueue(Object element) {
         assert element != null;
         ensureCapacity(size + 1);
         elements[(head + size) % elements.length] = element;
@@ -86,25 +86,5 @@ public abstract class ArrayQueueModule {
         return str.toString();
     }
 
-    public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            ArrayQueueModule.enqueue(i);
-        }
-        System.out.println(toStr());
 
-        for (int i = 0; i < 5; i++) {
-            ArrayQueueModule.dequeue();
-        }
-        System.out.println(toStr());
-
-        for (int i = 0; i < 5; i++) {
-            ArrayQueueModule.enqueue(i);
-        }
-        System.out.println(toStr());
-
-        for (int i = 100; i < 108; i++) {
-            ArrayQueueModule.enqueue(i);
-        }
-        System.out.println(toStr());
-    }
 }

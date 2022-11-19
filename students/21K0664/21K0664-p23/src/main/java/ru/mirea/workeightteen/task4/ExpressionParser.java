@@ -7,6 +7,7 @@ public class ExpressionParser implements Parser {
     private int index = 0;
     private String input;
 
+    @Override
     public TripleExpression parse(String expression) {
         input = expression;
         index = 0;

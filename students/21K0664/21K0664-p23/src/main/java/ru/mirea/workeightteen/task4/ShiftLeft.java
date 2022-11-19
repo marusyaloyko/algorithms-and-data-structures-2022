@@ -7,6 +7,7 @@ public class ShiftLeft extends AbstractExpression implements TripleExpression {
         rightD = y;
     }
 
+    @Override
     public int evaluate(int x, int y, int z) {
         return leftD.evaluate(x, y, z) << rightD.evaluate(x, y, z);
     }

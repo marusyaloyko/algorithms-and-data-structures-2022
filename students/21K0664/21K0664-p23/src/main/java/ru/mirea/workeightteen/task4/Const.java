@@ -8,6 +8,7 @@ public class Const extends AbstractExpression implements TripleExpression {
         k = x;
     }
 
+    @Override
     public int evaluate(int x, int y, int z) {
         return k;
     }

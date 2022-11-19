@@ -1,7 +1,7 @@
 package ru.mirea.workeightteen.task123;
 
 
-public abstract class GenericBox<T, V, K> extends Animal<K> implements Comparable<T>, Serializable<V> {
+public class GenericBox<T extends String, V extends Animal, K extends Number> {
     private final T content1;
     private final V content2;
     private final K content3;
@@ -22,6 +22,12 @@ public abstract class GenericBox<T, V, K> extends Animal<K> implements Comparabl
 
     public T getContent1() {
         return content1;
+    }
+
+    public void show() {
+        System.out.println("content1: " + content1.getClass().getName());
+        System.out.println("content2: " + content2.getClass().getName());
+        System.out.println("content2: " + content3.getClass().getName());
     }
 
 

@@ -19,7 +19,7 @@ public class MinMax<K> {
 
     }
 
-    public K  findMin() {
+    public K findMin() {
         K min = arr[0];
         for (K k : arr) {
             if ((Integer) k < (Integer) min) {

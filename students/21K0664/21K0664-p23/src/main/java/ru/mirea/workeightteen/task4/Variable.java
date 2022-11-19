@@ -8,6 +8,7 @@ public class Variable extends AbstractExpression implements TripleExpression {
         a = b;
     }
 
+    @Override
     public int evaluate(int x, int y, int z) {
         if (a == 'x') {
             return x;
