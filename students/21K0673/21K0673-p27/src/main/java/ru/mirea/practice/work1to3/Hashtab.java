@@ -1,6 +1,10 @@
 package ru.mirea.practice.work1to3;
 
 public class Hashtab {
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 
     public int hashtabHash() {
         return 0;
