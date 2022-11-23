@@ -31,7 +31,9 @@ public final class Shop {
         users = new HashMap<>();
         users.put("Denis", "255123456456");
     }
+
     //Singleton Pattern
+
     private static class ShopSingletonHelper {
         private static final Shop INSTANCE = new Shop();
     }
