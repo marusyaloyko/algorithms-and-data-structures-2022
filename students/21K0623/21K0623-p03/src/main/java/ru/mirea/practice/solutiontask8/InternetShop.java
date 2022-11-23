@@ -1,43 +1,34 @@
 package ru.mirea.practice.solutiontask8;
 
-import java.util.Objects;
-import java.util.Scanner;
+public class InternetShop {
 
-import static ru.mirea.practice.solutiontask7.Convector.convectorMoney;
-import static ru.mirea.practice.solutiontask7.Convector.returnLocale;
+    private final Product[] products;
+    double money = 0;
 
-public final class InternetShop {
-    private InternetShop() {}
+    public InternetShop(Product[] products) {
+        this.products = products;
+    }
 
-    public static void main(String[] args) {
-        try (Scanner sc = new Scanner(System.in)) {
-            Product[] products = {new Product("Молоко", 0.5),
-                                  new Product("Печенья", 0.75),
-                                  new Product("Кофе", 1.5)};
-            System.out.println("Выберите товар:");
-            int currentproduct = 0;
-            while (currentproduct < 1 || currentproduct > 3) {
-                int i = 1;
-                for (Product product: products) {
-                    System.out.println(i + ". " + product.getName() + " - " + product.getCost() + "$");
-                    i++;
-                }
-                currentproduct = sc.nextInt();
-            }
-            System.out.println("Введите кол-во продукта");
-            int count = sc.nextInt();
-            while (count < 1) {
-                count = sc.nextInt();
-            }
-            System.out.println("Введите удобную для вас валюту:\n1-$, 2-¥, 3-€, 4-£");
-            int currentvalue = sc.nextInt();
-            while (currentvalue < 1 || currentvalue > 4) {
-                currentvalue = sc.nextInt();
-            }
-            System.out.println("Итого:" + Objects.requireNonNull(returnLocale(currentvalue))
-                    .format(convectorMoney(1, currentvalue,
-                            products[currentproduct - 1].getCost()) * count));
+    public Product[] getProducts() {
+        return products;
+    }
 
+    public void setMoney(double money) {
+        this.money = money;
+    }
+
+    public double getMoney() {
+        return money;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder toreturn = new StringBuilder().append("Выберите товар:\n");
+        int i = 1;
+        for (Product product: products) {
+            toreturn.append(i).append(". ").append(product.getName()).append(" - ").append(product.getCost()).append("$\n");
+            i++;
         }
+        return toreturn.toString();
     }
 }
