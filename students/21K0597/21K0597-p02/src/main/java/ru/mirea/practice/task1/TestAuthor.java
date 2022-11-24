@@ -14,7 +14,6 @@ public abstract class TestAuthor {
             dude1.setEmail(sc.next());
             dude1.setGender(sc.next().charAt(0));
             System.out.printf(dude1.toString());
-            sc.close();
         }
     }
 }

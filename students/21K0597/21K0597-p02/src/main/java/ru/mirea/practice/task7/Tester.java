@@ -8,7 +8,7 @@ public abstract class Tester {
         poloshka.addBook(new Book("Xia", "book with name Part 2", 1921));
         poloshka.bookSort();
         System.out.print(poloshka.getOldest().toString() + "\n");
-        System.out.print(poloshka.getYangest().toString() + "\n");
+        System.out.print(poloshka.getYoungest().toString() + "\n");
         poloshka.show();
     }
 }

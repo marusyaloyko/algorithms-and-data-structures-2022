@@ -1,9 +1,9 @@
 package ru.mirea.practice.task7;
 
 public class Book {
-    public String author;
-    public String booksName;
-    public int writingYear;
+    private String author;
+    private String booksName;
+    private int writingYear;
 
     public Book(String author, String booksName, int writingYear) {
         this.author = author;

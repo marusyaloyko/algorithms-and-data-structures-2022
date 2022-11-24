@@ -20,20 +20,20 @@ public class Bookshelf {
         int temp = 99999999;
         int k = 0;
         for (int i = 0; i < shelf.size(); i++) {
-            if (shelf.get(i).writingYear < temp) {
-                temp = shelf.get(i).writingYear;
+            if (shelf.get(i).getWritingYear() < temp) {
+                temp = shelf.get(i).getWritingYear();
                 k = i;
             }
         }
         return shelf.get(k);
     }
 
-    public Book getYangest() {
+    public Book getYoungest() {
         int temp = 0;
         int k = 0;
         for (int i = 0; i < shelf.size(); i++) {
-            if (shelf.get(i).writingYear > temp) {
-                temp = shelf.get(i).writingYear;
+            if (shelf.get(i).getWritingYear() > temp) {
+                temp = shelf.get(i).getWritingYear();
                 k = i;
             }
         }
@@ -44,7 +44,7 @@ public class Bookshelf {
         Collections.sort(shelf, new Comparator<Book>() {
             @Override
             public int compare(Book o1, Book o2) {
-                return o1.writingYear - o2.writingYear;
+                return o1.getWritingYear() - o2.getWritingYear();
             }
         });
     }
