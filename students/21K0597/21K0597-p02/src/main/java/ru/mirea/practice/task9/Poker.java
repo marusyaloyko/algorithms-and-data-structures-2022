@@ -3,7 +3,7 @@ package ru.mirea.practice.task9;
 import java.util.Scanner;
 import java.util.Random;
 
-abstract class Poker {
+public abstract class Poker {
     public static void main(String[] args) {
         int n;
         try (Scanner sc = new Scanner(System.in)) {

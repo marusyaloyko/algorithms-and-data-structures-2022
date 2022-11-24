@@ -2,7 +2,7 @@ package ru.mirea.practice.task2;
 
 import java.util.Scanner;
 
-abstract class TestBall {
+public abstract class TestBall {
     public static void main(String[] args) {
         Ball ball1 = new Ball();
         try (Scanner sc = new Scanner(System.in)) {

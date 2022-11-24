@@ -1,6 +1,6 @@
 package ru.mirea.practice.task8;
 
-abstract class Main {
+public abstract class Main {
     public static void main(String[] args) {
         String temp = "";
         String[] arr = new String[]{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};

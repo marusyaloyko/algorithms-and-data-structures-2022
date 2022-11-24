@@ -1,6 +1,6 @@
 package ru.mirea.practice.task5;
 
-abstract class Main {
+public abstract class Main {
     public static void main(String[] args) {
         DogShelter konura1 = new DogShelter();
         konura1.addDog(new Dog("Sobakich", 4));

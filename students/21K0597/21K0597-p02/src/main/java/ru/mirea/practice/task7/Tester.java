@@ -1,6 +1,6 @@
 package ru.mirea.practice.task7;
 
-abstract class Tester {
+public abstract class Tester {
     public static void main(String[] args) {
         Bookshelf poloshka = new Bookshelf();
         poloshka.addBook(new Book("Xia", "book without name", 2000));

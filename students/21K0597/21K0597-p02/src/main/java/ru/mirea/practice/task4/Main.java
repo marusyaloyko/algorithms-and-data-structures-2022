@@ -1,6 +1,6 @@
 package ru.mirea.practice.task4;
 
-abstract class Main {
+public abstract class Main {
     public static void main(String[] args) {
         Shop taverna = new Shop();
         taverna.addComputer(new Computer("computer1", "gtx 1060", "B550", "16 gb 2400 gHz", "ryzen 5600x"));

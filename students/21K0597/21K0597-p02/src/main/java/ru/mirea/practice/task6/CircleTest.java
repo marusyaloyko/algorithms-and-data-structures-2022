@@ -1,6 +1,6 @@
 package ru.mirea.practice.task6;
 
-abstract class CircleTest {
+public abstract class CircleTest {
     public static void main(String[] args) {
         Circle circle1 = new Circle(4);
         Circle circle2 = new Circle(2);

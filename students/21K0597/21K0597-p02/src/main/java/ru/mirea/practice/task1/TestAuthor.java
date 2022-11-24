@@ -2,7 +2,7 @@ package ru.mirea.practice.task1;
 
 import java.util.Scanner;
 
-abstract class TestAuthor {
+public abstract class TestAuthor {
     public static void main(String[] args) {
         String name = "Oleg";
         String email = "dinozavrikOleg1997@mail.ru";
