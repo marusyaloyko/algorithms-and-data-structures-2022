@@ -1,11 +1,11 @@
 package ru.mirea.practice.task4;
 
 public class Computer {
-    String name;
-    String videoCard;
-    String motherBoard;
-    String memory;
-    String cpu;
+    private String name;
+    private String videoCard;
+    private String motherBoard;
+    private String memory;
+    private String cpu;
 
     public Computer(String name, String videoCard, String motherBoard, String memory, String cpu) {
         this.name = name;
