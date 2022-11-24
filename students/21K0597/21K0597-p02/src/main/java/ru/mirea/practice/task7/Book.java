@@ -25,12 +25,12 @@ public class Book {
         this.author = author;
     }
 
-    public String getBooksname() {
+    public String getBookname() {
         return booksName;
     }
 
-    public void setBooksname(String booksname) {
-        this.booksName = booksname;
+    public void setBookname(String bookName) {
+        this.booksName = bookName;
     }
 
     public int getWritingYear() {

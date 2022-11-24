@@ -27,6 +27,7 @@ public class Circle {
         return Math.PI * 2 * this.radius;
 
     }
+
     public boolean checkEquals(Circle circle2) {
         return this.radius == circle2.radius;
     }

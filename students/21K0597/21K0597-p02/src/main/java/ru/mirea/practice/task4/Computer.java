@@ -57,6 +57,7 @@ public class Computer {
 
     @Override
     public String toString() {
-        return "Computer{" + "name='" + name + '\'' + ", videoCard='" + videoCard + '\'' + ", motherBoard='" + motherBoard + '\'' + ", memory='" + memory + '\'' + ", cpu='" + cpu + '\'' + '}';
+        return "Computer{" + "name='" + name + '\'' + ", videoCard='" + videoCard + '\'' + ", motherBoard='"
+                + motherBoard + '\'' + ", memory='" + memory + '\'' + ", cpu='" + cpu + '\'' + '}';
     }
 }
