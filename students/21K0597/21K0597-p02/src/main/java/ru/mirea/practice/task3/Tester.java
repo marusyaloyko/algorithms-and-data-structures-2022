@@ -15,7 +15,6 @@ public class Tester {
     public void addCircle(Circle circle) {
         circlesCount++;
         circles.add(circle);
-
     }
 
     public void show() {
