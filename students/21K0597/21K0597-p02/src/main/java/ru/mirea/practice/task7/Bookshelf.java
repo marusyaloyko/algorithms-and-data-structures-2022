@@ -18,26 +18,26 @@ public class Bookshelf {
 
     public Book getOldest() {
         int temp = 99999999;
-        int k = 0;
-        for (int i = 0; i < shelf.size(); i++) {
-            if (shelf.get(i).getWritingYear() < temp) {
-                temp = shelf.get(i).getWritingYear();
-                k = i;
+        Book k = null;
+        for (Book book : shelf) {
+            if (book.getWritingYear() < temp) {
+                temp = book.getWritingYear();
+                k = book;
             }
         }
-        return shelf.get(k);
+        return k;
     }
 
     public Book getYoungest() {
         int temp = 0;
-        int k = 0;
-        for (int i = 0; i < shelf.size(); i++) {
-            if (shelf.get(i).getWritingYear() > temp) {
-                temp = shelf.get(i).getWritingYear();
-                k = i;
+        Book k = null;
+        for (Book book : shelf) {
+            if (book.getWritingYear() > temp) {
+                temp = book.getWritingYear();
+                k = book;
             }
         }
-        return shelf.get(k);
+        return k;
     }
 
     public void bookSort() {
