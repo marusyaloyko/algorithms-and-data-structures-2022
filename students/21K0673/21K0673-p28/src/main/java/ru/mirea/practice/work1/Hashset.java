@@ -6,10 +6,10 @@ import java.util.TreeSet;
 abstract class Hashset {
     public static void main(String[] args) {
         HashSet<String> set = new HashSet<>();
-        set.add("geeks");
-        set.add("practice");
-        set.add("contribute");
-        set.add("ide");
+        set.add("word");
+        set.add("not");
+        set.add("agh");
+        set.add("reh");
         System.out.println(set);
         TreeSet<String> treeset = new TreeSet<>(set);
         System.out.println(treeset);
