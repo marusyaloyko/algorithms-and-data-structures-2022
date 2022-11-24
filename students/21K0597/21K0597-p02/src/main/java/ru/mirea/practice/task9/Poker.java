@@ -11,7 +11,8 @@ public abstract class Poker {
             n = sc.nextInt();
         }
         String[] suits = {"Peak", "Tambourine", "Heart", "Clubs"};
-        String[] rank = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
+        String[] rank = {"2", "3", "4", "5", "6", "7", "8", "9",
+                         "10", "Jack", "Queen", "King", "Ace"};
         String[] deck = new String[52];
 
 

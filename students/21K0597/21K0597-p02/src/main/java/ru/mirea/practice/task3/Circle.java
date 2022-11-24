@@ -32,9 +32,6 @@ public class Circle {
 
     @Override
     public String toString() {
-        return "Circle{" +
-                "radius=" + radius +
-                ", centre=" + centre.toString() +
-                '}';
+        return "Circle{" + "radius=" + radius + ", centre=" + centre.toString() + '}';
     }
 }

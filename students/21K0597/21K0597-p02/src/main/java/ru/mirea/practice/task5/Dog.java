@@ -32,10 +32,7 @@ public class Dog {
 
     @Override
     public String toString() {
-        return "Dog{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+        return "Dog{" + "name='" + name + '\'' + ", age=" + age + '}';
     }
 
     public int convertAge() {
