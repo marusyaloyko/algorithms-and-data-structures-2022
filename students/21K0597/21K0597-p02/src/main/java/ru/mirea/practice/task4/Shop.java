@@ -17,8 +17,7 @@ public class Shop {
 
     public String search(String videoCard, String motherBoard, String memory, String cpu) {
         for (Computer comp: computers) {
-            if (videoCard.equals(comp.getVideoCard()) && motherBoard.equals(comp.getMotherBoard()) &&
-                    memory.equals(comp.getMemory()) && cpu.equals(comp.getCpu())) {
+            if (videoCard.equals(comp.getVideoCard()) && motherBoard.equals(comp.getMotherBoard()) && memory.equals(comp.getMemory()) && cpu.equals(comp.getCpu())) {
                 return "There is such a computer in the shop\n";
             }
         }
