@@ -27,46 +27,46 @@ public class Hashtab<K, V> {
     }
 
     public void hashtabAdd(K key, V value) {
-        Node<K, V> newNode = new Node<>(key, value);
-        int possiblePosition = hashtabHash(key);
-        if (tables[possiblePosition] == null) {
-            tables[possiblePosition] = newNode;
+        Node<K, V> node = new Node<>(key, value);
+        int pos = hashtabHash(key);
+        if (tables[pos] == null) {
+            tables[pos] = node;
         } else {
-            Node<K, V> retrievedNode = tables[possiblePosition];
-            while (retrievedNode != null) {
-                if (retrievedNode.getKey().equals(key)) {
-                    retrievedNode.setValue(value);
+            Node<K, V> node1 = tables[pos];
+            while (node1 != null) {
+                if (node1.getKey().equals(key)) {
+                    node1.setValue(value);
                     return;
                 }
-                retrievedNode = retrievedNode.getNext();
+                node1 = node1.getNext();
             }
         }
     }
 
     public Node hashtabDelete(K key) {
-        Node<K, V> removeNode = hashtabLookup(key);
-        Node<K, V> prevNode = removeNode.getPrev();
-        Node<K, V> nextNode = removeNode.getNext();
-        if (nextNode != null) {
-            nextNode.setPrev(prevNode);
+        Node<K, V> node = hashtabLookup(key);
+        Node<K, V> prev = node.getPrev();
+        Node<K, V> next = node.getNext();
+        if (next != null) {
+            next.setPrev(prev);
         }
-        if (prevNode != null) {
-            prevNode.setNext(nextNode);
+        if (prev != null) {
+            prev.setNext(next);
         } else {
-            int lookupPosition = hashtabHash(key);
-            tables[lookupPosition] = nextNode;
+            int pos = hashtabHash(key);
+            tables[pos] = next;
         }
-        return removeNode;
+        return node;
     }
 
     public Node hashtabLookup(K key) {
-        int lookupPosition = hashtabHash(key);
-        Node<K, V> retrievedNode = tables[lookupPosition];
-        while (retrievedNode != null) {
-            if (retrievedNode.getKey().equals(key)) {
-                return retrievedNode;
+        int pos = hashtabHash(key);
+        Node<K, V> node = tables[pos];
+        while (node != null) {
+            if (node.getKey().equals(key)) {
+                return node;
             } else {
-                retrievedNode = retrievedNode.getNext();
+                node = node.getNext();
             }
         }
         return null;
