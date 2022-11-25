@@ -1,6 +1,10 @@
 package ru.mirea.practice;
 
-public class Harmonic {
+public final class Harmonic {
+
+    private Harmonic() {
+    }
+
     public static void main(String[] args) {
         for (int i = 1; i < 11; i++) {
             if (i == 1) {

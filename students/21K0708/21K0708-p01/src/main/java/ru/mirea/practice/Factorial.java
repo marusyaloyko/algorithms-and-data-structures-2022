@@ -1,11 +1,12 @@
 package ru.mirea.practice;
 
-import java.util.Scanner;
+public final class Factorial {
 
-public class Factorial {
+    private Factorial() {
+    }
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
+        int x = 5;
         System.out.println(fact(x));
     }
 
