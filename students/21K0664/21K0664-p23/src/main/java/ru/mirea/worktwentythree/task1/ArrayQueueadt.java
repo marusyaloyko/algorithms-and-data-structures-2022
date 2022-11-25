@@ -7,14 +7,14 @@ public class ArrayQueueadt {
     private Object[] elements = new Object[5];
 
 
-    public static void enqueue(ArrayQueueadt queue, Object element) {
+    public void enqueue(ArrayQueueadt queue, Object element) {
         assert element != null;
         ensureCapacity(queue, queue.size + 1);
         queue.elements[(queue.head + queue.size) % queue.elements.length] = element;
         queue.size++;
     }
 
-    private static void ensureCapacity(ArrayQueueadt queue, int capacity) {
+    private void ensureCapacity(ArrayQueueadt queue, int capacity) {
         if (capacity <= queue.elements.length) {
             return;
         }
@@ -23,7 +23,6 @@ public class ArrayQueueadt {
             if (queue.size >= 0) {
                 System.arraycopy(queue.elements, 0, newElements, 0, queue.size);
             }
-            queue.elements = newElements;
         } else {
             if (queue.elements.length - queue.head >= 0) {
                 System.arraycopy(queue.elements, queue.head, newElements, 0, queue.elements.length - queue.head);
@@ -33,11 +32,11 @@ public class ArrayQueueadt {
                         (queue.head + queue.size) % queue.elements.length + 1);
             }
             queue.head = 0;
-            queue.elements = newElements;
         }
+        queue.elements = newElements;
     }
 
-    public static Object dequeue(ArrayQueueadt queue) {
+    public Object dequeue(ArrayQueueadt queue) {
         assert queue.size > 0;
         Object x = queue.elements[queue.head];
         queue.head = (queue.head + 1) % queue.elements.length;
@@ -95,22 +94,22 @@ public class ArrayQueueadt {
         ArrayQueueadt queue = new ArrayQueueadt();
 
         for (int i = 0; i < 10; i++) {
-            ArrayQueueadt.enqueue(queue, i);
+            queue.enqueue(queue, i);
         }
         System.out.println(ArrayQueueadt.toStr(queue));
 
         for (int i = 0; i < 5; i++) {
-            ArrayQueueadt.dequeue(queue);
+            queue.dequeue(queue);
         }
         System.out.println(ArrayQueueadt.toStr(queue));
 
         for (int i = 0; i < 5; i++) {
-            ArrayQueueadt.enqueue(queue, i);
+            queue.enqueue(queue, i);
         }
         System.out.println(ArrayQueueadt.toStr(queue));
 
         for (int i = 100; i < 108; i++) {
-            ArrayQueueadt.enqueue(queue, i);
+            queue.enqueue(queue, i);
         }
         System.out.println(ArrayQueueadt.toStr(queue));
     }
