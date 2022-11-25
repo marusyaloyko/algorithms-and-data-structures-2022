@@ -10,9 +10,9 @@ public class Pants extends Clothes implements MenClothing, WomenClothing  {
     public void dressMan() {
         System.out.println("Одеть штаны на мужчину");
     }
+
     @Override
     public void dressWoman() {
         System.out.println("Одеть штаны на женщину");
     }
-
 }

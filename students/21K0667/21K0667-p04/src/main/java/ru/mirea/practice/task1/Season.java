@@ -15,7 +15,7 @@ public enum Season {
     private final String description;
 
 
-    private Season(int temp, String description) {
+    Season(int temp, String description) {
         this.avg = temp;
         this.description = description;
     }
@@ -28,6 +28,7 @@ public enum Season {
     public String toString() {
         return this.name() + " Описание: " + description + ", Средняя температура: " + avg;
     }
+
     static void favorite(Season best) {
         switch (best) {
             case AUTUMN:
@@ -46,5 +47,4 @@ public enum Season {
                 break;
         }
     }
-
 }

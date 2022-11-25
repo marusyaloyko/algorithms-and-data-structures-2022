@@ -1,6 +1,6 @@
 package ru.mirea.practice.task4;
 
-public class Test {
+public abstract class Test {
     public static void main(String[] args) {
         Processor processor1 = new Processor(3.5, 6, 3);
         Processor processor2 = new Processor(3.5, 6, 3);
@@ -19,12 +19,13 @@ public class Test {
         Brand dexp = Brand.DEXP;
 
         Computer[] arr = {new Computer(processor1, memory1, monitor1, lenovo),
-                new Computer(processor2, memory2, monitor2, hp),
-                new Computer(processor3, memory3, monitor3, dexp)};
+            new Computer(processor2, memory2, monitor2, hp),
+            new Computer(processor3, memory3, monitor3, dexp)};
 
         for (Computer computer : arr) {
             System.out.println(computer);
             System.out.println();
         }
     }
+
 }

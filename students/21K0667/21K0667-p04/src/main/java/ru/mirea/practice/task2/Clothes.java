@@ -22,8 +22,9 @@ abstract class Clothes {
     public String getColor() {
         return color;
     }
+
+    @Override
     public String toString() {
         return "Размер: " + getSize().name() + " Цена: " + getPrice() + " Цвет: " + color;
     }
-
 }
