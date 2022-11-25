@@ -1,6 +1,7 @@
 package ru.mirea.practice.task3;
 
 import java.util.ArrayList;
+import java.util.List;
 
 abstract class Tester {
     public static void main(String[] args) {
@@ -15,7 +16,7 @@ abstract class Tester {
         circles_size = circles.size();
     }
 
-    static ArrayList<Circle> circles = new ArrayList<>();
+    static List<Circle> circles = new ArrayList<>();
     //Kill array list
     static int circles_size = 0;
 }
