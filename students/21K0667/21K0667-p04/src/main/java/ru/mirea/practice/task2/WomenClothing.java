@@ -5,3 +5,4 @@ public interface WomenClothing {
         System.out.println("Одеть женщину");
     }
 }
+

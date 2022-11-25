@@ -31,3 +31,4 @@ public class Memory {
         this.hddCapacity = hddCapacity;
     }
 }
+

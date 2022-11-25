@@ -13,3 +13,4 @@ abstract class Tester {
         test.dressWoman(arr);
     }
 }
+

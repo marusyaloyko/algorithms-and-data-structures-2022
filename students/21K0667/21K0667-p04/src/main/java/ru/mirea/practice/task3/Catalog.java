@@ -57,5 +57,4 @@ public enum Catalog {
     public abstract void getDescription();
 
     public abstract Product[] getCatalog();
-
 }

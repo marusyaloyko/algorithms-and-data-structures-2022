@@ -31,3 +31,4 @@ public class Monitor {
         this.resolution = resolution;
     }
 }
+
