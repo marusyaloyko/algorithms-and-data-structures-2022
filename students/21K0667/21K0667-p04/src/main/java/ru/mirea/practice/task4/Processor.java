@@ -1,7 +1,7 @@
 package ru.mirea.practice.task4;
 
 public class Processor {
-    private int frequency;
+    private double frequency;
     private int threads;
     private int cores;
 
@@ -12,11 +12,11 @@ public class Processor {
                 + ", Кол-во ядер: " + cores;
     }
 
-    public int getFrequency() {
+    public double getFrequency() {
         return frequency;
     }
 
-    public void setFrequency(int frequency) {
+    public void setFrequency(double frequency) {
         this.frequency = frequency;
     }
 
@@ -36,7 +36,7 @@ public class Processor {
         this.cores = cores;
     }
 
-    public Processor(int frequency, int threads, int cores) {
+    public Processor(double frequency, int threads, int cores) {
         this.frequency = frequency;
         this.threads = threads;
         this.cores = cores;
