@@ -1,4 +1,4 @@
-package ru.mirea.practice.task2;
+package ru.mirea.practice.task1to3;
 
 public interface Movable {
     void moveUp();

@@ -1,4 +1,4 @@
-package ru.mirea.practice.task2;
+package ru.mirea.practice.task1to3;
 
 public class MovableRectangle implements Movable {
     private MovablePoint topLeft;
@@ -9,7 +9,7 @@ public class MovableRectangle implements Movable {
         topLeft = new MovablePoint(x2, y2, xspeed, yspeed);
     }
 
-    public boolean checkSpeed() {
+    public boolean speedTest() {
         return bottomRight.xSpeed == topLeft.xSpeed && bottomRight.ySpeed == topLeft.ySpeed;
     }
 
