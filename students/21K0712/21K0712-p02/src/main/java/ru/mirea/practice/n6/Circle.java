@@ -18,19 +18,21 @@ public class Circle {
     }
 
     public double square() {
-        return (3.14 * radius * radius);
+        return 3.14 * radius * radius;
     }
 
     public double length() {
-        return (2 * 3.14 * radius);
+        return 2 * 3.14 * radius;
     }
 
     public boolean compare(Circle c) {
+        boolean b;
         if (radius >= c.radius) {
-            return true;
+            b = true;
         } else {
-            return false;
+            b = false;
         }
+        return b;
     }
 
     @Override

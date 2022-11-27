@@ -10,6 +10,7 @@ public class Tester {
     }
 
     public Tester() {
+        this.n = 0;
     }
 
     public int getN() {

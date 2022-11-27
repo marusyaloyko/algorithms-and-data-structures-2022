@@ -1,23 +1,24 @@
 package ru.mirea.practice.n5;
 
-import java.util.ArrayList;
-
 public class DogNursery {
-    private ArrayList<Dog> list = new ArrayList<>();
+    private Dog[] list = new Dog[1];
+    private int counter;
 
     public void add(Dog d) {
-        list.add(d);
+        Dog[] temp = new Dog[counter + 1];
+        temp[counter + 1] = d;
+        list = temp;
     }
 
-    public DogNursery(ArrayList<Dog> list) {
+    public DogNursery(Dog[] list) {
         this.list = list;
     }
 
-    public ArrayList<Dog> getList() {
+    public Dog[] getList() {
         return list;
     }
 
-    public void setList(ArrayList<Dog> list) {
+    public void setList(Dog[] list) {
         this.list = list;
     }
 

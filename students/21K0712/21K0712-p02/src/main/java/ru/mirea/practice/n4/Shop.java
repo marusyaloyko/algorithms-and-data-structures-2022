@@ -1,64 +1,60 @@
 package ru.mirea.practice.n4;
 
-import ru.mirea.practice.n3.Circle;
-
-import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Shop {
+    private int max = 10;
+    private int[] computer = new int[max];
+    private int counter;
 
-    Computer[] list = new Computer[0];
-    int counter;
+    Shop(int counter) {
+        this.counter = counter;
 
-    public Shop(Computer[] list) {
-        this.list = list;
-    }
-
-    public Shop() {
-    }
-
-    public Computer[] getList() {
-        return list;
-    }
-
-    public void setList(Computer[] list) {
-        this.list = list;
-    }
-
-    public void add(Computer comp) {
-        list[];
-    }
-
-    public void delete(Computer comp) {
-        for (int i = 0; i < list.size(); i++) {
-            if (comp == list.get(i)) {
-                list.remove(i);
-            }
+        for (int i = 0; i < counter; i++) {
+            computer[i] = 1;
         }
     }
 
-    public ArrayList find(Computer comp) {
-        ArrayList<Integer> founded = new ArrayList<>();
-        for (int i = 0; i < list.size(); i++) {
-            if (comp.equals(list.get(i))) {
-                founded.add(i);
-            }
-        }
-        return founded;
+    public double getCounter() {
+        return this.counter;
     }
 
-    public Computer find(int i) {
-        return list.get(i);
+    public void setCounter(int counter) {
+        this.counter = counter;
+    }
+
+    public void addComputer(int a) {
+        if ((this.counter + a) > 10) {
+            this.counter = 10;
+        }
+        this.counter += a;
+    }
+
+    public void delComputer(int a) {
+        if ((this.counter - a) < 0) {
+            this.counter = 0;
+        }
+        this.counter -= a;
+    }
+
+    public void findComputer(int a) {
+        if (a < 0 || a > 10) {
+            System.out.println("Error");
+        } else if (computer[a] == 0) {
+            System.out.println("Компьютера " + a + " нет в наличии");
+        }
+        System.out.println("Компьютер " + a + " есть на складе");
     }
 
     @Override
     public String toString() {
-        String s = "";
-        for (int i = 0; i < list.size(); i++) {
-            s += list.get(i).toString();
-        }
         return "Shop{"
                 +
-                "list=" + s
+                "max=" + max
+                +
+                ", computer=" + Arrays.toString(computer)
+                +
+                ", counter=" + counter
                 +
                 '}';
     }

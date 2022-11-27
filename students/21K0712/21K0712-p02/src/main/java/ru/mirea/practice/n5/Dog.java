@@ -30,8 +30,8 @@ public class Dog {
         this.age = age;
     }
 
-    public int to_human_age() {
-        return (7 * age);
+    public int toHumanage() {
+        return 7 * age;
     }
 
     @Override
