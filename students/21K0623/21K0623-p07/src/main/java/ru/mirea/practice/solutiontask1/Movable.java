@@ -1,11 +1,11 @@
 package ru.mirea.practice.solutiontask1;
 
 public interface Movable {
-    void moveUp(double yspeed);
+    void moveUp(int yspeed);
 
-    void moveDown(double yspeed);
+    void moveDown(int yspeed);
 
-    void moveLeft(double xspeed);
+    void moveLeft(int xspeed);
 
-    void moveRight(double xspeed);
+    void moveRight(int xspeed);
 }

@@ -17,25 +17,25 @@ public class MovableRectangle implements Movable {
     }
 
     @Override
-    public void moveUp(double yspeed) {
+    public void moveUp(int yspeed) {
         this.topLeft.moveUp(yspeed);
         this.bottomRight.moveUp(yspeed);
     }
 
     @Override
-    public void moveDown(double yspeed) {
+    public void moveDown(int yspeed) {
         this.topLeft.moveDown(yspeed);
         this.bottomRight.moveDown(yspeed);
     }
 
     @Override
-    public void moveLeft(double xspeed) {
+    public void moveLeft(int xspeed) {
         this.topLeft.moveLeft(xspeed);
         this.bottomRight.moveLeft(xspeed);
     }
 
     @Override
-    public void moveRight(double xspeed) {
+    public void moveRight(int xspeed) {
         this.topLeft.moveRight(xspeed);
         this.bottomRight.moveRight(xspeed);
     }
