@@ -2,9 +2,10 @@ package ru.mirea.practice.n1;
 
 public class Circle extends Shape {
     private double r;
+
     @Override
     public double getArea() {
-        return 3.14*r*r;
+        return 3.14 * r * r;
     }
 
     public Circle() {
@@ -13,12 +14,7 @@ public class Circle extends Shape {
 
     @Override
     public double getPerimeter() {
-        return 2*3.14*r;
-    }
-
-    @Override
-    public void setType(String type) {
-        super.setType(type);
+        return 2 * 3.14 * r;
     }
 
     @Override

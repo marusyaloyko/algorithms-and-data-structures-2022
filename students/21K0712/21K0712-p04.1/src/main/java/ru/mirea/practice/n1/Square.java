@@ -1,16 +1,16 @@
 package ru.mirea.practice.n1;
 
-public class Square extends Shape{
+public class Square extends Shape {
     int a;
 
     @Override
     public double getArea() {
-        return a*a;
+        return a * a;
     }
 
     @Override
     public double getPerimeter() {
-        return a*4;
+        return a * 4;
     }
 
     @Override
