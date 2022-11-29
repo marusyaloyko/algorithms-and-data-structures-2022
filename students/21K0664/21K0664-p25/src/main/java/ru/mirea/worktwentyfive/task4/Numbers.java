@@ -1,9 +1,9 @@
-package ru.mirea.workfourteen.task4;
+package ru.mirea.worktwentyfive.task4;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-abstract class Time {
+abstract class Numbers {
     public static void main(String[] args) {
         Pattern a = Pattern.compile("\\+");
         Pattern b = Pattern.compile(", ");
